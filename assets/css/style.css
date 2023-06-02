@@ -1,76 +1,153 @@
-body {
-  padding: 0;
-  margin: 0;
+@media (min-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5%;
+    height: 10%;
+  }
+
+  #hamburg-icon {
+    font-size: 17pt;
+    padding-right: 2rem;
+    color: #28352f;
+  }
+
+  .headline-section {
+    background-image: url(../img/image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 5%;
+  }
+
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10%;
+  }
+
+  .socialmedia-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    margin-top: -2%;
+  }
+
+  .socialmedia-links li { list-style: none; }
+
+  .socialmedia-links img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .headline-primary,
+  .headline-secondary {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .headline-primary { color: #172b4d; }
+
+  .headline-secondary { color: #36b37e; }
+
+  .headline-content p {
+    margin-top: -10%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
-
-.navegation-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  width: 100%;
-}
-
-.humburguer {
-  padding-right: 20px;
-  margin-top: 20px;
-  color: black;
-}
-
-.headline-section {
-  background-image: url(../img/header-illsutration-mobile.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 712px;
-  padding-top: 92px;
-}
-
-.headline-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-}
-
-.header-text h1,
-.header-text h2 {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin: 1.5rem;
-}
-
-.header-text h1 { color: #172b4d; }
-
-.header-text h2 { color: #36b37e; }
-
-.headline-container p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  color: #172b4d;
-  margin: 1.5rem;
-}
-
-.socialmedia-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 7%;
-}
-
-.socialmedia-links li { list-style: none; }
 
 @media (min-width: 375px) {
-  .headline-section { background-size: cover; }
-}
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
 
-@media (min-width: 768px) {
-  .headline-section { width: 100%; }
+  .header-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5%;
+    height: 10%;
+  }
+
+  #hamburg-icon {
+    font-size: 17pt;
+    padding-right: 2rem;
+    color: #28352f;
+  }
+
+  .headline-section {
+    background-image: url(../img/image.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: 5%;
+  }
+
+  .headline-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10%;
+  }
+
+  .socialmedia-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    margin-top: -2%;
+  }
+
+  .socialmedia-links li { list-style: none; }
+
+  .socialmedia-links img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .headline-primary,
+  .headline-secondary {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+  }
+
+  .headline-primary { color: #172b4d; }
+
+  .headline-secondary { color: #36b37e; }
+
+  .headline-content p {
+    margin-top: -10%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172b4d;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }
