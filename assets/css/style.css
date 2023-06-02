@@ -17,6 +17,52 @@
     color:black;
 }
 
+.headline-section{
+
+    background-image: url(../img/header-illsutration-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 712px;
+    padding-top:92px;
+    }
+    .headline-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;    
+       
+    }
+    .header-text h1,.header-text h2{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 52px;
+        text-align: center;    
+    }
+    .header-text h1{
+        color: #172B4D;
+    }
+    .header-text h2 {
+    color: #36B37E;
+    }
+    .headline-container p{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #172B4D;
+        margin: 1.5rem;
+    }
+    .socialmedia-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 7%;
+    }
 
 .socialmedia-links li{ list-style: none;}
 
