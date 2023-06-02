@@ -1,0 +1,32 @@
+
+    body {
+        padding: 0;
+        margin: 0;
+       }
+       
+.navegation-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:end ; 
+    width: 100%;
+}
+
+.humburguer{
+    padding-right: 20px;
+    margin-top:20px;
+    color:black;
+}
+
+
+.socialmedia-links li{ list-style: none;}
+
+@media (min-width: 375px) {
+    .headline-section {
+      background-size: cover;
+    }
+  }
+  @media (min-width: 768px) {
+    .headline-section {
+        width: 100%;
+      }
+  }
