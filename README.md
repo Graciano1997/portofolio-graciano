@@ -42,9 +42,9 @@ and how to use images and backgrounds to enhance the look of the website.
 </details>
 
 ### Key Features <a name="key-features"></a>
-- **setup and mobile first**
+- **Finish with mobile first**
 - **Understand how to parse a Figma design to create a UI.**
-- **Learning how to use Flexbox to place elements in the page.**
+- **Learning how to use Flexbox and grid to place elements in the page.**
 - **Use images and backgrounds to enhance the look of the website.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
