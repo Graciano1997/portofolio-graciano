@@ -25,14 +25,6 @@
     margin-top: 5%;
   }
 
-  .headline-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 10%;
-    margin-top: -4%;
-  }
-
   .socialmedia-links {
     display: flex;
     flex-direction: row;
@@ -52,6 +44,8 @@
     width: 90%;
   }
 
+  .headline-section { margin-top: 15.3%; }
+
   .headline-primary,
   .headline-secondary {
     font-family: 'Inter', sans-serif;
@@ -62,13 +56,9 @@
     text-align: center;
   }
 
-  .headline-primary {
-    color: #172b4d;
-  }
+  .headline-primary { color: #172b4d; }
 
-  .headline-secondary {
-    color: #36b37e;
-  }
+  .headline-secondary { color: #36b37e; }
 
   .headline-content p {
     margin-top: -8%;
@@ -83,38 +73,47 @@
     padding-right: 0.5%;
   }
 
-  .about-content p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #42526e;
-    margin-top: -3%;
-  }
-
   .headline-content {
     margin-left: 5%;
     margin-right: 5%;
-    padding-left: 13px;
-    padding-right: 13px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .btn-hover {
+    text-align: center;
+    padding-top: 15%;
+  }
+
+  .indicator {
+    width: 48px;
+    height: 4px;
+    background: #36b37e;
+    border-radius: 24px;
+    margin-top: -5%;
+  }
+
+  .works-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
   .card {
-    background-image: url(../img/imgbg.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 5%;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .tech {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 8%;
-    margin-bottom: 2%;
+    gap: 12px;
   }
 
   .box-icon {
@@ -147,30 +146,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
     border-radius: 8px;
     border: 1px solid #d0d9d4;
   }
 
-  .cards {
+  .box-card {
     display: flex;
     flex-direction: column;
-    margin-top: 11%;
-    margin-left: 3%;
-    margin-right: 3%;
+    justify-content: center;
+    gap: 17px;
   }
 
-  .btn-hover {
-    text-align: center;
-    padding-top: 15%;
+  .box-tech {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 12%;
   }
 
-  .indicator {
-    width: 48px;
-    height: 4px;
-    background: #36b37e;
-    border-radius: 24px;
-    margin-top: -5%;
+  .cards {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 474px;
+    border: 1px solid #d0d9d4;
+    background: #ebf0ee;
+    border-radius: 8px;
+  }
+
+  .card-headerbg {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
   }
 
   .card-body {
@@ -180,19 +189,23 @@
     margin-top: 0%;
   }
 
+  .about-content p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #42526e;
+    margin-top: -3%;
+  }
+
   .tech-language {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2%;
-    margin-top: -10%;
-  }
-
-  .languag {
-    display: flex;
-    justify-content: space-around;
-    gap: 2%;
+    gap: 1.5%;
     margin-top: -10%;
   }
 
@@ -330,11 +343,14 @@
     background-image: url(../img/imgAbout.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 8%;
-    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
-  #about-header {
+  .about-header h1 {
     padding-top: -60%;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -360,7 +376,6 @@
     border-radius: 8px;
     width: 327px;
     height: 316px;
-    margin-top: 6%;
     display: grid;
     grid-template-rows: 30fr 70fr;
     grid-template-columns: 100%;
