@@ -249,7 +249,7 @@
     border-radius: 4px;
     background: #36b37f;
   }
-  
+
   .see-project a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -782,7 +782,7 @@
 
 .see-project:hover {
   background: #36b37f;
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0.1px 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .see-project:active { background: #008552; }
