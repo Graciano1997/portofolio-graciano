@@ -249,9 +249,7 @@
     border-radius: 4px;
     background: #36b37f;
   }
-
-  .see-project:hover { background: #008552; }
-
+  
   .see-project a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -643,8 +641,6 @@
     background: #36b37f;
   }
 
-  .see-project:hover { background: #008552; }
-
   .see-project a {
     text-decoration: none;
     font-family: "Inter", sans-serif;
@@ -783,3 +779,10 @@
     border-radius: 8px;
   }
 }
+
+.see-project:hover {
+  background: #36b37f;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.see-project:active { background: #008552; }
