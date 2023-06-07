@@ -1,4 +1,4 @@
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
   }
 
   .headline-section {
-    margin-top: 15.3%;
+    margin-top: 20%;
   }
 
   .headline-primary,
@@ -101,8 +101,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
   }
 
   .card {
@@ -202,6 +203,8 @@
     text-align: center;
     color: #42526e;
     margin-top: -3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .tech-language {
@@ -344,8 +347,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 0;
+    margin-right:0;
     padding-top: 5%;
   }
 
@@ -391,7 +394,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -438,7 +441,7 @@
   }
 
   .headline-section {
-    margin-top: 15.3%;
+    margin-top: 20%;
   }
 
   .headline-primary,
@@ -492,8 +495,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .card {
@@ -593,6 +596,8 @@
     text-align: center;
     color: #42526e;
     margin-top: -3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .tech-language {
