@@ -46,9 +46,7 @@
     width: 90%;
   }
 
-  .headline-section {
-    margin-top: 20%;
-  }
+  .headline-section { margin-top: 20%; }
 
   .headline-primary,
   .headline-secondary {
@@ -243,7 +241,7 @@
 
   .form-background img { z-index: -10; }
 
-  .email_links_container { margin-top: -22%; }
+  .email_links_container { margin-top: 1%; }
 
   .foot-link { margin-top: 10%; }
 
@@ -381,16 +379,16 @@
     border-radius: 8px;
   }
 
-  .contact {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
   .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    background-image: url(../img/imgfoot.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .form input {
@@ -405,6 +403,8 @@
     color: #6b778c;
     height: 48px;
     padding-left: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .form textarea {
@@ -420,6 +420,8 @@
     height: 114px;
     padding-left: 3%;
     padding-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .btn-primary {
@@ -456,7 +458,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -504,9 +506,7 @@
     width: 90%;
   }
 
-  .headline-section {
-    margin-top: 20%;
-  }
+  .headline-section { margin-top: 20%; }
 
   .headline-primary,
   .headline-secondary {
@@ -701,7 +701,7 @@
 
   .form-background img { z-index: -10; }
 
-  .email_links_container { margin-top: -22%; }
+  .email_links_container { margin-top: 1%; }
 
   .foot-link { margin-top: 10%; }
 
@@ -839,16 +839,16 @@
     border-radius: 8px;
   }
 
-  .contact {
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
   .form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    background-image: url(../img/imgfoot.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .form input {
@@ -863,6 +863,8 @@
     color: #6b778c;
     height: 48px;
     padding-left: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .form textarea {
@@ -878,6 +880,8 @@
     height: 114px;
     padding-left: 3%;
     padding-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .btn-primary {
