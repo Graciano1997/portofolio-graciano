@@ -450,6 +450,10 @@
     color: #42526e;
   }
 
+  .contact-header{
+    margin: 5%;
+  }
+
   .indicator-finish {
     margin-top: 10%;
     width: 134px;
