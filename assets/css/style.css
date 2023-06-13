@@ -86,6 +86,8 @@
     text-align: center;
     padding-top: 15%;
   }
+  
+  .contact-container{ padding-bottom: 0;}
 
   .indicator {
     width: 48px;
