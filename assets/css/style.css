@@ -1,10 +1,12 @@
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .header-menu {
@@ -86,8 +88,8 @@
     text-align: center;
     padding-top: 15%;
   }
-  
-  .contact-container{ padding-bottom: 0;}
+
+  .contact-container { margin-top: 10%; }
 
   .indicator {
     width: 48px;
@@ -391,6 +393,7 @@
     background-position: right bottom;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 15%;
   }
 
   .form input {
@@ -450,9 +453,7 @@
     color: #42526e;
   }
 
-  .contact-header{
-    margin: 5%;
-  }
+  .contact-header { margin: 5%; }
 
   .indicator-finish {
     margin-top: 10%;
@@ -471,6 +472,8 @@
     justify-content: center;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .header-menu {
@@ -552,6 +555,8 @@
     text-align: center;
     padding-top: 15%;
   }
+
+  .contact-container { margin-top: 10%; }
 
   .indicator {
     width: 48px;
@@ -855,6 +860,7 @@
     background-position: right bottom;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 15%;
   }
 
   .form input {
@@ -913,6 +919,8 @@
     text-align: center;
     color: #42526e;
   }
+
+  .contact-header { margin: 5%; }
 
   .indicator-finish {
     margin-top: 10%;
