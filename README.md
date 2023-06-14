@@ -42,10 +42,9 @@
 </details>
 
 ### Key Features <a name="key-features"></a>
-- **Finish with mobile first development**
+- **Portfolio: desktop version**
 - **Understand how to parse a Figma design to create a UI.**
-- **Learning how to use Flexbox and grid to place elements in the page.**
-- **Use images and backgrounds to enhance the look of the website.**
+- **Understand how to create UIs adaptable to different screen sizes using media queries.**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 - [Live Demo Link](https://graciano1997.github.io/portofolio-graciano/)
