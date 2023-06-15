@@ -176,7 +176,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 17px;
+    gap: 24px;
     margin-top: 15%;
   }
 
@@ -184,7 +184,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 17px;
+    gap: 24px;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 12%;
@@ -404,7 +404,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 24px;
     background-image: url(../img/imgfoot.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
