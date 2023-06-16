@@ -1052,3 +1052,42 @@ body {
 }
 
 .btn-primary:active { background: #008552; }
+
+.cards {
+  transition: all 2s 0.8s ease;
+}
+
+.cards:hover,
+.cards:focus {
+  width: 102%;
+  position: relative;
+  left: -5px;
+}
+
+nav ul li {
+  transition: font-size 0.2s 0.2s ease;
+}
+
+nav ul li:focus,
+nav ul li:hover {
+  font-size: 20px;
+  color: mediumspringgreen;
+}
+
+.btn-hover img {
+  transition: all 1.5s 0.5s ease-in-out;
+}
+
+.btn-hover img:hover {
+  width: 80%;
+  height: 80%;
+}
+
+.card-title{
+  transition: all 2s 0.5s ease-out;
+}
+
+.card-title:hover {
+  box-shadow: 2px 2px 5px 1px black;
+}
+
