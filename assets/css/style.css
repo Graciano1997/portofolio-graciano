@@ -20,7 +20,8 @@ body {
     flex-direction: row-reverse;
     margin-top: 5%;
     height: 5%;
-  }D
+  }
+
   #hamburg-icon {
     font-size: 17pt;
     padding-right: 2rem;
@@ -1052,20 +1053,7 @@ body {
 
 .btn-primary:active { background: #008552; }
 
-.cards {
-  transition: all 2s 0.8s ease;
-}
-
-.cards:hover,
-.cards:focus {
-  width: 102%;
-  position: relative;
-  left: -5px;
-}
-
-nav ul li {
-  transition: font-size 0.2s 0.2s ease;
-}
+nav ul li { transition: font-size 0.2s 0.2s ease; }
 
 nav ul li:focus,
 nav ul li:hover {
@@ -1073,27 +1061,29 @@ nav ul li:hover {
   color: mediumspringgreen;
 }
 
-.btn-hover img {
-  transition: all 1.5s 0.5s ease-in-out;
+.cards,
+.box { transition: all 2s 0.5s ease-in-out; }
+
+.cards:hover,
+.cards:focus {
+  width: 102%;
+  position: relative;
+  left: -5px;
+  box-shadow: 2px 1px 4px 2px #36b37e;
 }
+
+.box:hover,
+.box:focus {
+  box-shadow: 2px 1px 4px 2px #36b37e;
+}
+
+.card-title { transition: all 2s 0.5s ease-out; }
+
+.card-title:hover { box-shadow: 2px 2px 5px 1px black; }
+
+.btn-hover img { transition: all 1.5s 0.5s ease-in-out; }
 
 .btn-hover img:hover {
   width: 80%;
   height: 80%;
 }
-
-.card-title{
-  transition: all 2s 0.5s ease-out;
-}
-
-.card-title:hover {
-  box-shadow: 2px 2px 5px 1px black;
-}
-.cards {
-  transition: all 2s 0.1s ease;
-}
-
-.cards:hover {
-  box-shadow: 2px 1px 4px 2px #36b37e;
-}
-
