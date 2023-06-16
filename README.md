@@ -27,12 +27,8 @@
 
 # 📖 Portofolio-Graciano <a name="about-project"></a>
 
-<<<<<<< HEAD
-**Portofolio-Graciano**,Is a project that show that I understood how to parse a Figma design to create a UI, how to place elements on the page using Flexbox,grid and how to use images and backgrounds to enhance the look of the website.
-=======
 **Portofolio-Graciano**,Is a project that show that I understood how to parse a Figma design to create a UI, how to place elements on the page using Flexbox, Grid , media-query 
 and how to use images and backgrounds to enhance the look of the website.
->>>>>>> desktop-feature
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -47,13 +43,9 @@ and how to use images and backgrounds to enhance the look of the website.
 </details>
 
 ### Key Features <a name="key-features"></a>
-<<<<<<< HEAD
-- **Portfolio: desktop version**
-=======
 
 - **Portofolio:responsive desktop,mobile ...**
 -**Understand how to create UIs adaptable to different screen sizes using media queries.**
->>>>>>> desktop-feature
 - **Understand how to parse a Figma design to create a UI.**
 - **Understand how to create UIs adaptable to different screen sizes using media queries.**
 
