@@ -1087,3 +1087,18 @@ nav ul li:hover {
   width: 80%;
   height: 80%;
 }
+
+.header-first {
+  animation-duration: 2s;
+  animation-name: anime;
+  animation-delay: 0.2s;
+  animation-iteration-count: initial;
+}
+
+@keyframes anime {
+  from {
+    font-size: 30px;
+  }
+
+  to { margin-top: -2%; }
+}
