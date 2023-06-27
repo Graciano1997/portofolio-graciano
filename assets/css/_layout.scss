@@ -1,0 +1,14 @@
+.flexLayout {
+  display: flex;
+  justify-content: center;
+}
+
+.fontStyle {
+  font-family:$fontPrimary;
+  font-style: normal;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: 100%;
+}

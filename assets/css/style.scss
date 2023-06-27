@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import 'variables';
+
+@import 'layout';
+
+*{
+   @extend .fontStyle;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.headline-primary { color: $primary; }
+  
+.headline-secondary { color: $secondary; }
+
+.headline-primary,
+.headline-secondary {
+  @extend .fontStyle;
+  font-weight: 700;
+  text-align: center;
+  line-height: 52px;
+}
+
+.headline-content{
+  p {
+    font-size: 20px;
+    color: $primary;
+    text-align: center;
+  }
+} 
+
+
+.btn-primary:hover {
+  background: $btnBg; 
+  box-shadow: 0 8px 16px $btnHoverShadow;
+}
+
+.btn-primary {
+  height: 48px;
+  background: $btnBg;
+  border-radius: 4px;
+  font-family:$fontPrimary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $btnFc;
+  border: transparent;
+}
+
+.btn-primary:active { background: $btnActive; }
+
+nav ul li { transition: font-size 0.2s 0.2s ease; }
+
+nav ul li:focus,
+nav ul li:hover {
+  font-size: 20px;
+  color: mediumspringgreen;
+}
+
+
+.cards,
+.box { transition: all 2s 0.5s ease-in-out; }
+
+.cards:hover,
+.cards:focus {
+  width: 102%;
+  position: relative;
+  left: -5px;
+  box-shadow: 2px 1px 4px 2px $secondary;
+}
+
+.box:hover,
+.box:focus {
+  box-shadow: 2px 1px 4px 2px $secondary;
+}
+
+.socialmedia-links {
+  @extend .flexLayout;
+  flex-direction: row;
+}
+
+.card-title { transition: all 2s 0.5s ease-out; }
+
+.card-title:hover { box-shadow: 2px 2px 5px 1px $default; }
+
+.btn-hover img { transition: all 1.5s 0.5s ease-in-out; }
+
+.btn-hover img:hover {
+  width: 80%;
+  height: 80%;
+}
+
+.header-first {
+  animation-duration: 2s;
+  animation-name: anime;
+  animation-delay: 0.2s;
+  animation-iteration-count: initial;
+}
+
+
+.form-container input {
+  font-family:$fontPrimary;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  background: $defaultWhite;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+.form-container textarea {
+  background: #ffff;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #42526e;
+  height: 114px;
+}
+
+
+
+
+
+.contact-descr {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  color: $primary;
+}
+
+@keyframes anime {
+  from {
+    font-size: 30px;
+  }
+
+  to { margin-top: -2%; }
+}

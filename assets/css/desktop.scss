@@ -7,10 +7,18 @@
     column-gap: 24px;
   }
 
-  .headline-content p {
+   .headline-primary,
+   .headline-secondary {
+   @extend .fontStyle;
+   font-size: 48px;
+  }
+
+  .headline-content {
+    p {
     text-align: center;
     margin-left: 13rem;
     margin-right: 13rem;
+    }
   }
 
   .btn-hover { margin-top: 24px; }
@@ -35,7 +43,7 @@
     margin-right: 12.2rem;
   }
 
-  .form-container button { align-self: flex-start; }
+  .form-container { button { align-self: flex-start; }}
 
   .contact {
     margin-top: 1px;
@@ -67,29 +75,10 @@
   }
 
   .form-container input {
-    background: #fff;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
     padding: 2%;
   }
 
   .form-container textarea {
-    background: #ffff;
-    border: 1px solid #60c095;
-    border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #42526e;
-    height: 114px;
     padding-left: 3%;
     padding-top: 3%;
   }
