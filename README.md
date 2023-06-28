@@ -25,7 +25,8 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 Portofolio-Graciano <a name="about-project"></a>
+# 📖 Portofolio-Graciano
+ <a name="about-project"></a>
 
 **Portofolio-Graciano**,Is a project that show that I understood how to parse a Figma design to create a UI, how to place elements on the page using Flexbox, Grid , media-query 
 and how to use images and backgrounds to enhance the look of the website.

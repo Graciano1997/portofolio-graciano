@@ -1,5 +1,5 @@
 @media (min-width: 768px) {
-  .flexLayout, .resume, .card-tech, .card-list, .skills, .box-icon, .about-container, .btn-hover, .header-menu, .headline-section, .container {
+  .flexLayout, .resume, .card-tech, .card-list, .skills, .box-icon, .about-container, .works-section, .btn-hover, .header-menu, .headline-section, .container {
     display: flex;
     justify-content: center;
   }
@@ -49,6 +49,9 @@
   }
   nav ul li {
     list-style: none;
+  }
+  nav ul li > a {
+    text-decoration: none;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
@@ -88,6 +91,8 @@
     display: none;
   }
   .works-section {
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     margin-top: -25rem;
   }
@@ -107,8 +112,6 @@
     margin-top: 10%;
   }
   .box-descr h3 {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
@@ -170,8 +173,6 @@
     height: 32px;
   }
   .about-content p {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -271,8 +272,6 @@
   .language a {
     text-decoration: none;
     text-align: center;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
@@ -424,8 +423,6 @@
     border: transparent;
   }
   .email {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -453,8 +450,6 @@
     margin-top: -1%;
   }
   .contact-descr {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 52px;

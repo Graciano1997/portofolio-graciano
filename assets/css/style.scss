@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-
 @import 'variables';
-
 @import 'layout';
 
-*{
-   @extend .fontStyle;
+* {
+  @extend.fontStyle;
 }
 
 body {
@@ -14,37 +12,35 @@ body {
   padding: 0;
 }
 
-.headline-primary { color: $primary; }
-  
-.headline-secondary { color: $secondary; }
+.headline-primary {
+  color: $primary;
+}
+
+.headline-secondary {
+  color: $secondary;
+}
 
 .headline-primary,
 .headline-secondary {
-  @extend .fontStyle;
   font-weight: 700;
   text-align: center;
   line-height: 52px;
+  @extend.fontStyle;
 }
 
-.headline-content{
+.headline-content {
   p {
     font-size: 20px;
     color: $primary;
     text-align: center;
   }
-} 
-
-
-.btn-primary:hover {
-  background: $btnBg; 
-  box-shadow: 0 8px 16px $btnHoverShadow;
 }
 
 .btn-primary {
   height: 48px;
   background: $btnBg;
   border-radius: 4px;
-  font-family:$fontPrimary;
+  font-family: $fontPrimary;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -54,19 +50,23 @@ body {
   border: transparent;
 }
 
-.btn-primary:active { background: $btnActive; }
-
-nav ul li { transition: font-size 0.2s 0.2s ease; }
-
-nav ul li:focus,
-nav ul li:hover {
-  font-size: 20px;
-  color: mediumspringgreen;
+.btn-primary:hover {
+  background: $btnBg;
+  box-shadow: 0 8px 16px $btnHoverShadow;
 }
 
+.btn-primary:active {
+  background: $btnActive;
+}
+
+nav ul li {
+  transition: font-size 0.2s 0.2s ease;
+}
 
 .cards,
-.box { transition: all 2s 0.5s ease-in-out; }
+.box {
+  transition: all 2s 0.5s ease-in-out;
+}
 
 .cards:hover,
 .cards:focus {
@@ -82,19 +82,26 @@ nav ul li:hover {
 }
 
 .socialmedia-links {
-  @extend .flexLayout;
   flex-direction: row;
+  @extend.flexLayout;
 }
 
-.card-title { transition: all 2s 0.5s ease-out; }
+.card-title {
+  transition: all 2s 0.5s ease-out;
+}
 
-.card-title:hover { box-shadow: 2px 2px 5px 1px $default; }
+.card-title:hover {
+  box-shadow: 2px 2px 5px 1px $default;
+}
 
-.btn-hover img { transition: all 1.5s 0.5s ease-in-out; }
+.btn-hover img {
+  transition: all 1.5s 0.5s ease-in-out;
+}
 
 .btn-hover img:hover {
-  width: 80%;
-  height: 80%;
+  transform: scale(1.5);
+  border: 0.5px dashed black;
+  border-radius: 50px;
 }
 
 .header-first {
@@ -104,9 +111,8 @@ nav ul li:hover {
   animation-iteration-count: initial;
 }
 
-
 .form-container input {
-  font-family:$fontPrimary;
+  font-family: $fontPrimary;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -130,10 +136,6 @@ nav ul li:hover {
   height: 114px;
 }
 
-
-
-
-
 .contact-descr {
   font-style: normal;
   font-weight: 700;
@@ -146,5 +148,7 @@ nav ul li:hover {
     font-size: 30px;
   }
 
-  to { margin-top: -2%; }
+  to {
+    margin-top: -2%;
+  }
 }

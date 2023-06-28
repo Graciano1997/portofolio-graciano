@@ -3,295 +3,63 @@
   @import 'layout';
 
   .container {
-      @extend .flexLayout;
-      flex-direction: column;
-    }
-  
-    .header-menu {
-      display: flex;
-      flex-direction: row-reverse;
-      margin-top: 5%;
-      height: 5%;
-    }
-  
-    #hamburg-icon {
-      font-size: 17pt;
-      padding-right: 2rem;
-      color: $default;
-    }
-  
-    .nav-bar { ul { display: none; } } 
-  
-    main { margin-top: 1rem; }
-  
-    .socialmedia-links {
-      transform: translateX(-7%);
-      gap: 1.5%;
-    }
-  
-    .heading { margin-top: 0.9rem; }
-  
-    .header-first { margin-top: 4rem; }
-  
-    .socialmedia-links {
-    li {
-      list-style: none;
-      padding-left: 4%;
-    }
+    flex-direction: column;
+    @extend.flexLayout;
   }
-  
-    .socialmedia-links img {
-      height: 90%;
-      width: 90%;
-    }
-  
-    .headline-section {
-      background-image: url(../img/header-illsutration-mobile@2x.png);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      margin-top: 0.5rem;
-      @extend .flexLayout;
-      flex-direction: column;
-      padding-bottom: 2.3rem;
-    }
 
-    .headline-primary,
-    .headline-secondary {
-    @extend .fontStyle;
-    font-size: 40px;
-    }
+  .header-menu {
+    margin: 0;
+    background: white;
+  }
 
-    .headline-content{
-      p {
-        text-align: center;
-        margin-top: -1.5rem;
-        line-height: 28px;
-        padding-left: 0.5%;
-        padding-right: 0.5%;
-      }
-    } 
-  
-    .headline-content {
-      margin-left: 5%;
-      margin-right: 5%;
-      padding-left: 3%;
-      padding-right: 3%;
-    }
-  
-    .btn-hover {
-      text-align: center;
-      padding-top: 3rem;
-    }
-  
-    .contact-container {
-      margin-top: 10%;
-    }
-  
-    .indicator {
-      width: 48px;
-      height: 4px;
-      background: $secondary;
-      border-radius: 24px;
-      margin-top: -5%;
-    }
-  
-    .works-section {
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-top: 2%;
-    }
-  
-    .card {
-    @extend .gridLayout;
-      grid-template-rows: 20% 10% 20%;
-      border-radius: 8px;
-      background-color: $defaultWhite;
-    }
-  
-    .tech {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-  
-    .box-icon {
-      @extend .flexLayout;
-      align-items: center;
-      margin-top: 10%;
-    }
-  
-    .box-descr {
-      
-      h3 {
-        @extend .fontStyle;
-        font-weight: 600;
-        font-size: 24px;
-        text-align: center;
-        line-height: 32px;
-        color: $aboutBoxTitle;
-        margin-top: -7%;
-      }
-    } 
-  
-    .box-descr {
-    @extend .gridLayout;
-      grid-template-rows: 20fr 80fr;
-    }
-  
-    .card-description {
-      margin-top: 70%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 8px;
-      border: 1px solid #d0d9d4;
-    }
-  
-    .box-card {
-      @extend .flexLayout;
-      flex-direction: column;
-      gap: 24px;
-      margin-top: 15%;
-    }
-  
-    .box-tech {
-      @extend .flexLayout;
-      flex-direction: column;
-      gap: 24px;
-      margin-left: 5%;
-      margin-right: 5%;
-      margin-top: 12%;
-    }
-  
-    .cards {
-    @extend .gridLayout;
-      grid-template-rows: 50% 50%;
-      height: 474px;
-      border: 1px solid #d0d9d4;
-      background: $aboutBoxBg;
-      border-radius: 8px;
-    }
-  
-    .card-headerbg {
-      border-top-left-radius: 8px;
-      border-top-right-radius: 8px;
-    }
-  
-    .card-list {
-      display: flex;
-      justify-content: space-between;
-      padding-left: 0%;
-      margin-top: -3%;
-      margin-bottom: 8%;
-    }
-  
-    .about-content {
-     p {
-      @extend .fontStyle;
-      font-weight: 400;
-      font-size: 20px;
-      text-align: center;
-      line-height: 32px;
-      color: $terciary;
-      margin-top: -3%;
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-    }
-  
-    .tech-language {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 2%;
-      padding-left: 0%;
-      justify-content: center;
-      align-items: flex-start;
-    }
-  
-    .card-gra {
-    @extend .gridLayout;
-      grid-template-rows: 20fr 20fr 60fr;
-    }
-  
-    .card-tech {
-      @extend .flexLayout;
-    }
-  
-    .card-tech button {
-      background-color: $btnBg;
-      color: $defaultWhite;
-    }
-  
-    .form-background {
-      display: flex;
-      justify-content: flex-end;
-      position: relative;
-      right: -5%;
-      margin-top: -24%;
-    }
-  
-    .form-background img { z-index: -10; }
-  
-    .email_links_container { margin-top: 1%; }
-  
-    .foot-link { margin-top: 10%; }
-  
-    .card-title {
-      @extend .fontStyle;
-      font-weight: 600;
-      font-size: 24px;
-      text-align: center;
-      line-height: 32px;
-      color: $workCardTitleColor
-    }
-  
-    .card-see {
-      @extend .flexLayout;
-      flex-direction: column;
-      align-items: center;
-      height: 48px;
-    }
-  
-    .resume {
-      @extend .flexLayout;
-    }
-  
-    .language {
-      display: flex;
-      align-items: center;
-      background: $aboutBoxBg;
-      text-align: center;
-      border-radius: 4px;
-      list-style: none;
-      padding-left: 3%;
-      padding-right: 3%;
-      height: 32px;
-    }
-  
-    .techlanguage {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 12px;
-      background: $defaultWhite;
-      height: 10%;
-      border-radius: 8px;
-    }
-  
-    .language a {
-      @extend .fontStyle;
-      font-weight: 600;
-      font-size: 12px;
-      text-align: center;
-      text-decoration: none;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      color: $workCardTitleColor
-    }
-  
-    .techlanguage a {
-      @extend .fontStyle;
+  .defaultHeight {
+    height: 98vh;
+    border-bottom-left-radius: 4.3%;
+    border-bottom-right-radius: 4.3%;
+  }
+
+  #hamburg-icon {
+    font-size: 17pt;
+    padding-right: 2rem;
+    color: $default;
+  }
+
+  .socialmedia-links {
+    transform: translateX(-7%);
+    gap: 1.5%;
+  }
+
+  .socialmedia-links img {
+    height: 90%;
+    width: 90%;
+  }
+
+  .socialmedia-links li {
+    list-style: none;
+    padding-left: 4%;
+  }
+
+  .language a {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $workCardTitleColor;
+    @extend.fontStyle;
+  }
+
+  .techlanguage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    background: $defaultWhite;
+    height: 10%;
+    border-radius: 8px;
+
+    a {
       font-weight: 600;
       font-size: 12px;
       text-align: center;
@@ -300,119 +68,400 @@
       letter-spacing: 0.03em;
       color: $secondary;
     }
-  
-    .tech-language-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      margin-top: -1rem;
+    @extend.fontStyle;
+  }
+
+  .card-ruby a {
+    font-weight: bold;
+    color: $default;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 10%;
+      height: 10%;
+      align-self: self-end;
+      margin-top: 5%;
+      transition: all 0.2s 0.2s ease;
     }
-  
-    .card-ruby a {
-      font-weight: bold;
-      color: $default;
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 12px;
+
+        a {
+          text-decoration: none;
+          font-size: 32px;
+          color: #3a4a42;
+          font-weight: 600;
+        }
+      }
     }
-  
-    .about {
-      background-image: url(../img/imgAbout.svg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      @extend .flexLayout;
-      flex-direction: column;
-      margin-left: 0;
-      margin-right: 0;
-      padding-top: 5%;
-    }
-  
-    .about-header h2 {
-      @extend .fontStyle;
-      font-weight: 700;
-      font-size: 40px;
+  }
+
+  main {
+    margin-top: 1rem;
+  }
+
+  .heading {
+    margin-top: 0.9rem;
+  }
+
+  .header-first {
+    margin-top: 4rem;
+  }
+
+  .headline-section {
+    background-image: url(../img/header-illsutration-mobile@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    padding-bottom: 2.3rem;
+    @extend.flexLayout;
+  }
+
+  .headline-primary,
+  .headline-secondary {
+    font-size: 40px;
+    @extend.fontStyle;
+  }
+
+  .headline-content {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    p {
       text-align: center;
-      line-height: 52px;
-      color: $primary;
+      margin-top: -1.5rem;
+      line-height: 28px;
+      padding-left: 0.5%;
+      padding-right: 0.5%;
+      font-size: 18px;
     }
-  
-    .about-header h3 {
-      @extend .fontStyle;
-      font-weight: 700;
-      font-size: 40px;
+  }
+
+  .btn-hover {
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  .contact-container {
+    margin-top: 10%;
+  }
+
+  .indicator {
+    width: 48px;
+    height: 4px;
+    background: $secondary;
+    border-radius: 24px;
+    margin-top: -5%;
+  }
+
+  .works-section {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    @extend.flexLayout;
+  }
+
+  .card {
+    grid-template-rows: 20% 10% 20%;
+    border-radius: 8px;
+    background-color: $defaultWhite;
+    @extend.gridLayout;
+  }
+
+  .tech {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .box-icon {
+    align-items: center;
+    margin-top: 10%;
+    @extend.flexLayout;
+  }
+
+  .box-descr {
+    grid-template-rows: 20fr 80fr;
+
+    h3 {
+      font-weight: 600;
+      font-size: 24px;
       text-align: center;
-      line-height: 52px;
-      padding-top: -60%;
-      color: $primary;
+      line-height: 32px;
+      color: $aboutBoxTitle;
+      margin-top: -7%;
+      @extend.fontStyle;
     }
-  
-    #about-resume {
-      @extend .fontStyle;
-      font-weight: 500;
-      font-size: 17px;
-      line-height: 24px;
-    }
-  
-    .box-title { margin-top: 5%; }
-  
-    .box { 
-      @extend .gridLayout;
-      grid-template-rows: 20fr 30fr;
-      height: 316px;
-      border: 1px solid $aboutBoxBgBorder;
-      background: $aboutBoxBg;
-      border-radius: 8px;
-    }
-  
-    .form-container {
-      @extend .flexLayout;
-      flex-direction: column;
-      gap: 24px;
-      background-image: url(../img/imgfoot.svg);
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      margin-top: 1rem;
-    }
-  
-    .form-container input {
-      padding: 3%;
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-  
-    .form-container textarea {
-      padding:3%;
-      margin-left: 5%;
-      margin-right: 5%;
-      
-    }
-  
-    .email {
-      @extend .fontStyle;
+    @extend.gridLayout;
+  }
+
+  .card-description {
+    margin-top: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #d0d9d4;
+  }
+
+  .box-card {
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 15%;
+    @extend.flexLayout;
+  }
+
+  .box-tech {
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 12%;
+    @extend.flexLayout;
+  }
+
+  .cards {
+    grid-template-rows: 50% 50%;
+    height: 474px;
+    border: 1px solid #d0d9d4;
+    background: $aboutBoxBg;
+    border-radius: 8px;
+    @extend.gridLayout;
+  }
+
+  .card-headerbg {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .card-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    margin-top: -3%;
+    margin-bottom: 8%;
+  }
+
+  .about-content {
+    p {
       font-weight: 400;
       font-size: 20px;
       text-align: center;
       line-height: 32px;
       color: $terciary;
-    }
-  
-    .contact-header { margin: 5%; }
-  
-    .indicator-finish {
-      margin-top: 10%;
-      width: 134px;
-      height: 5px;
-      bottom: 8px;
-      background: $indicatorEnd;
-      border-radius: 10px;
-    }
-  
-    .contact-descr {
-      font-size: 40px;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-  
-    .box-contact {
-      @extend .flexLayout;
-      flex-direction: column;
+      margin-top: -3%;
+      margin-left: 5%;
+      margin-right: 5%;
+      @extend.fontStyle;
     }
   }
-  
+
+  .tech-language {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    padding-left: 0%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .card-gra {
+    grid-template-rows: 20fr 20fr 60fr;
+    @extend.gridLayout;
+  }
+
+  .card-tech {
+    @extend.flexLayout;
+  }
+
+  .card-tech button {
+    background-color: $btnBg;
+    color: $defaultWhite;
+  }
+
+  .form-background {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: -5%;
+    margin-top: -24%;
+  }
+
+  .form-background img {
+    z-index: -10;
+  }
+
+  .email_links_container {
+    margin-top: 1%;
+    height: 5vh;
+  }
+
+  .foot-link {
+    margin-top: 10%;
+  }
+
+  .card-title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+    color: $workCardTitleColor;
+    @extend.fontStyle;
+  }
+
+  .card-see {
+    flex-direction: column;
+    align-items: center;
+    height: 48px;
+    @extend.flexLayout;
+  }
+
+  .resume {
+    @extend.flexLayout;
+  }
+
+  .language {
+    display: flex;
+    align-items: center;
+    background: $aboutBoxBg;
+    text-align: center;
+    border-radius: 4px;
+    list-style: none;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 32px;
+  }
+
+  .tech-language-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -1rem;
+  }
+
+  .about {
+    background-image: url(../img/imgAbout.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 5%;
+    @extend.flexLayout;
+  }
+
+  .about-header h2 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: 52px;
+    color: $primary;
+    @extend.fontStyle;
+  }
+
+  .about-header h3 {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    line-height: 52px;
+    padding-top: -60%;
+    color: $primary;
+    @extend.fontStyle;
+  }
+
+  #about-resume {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    @extend.fontStyle;
+  }
+
+  .box-title {
+    margin-top: 5%;
+  }
+
+  .box {
+    grid-template-rows: 20fr 30fr;
+    height: 316px;
+    border: 1px solid $aboutBoxBgBorder;
+    background: $aboutBoxBg;
+    border-radius: 8px;
+    @extend.gridLayout;
+  }
+
+  .form-container {
+    flex-direction: column;
+    gap: 24px;
+    background-image: url(../img/imgfoot.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    margin-top: 1rem;
+    @extend.flexLayout;
+  }
+
+  .form-container input {
+    padding: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .form-container textarea {
+    padding: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .email {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    line-height: 32px;
+    color: $terciary;
+    @extend.fontStyle;
+  }
+
+  .contact-header {
+    margin: 5%;
+  }
+
+  .indicator-finish {
+    margin-top: 3%;
+    width: 134px;
+    height: 5px;
+    bottom: 8px;
+    background: $indicatorEnd;
+    border-radius: 10px;
+  }
+
+  .contact-descr {
+    font-size: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .box-contact {
+    flex-direction: column;
+    @extend.flexLayout;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .bodyBg {
+    background: $bodyBg;
+  }
+}

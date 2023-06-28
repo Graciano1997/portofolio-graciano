@@ -1,1 +1,140 @@
-/*# sourceMappingURL=desktop.css.map */
+@media (min-width: 1200px) {
+  .flexLayout {
+    display: flex;
+    justify-content: center;
+  }
+  .fontStyle, .headline-primary,
+  .headline-secondary {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+  }
+  .gridLayout {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .box-card {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    width: 1172px;
+    row-gap: 24px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+  .headline-primary,
+  .headline-secondary {
+    font-size: 48px;
+  }
+  .headline-content {
+    margin-top: -2%;
+  }
+  .headline-content p {
+    text-align: center;
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+  .btn-hover {
+    margin-top: 24px;
+  }
+  .header-first {
+    margin-top: -2%;
+  }
+  .box-tech {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 1172px;
+    height: 316px;
+  }
+  .box-contact {
+    display: grid;
+    grid-template: 50fr/50fr 50fr;
+    width: 1172px;
+    margin-left: 13.5rem;
+    margin-right: 12.2rem;
+  }
+  .contact {
+    margin-top: 1px;
+    background-image: url(../img/desk_contact.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10%;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+  }
+  .form-container button {
+    align-self: flex-start;
+  }
+  .contact-descr {
+    font-size: 30px;
+    text-align: justify;
+    padding: 0;
+  }
+  .form-container input {
+    padding: 2%;
+  }
+  .form-container textarea {
+    padding-left: 3%;
+    padding-top: 3%;
+  }
+  .tech-language {
+    gap: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  .techlanguage {
+    padding: 12px;
+  }
+  .techlanguage a {
+    font-size: 12px;
+  }
+  .about-container {
+    margin-left: 13.5rem;
+    margin-right: 12.2rem;
+  }
+  .works-section {
+    margin-left: 13.5rem;
+    margin-right: 12.2rem;
+    margin-top: 5rem;
+  }
+  .cards {
+    grid-template-rows: 50% 50%;
+  }
+  .card-gra {
+    grid-template-rows: 10fr 10fr 30fr;
+  }
+  .card-list {
+    gap: 8px;
+    margin-top: -3%;
+  }
+  .language {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .language a {
+    font-size: 12px;
+  }
+  .about-header {
+    margin-top: 5.5rem;
+  }
+  .about-content p {
+    margin-top: -3%;
+  }
+  .card-see button {
+    margin-top: -1.9rem;
+  }
+  .card-title {
+    font-size: 24px;
+  }
+  nav ul li a:focus,
+  nav ul li a:hover {
+    font-size: 20px;
+    color: mediumspringgreen;
+  }
+}/*# sourceMappingURL=desktop.css.map */

@@ -42,11 +42,6 @@ body {
   text-align: center;
 }
 
-.btn-primary:hover {
-  background: #36b37f;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-}
-
 .btn-primary {
   height: 48px;
   background: #36b37f;
@@ -61,18 +56,17 @@ body {
   border: transparent;
 }
 
+.btn-primary:hover {
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
 .btn-primary:active {
   background: #008552;
 }
 
 nav ul li {
   transition: font-size 0.2s 0.2s ease;
-}
-
-nav ul li:focus,
-nav ul li:hover {
-  font-size: 20px;
-  color: mediumspringgreen;
 }
 
 .cards,
@@ -110,8 +104,9 @@ nav ul li:hover {
 }
 
 .btn-hover img:hover {
-  width: 80%;
-  height: 80%;
+  transform: scale(1.5);
+  border: 0.5px dashed black;
+  border-radius: 50px;
 }
 
 .header-first {

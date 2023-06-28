@@ -1,4 +1,7 @@
 @media (min-width: 1200px) {
+  @import 'variables';
+  @import 'layout';
+
   .box-card {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(3, 1fr);
@@ -7,25 +10,29 @@
     column-gap: 24px;
   }
 
-   .headline-primary,
-   .headline-secondary {
-   @extend .fontStyle;
-   font-size: 48px;
+  .headline-primary,
+  .headline-secondary {
+    font-size: 48px;
+    @extend.fontStyle;
   }
 
   .headline-content {
-    p {
+    margin-top: -2%;
+  }
+
+  .headline-content p {
     text-align: center;
     margin-left: 13rem;
     margin-right: 13rem;
-    }
   }
 
-  .btn-hover { margin-top: 24px; }
+  .btn-hover {
+    margin-top: 24px;
+  }
 
-  .headline-content { margin-top: -2%; }
-
-  .header-first { margin-top: -2%; }
+  .header-first {
+    margin-top: -2%;
+  }
 
   .box-tech {
     display: flex;
@@ -42,8 +49,6 @@
     margin-left: 13.5rem;
     margin-right: 12.2rem;
   }
-
-  .form-container { button { align-self: flex-start; }}
 
   .contact {
     margin-top: 1px;
@@ -63,13 +68,12 @@
     padding: 0;
   }
 
+  .form-container button {
+    align-self: flex-start;
+  }
+
   .contact-descr {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 30px;
-    line-height: 52px;
-    color: #172b4d;
     text-align: justify;
     padding: 0;
   }
@@ -89,9 +93,13 @@
     margin-left: 16px;
   }
 
-  .techlanguage { padding: 12px; }
+  .techlanguage {
+    padding: 12px;
+  }
 
-  .techlanguage a { font-size: 12px; }
+  .techlanguage a {
+    font-size: 12px;
+  }
 
   .about-container {
     margin-left: 13.5rem;
@@ -104,9 +112,13 @@
     margin-top: 5rem;
   }
 
-  .cards { grid-template-rows: 50% 50%; }
+  .cards {
+    grid-template-rows: 50% 50%;
+  }
 
-  .card-gra { grid-template-rows: 10fr 10fr 30fr; }
+  .card-gra {
+    grid-template-rows: 10fr 10fr 30fr;
+  }
 
   .card-list {
     gap: 8px;
@@ -118,13 +130,29 @@
     padding-right: 3%;
   }
 
-  .language a { font-size: 12px; }
+  .language a {
+    font-size: 12px;
+  }
 
-  .about-header { margin-top: 5.5rem; }
+  .about-header {
+    margin-top: 5.5rem;
+  }
 
-  .about-content p { margin-top: -3%; }
+  .about-content p {
+    margin-top: -3%;
+  }
 
-  .card-see button { margin-top: -1.9rem; }
+  .card-see button {
+    margin-top: -1.9rem;
+  }
 
-  .card-title { font-size: 24px; }
+  .card-title {
+    font-size: 24px;
+  }
+
+  nav ul li a:focus,
+  nav ul li a:hover {
+    font-size: 20px;
+    color: mediumspringgreen;
+  }
 }

@@ -5,37 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
     <link rel="stylesheet" href="assets/css/tablet.css">
     <link rel="stylesheet" href="assets/css/desktop.css">
-    <title>Portofolio-Graciano</title>
+    <title>Portofolio-Graciano Website</title>
 </head>
 
 <body class="container">
+    
+    <header class="header-menu">
+        <nav class="nav-bar">
+                <img src="./assets/img/hamburguer.svg" alt="icon" id="hamburg-icon">
+            <ul class="nav-links hide">
+                <li ><a href="#work-section-area" id="item-portfolio">Portfolio</a></li>
+                <li ><a href="#about-section-area" id="item-about">About</a></li>
+                <li ><a href="#contact-section-area" id="item-contact">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    
     <main>
-
-        <header class="header-menu">
-            <nav class="nav-bar">
-                <i href="#" class="fa fa-bars" id="hamburg-icon"></i>
-                <ul>
-                    <li>Portofolio</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-            </div>
-        </header>
         <section class="headline-section">
-            <h1 class="headline-primary header-first">Hey there. I'm Graciano.</span><br>
-                <span class="headline-secondary">I'm a software developer</span>
+            <h1 class="headline-primary header-first">Hey there. I’m Graciano.</span><br>
+                <span class="headline-secondary">I’m a software developer</span>
             </h1>
             <div class="headline-content">
                 <p>
                     I can help you build a product , feature or website Look through some of my work and experience! If
                     you like what you see and have a project you need coded,
-                    don't hesitate to contact me.
+                    don’t hesitate to contact me.
                 </p>
             </div>
 
@@ -51,7 +51,7 @@
             <div class="btn-hover"><img src="assets/img/see.svg" alt="" srcset=""></div>
         </section>
 
-        <section class="works-section">
+        <section class="works-section" id="work-section-area">
             <div class="headline-container">
                 <h2 class="headline-primary">My Recent Works</h2>
                 <hr class="indicator">
@@ -236,7 +236,7 @@
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about-section-area">
             <div class="about-container">
 
                 <div class="about-header">
@@ -342,11 +342,11 @@
 
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact-section-area">
             <div class="box-contact">
                 <div class="box-contact-descr">
                     <p class="headline-primary contact-descr">
-                        I'm always interested in hearing about new projects, so if you'd like to chat please get in
+                        I’m always interested in hearing about new projects, so if you’d like to chat please get in
                         touch.
                     </p>
                 </div>
@@ -376,8 +376,8 @@
             </ul>
             <hr class="indicator-finish">
         </section>
-
     </main>
+    <script src="./assets/js/menu.js"></script>
 </body>
 
 </html>
