@@ -46,7 +46,11 @@ linkContact.addEventListener('click', () => {
 
 hamburguerBtn.addEventListener('click', () => {
   const adress = (hamburguerBtn.src).replace('http://127.0.0.1:5501', '');
-  (adress  === '/assets/img/close.svg' ? hamburguerBtn.src = './assets/img/hamburguer.svg' : hamburguerBtn.src = './assets/img/close.svg');
+  if (adress === '/assets/img/close.svg') {
+    hamburguerBtn.src = './assets/img/hamburguer.svg';
+  } else {
+    hamburguerBtn.src = './assets/img/close.svg';
+  }
   hide();
   addBgHeight();
 });
