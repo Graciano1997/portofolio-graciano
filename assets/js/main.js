@@ -48,7 +48,7 @@ function hideToPopup() {
 }
 
 function removeBgHeight() {
- // document.querySelector('.header-menu').classList.remove('defaultHeight');
+  document.querySelector('.header-menu').classList.remove('defaultHeight');
   document.querySelector('.container').classList.remove('bodyBg');
   hamburguerBtn.src = './assets/img/hamburguer.svg';
 }
@@ -213,7 +213,6 @@ closeProjectBtn.addEventListener("click",()=>{
  });
  
 }
-
 const seeProjectList = document.querySelectorAll('.btnPopup');
 
 seeProjectList.forEach((seeProject) => {
