@@ -50,12 +50,15 @@ body {
   border: transparent;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.project-btn-primary:active
+{
   background: $btnBg;
   box-shadow: 0 8px 16px $btnHoverShadow;
 }
 
-.btn-primary:active {
+.btn-primary:active,
+ .project-btn-primary:active {
   background: $btnActive;
 }
 

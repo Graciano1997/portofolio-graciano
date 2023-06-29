@@ -483,11 +483,11 @@
       border: 1px solid #d0d9d4;
       background:white;
       border-radius: 8px;
-      margin-top:3%;
+      margin-top:1%;
       margin-bottom:3%;
       margin-left: 5%;
       margin-right: 5%;
-      padding: 5%;
+      padding: 3%;
 
   }
 
@@ -538,8 +538,8 @@
     justify-content: space-between;
   }
   #projectClose{
-    width: 10%;
-    height: 10%;
+    width: 8%;
+    height: 8%;
     align-self: self-end;
     position: relative;
     top: 3rem;
@@ -560,6 +560,7 @@
     // background-size: cover;
     // background-position: center;
     // background: url(../img/iot.svg) no-repeat;
+    margin-top: -7%;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -573,6 +574,7 @@
     flex-direction: column;
   }
   
+  
 .project-btn-primary {
   background: $btnBg;
   border-radius: 4px;
@@ -581,16 +583,14 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  letter-spacing: 0.03em;
+  letter-spacing:3%;
   color: $btnFc;
   border: transparent;
   display: flex;
-  flex-basis: content;
   align-items: center;
-  flex-shrink: 1;
+  gap: 4px;
   height: 48px;
-  width: 135px;
-  padding: 3%;
+  padding: 6%;
 }
 
 }
