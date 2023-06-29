@@ -9,7 +9,7 @@
   }
   .gridLayout {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 100fr;
   }
   .container {
     flex-direction: column;

@@ -18,6 +18,10 @@
     border-bottom-right-radius: 4.3%;
   }
 
+  /*.fullHeight {
+   height:max-content;
+  }*/
+
   #hamburg-icon {
     font-size: 17pt;
     padding-right: 2rem;
@@ -465,29 +469,50 @@
     background: $bodyBg;
   }
 
-  .window {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-top: 5%;
+  .popup {
+    // display: flex;
+    // flex-direction: column;
+    // padding-left: 5%;
+    // padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     background: #C1C7D0;
   }
 
   .project {
-      grid-template-rows: 40% 60%;
-      height: 750px;
       border: 1px solid #d0d9d4;
       background:white;
       border-radius: 8px;
       margin-top:3%;
       margin-bottom:3%;
+      margin-left: 5%;
+      margin-right: 5%;
       padding: 5%;
-      @extend.gridLayout;
+
   }
 
-  .project-header{
-    width: 75%;
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 80%;
+    margin-top: -5%;
+  }
+  
+  .project-content{
+    text-align: justify;
+    color:#344563;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .project-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height:44px;
+    color: #172B4D;
+    padding-top:-5%;
   }
 
   .project-list{
@@ -507,24 +532,45 @@
         @extend.fontStyle;
       }  
   }
+ 
   .project-see{
     display: flex;
-    justify-content: space-evenly;
-    gap: 8px;
+    justify-content: space-between;
   }
+  #projectClose{
+    width: 10%;
+    height: 10%;
+    align-self: self-end;
+    position: relative;
+    top: 3rem;
+    padding-right: 3%;
+  }
+  
+  @media (min-width:579px) and (max-width:768px){
+    #projectClose{
+      top: 5rem;
+    }
+  } 
 
   .project-img {
-    background: url(../img/iot.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-
+    img{
+      width: 100%;
+   
+    }
+    // background-size: cover;
+    // background-position: center;
+    // background: url(../img/iot.svg) no-repeat;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
   }
 
   .project-card {
-    grid-template-rows: 12% 50% 10%;
+    // grid-template-rows: 12% 50% 10%;
+    // @extend.gridLayout;
     border-radius: 8px;
-    background-color: $defaultWhite;
-    @extend.gridLayout;
+    display: flex;
+    flex-direction: column;
   }
   
 .project-btn-primary {
@@ -543,6 +589,8 @@
   align-items: center;
   flex-shrink: 1;
   height: 48px;
+  width: 135px;
+  padding: 3%;
 }
 
 }
