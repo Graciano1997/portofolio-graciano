@@ -213,11 +213,11 @@ closeProjectBtn.addEventListener("click",()=>{
  });
  
 }
-const seeProjectBtn = document.querySelector('.btn-primaryy');
 
+const seeProjectList = document.querySelectorAll('.btnPopup');
 
-
-seeProjectBtn.addEventListener("click",()=>{
-  createPopup(project);
+seeProjectList.forEach((seeProject) => {
+  seeProject.addEventListener('click', () => {
+    createPopup(project);
+  });
 });
-
