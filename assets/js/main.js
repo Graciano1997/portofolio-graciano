@@ -1,3 +1,16 @@
+let windowSizemobile=window.outerWidth;
+
+function handleResizeMobile() {
+  var outerWidth = window.outerWidth;
+  windowSizemobile=outerWidth;
+  console.log("Window outer width: Mobile", outerWidth);
+}
+
+// Add event listener for the window resize event
+
+  /**************WINDOWS POPUP*********************/
+  
+
 const linksOption = {
   linkPortfolio: document.querySelector('#item-portfolio'),
   linkAbout: document.querySelector('#item-about'),
@@ -6,7 +19,7 @@ const linksOption = {
 
 const { linkPortfolio, linkAbout, linkContact } = linksOption;
 
-const project={
+var project={
   images:{iot:{path:"./assets/img/iot.svg",alt:"iot"},btnClose:{path:"./assets/img/iotclose.svg",alt:"close icon",id:"projectClose"}},
   title:"Keeping track of hundreds of components",
   techLanguage:["Ruby on Rails","Css","JavaScript"],
@@ -196,14 +209,14 @@ projectDiv.append(projectImgDiv,projectCardDiv);
 const popupDiv=document.createElement('div');
 popupDiv.classList.add("popup");
 popupDiv.append(projectDiv);
-hideAll();
 
- //document.querySelector('.popup').classList.toggle('');
-
-   document.querySelector('.modal').classList.remove("hide");
+//document.querySelector('.popup').classList.toggle('');
+  
+  hideAll();
+  document.querySelector('.modal').classList.remove("hide");
   document.querySelector('.modal').append(popupDiv);
 
-const closeProjectBtn = document.querySelector('#projectClose');
+  const closeProjectBtn = document.querySelector('#projectClose');
  
 closeProjectBtn.addEventListener("click",()=>{
  //  document.querySelector(".popup").classList.add("hide");
@@ -211,12 +224,37 @@ closeProjectBtn.addEventListener("click",()=>{
   document.querySelector('.modal').classList.add("hide");
   hideAll();
  });
+
+
+
+
  
 }
 const seeProjectList = document.querySelectorAll('.btnPopup');
+window.addEventListener('resize', handleResizeMobile);
 
 seeProjectList.forEach((seeProject) => {
   seeProject.addEventListener('click', () => {
-    createPopup(project);
+    if(windowSizemobile<768){
+
+      createPopup(project);
+    }else{
+
+    }
+
   });
 });
+
+
+
+
+let windowSize=window.outerWidth;
+
+function handleResize() {
+  var outerWidth = window.outerWidth;
+  windowSize=outerWidth;
+  console.log("Window outer width DESKTOP:", outerWidth);
+}
+
+
+// Add event listener for the window resize event
