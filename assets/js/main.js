@@ -3,8 +3,16 @@ let windowSizemobile=window.outerWidth;
 function handleResizeMobile() {
   var outerWidth = window.outerWidth;
   windowSizemobile=outerWidth;
-  console.log("Window outer width: Mobile", outerWidth);
+
+  if(windowSizemobile<768){
+    document.querySelector('.nav-links').classList.add('hide');
+  }else{
+    document.querySelector('.nav-links').classList.remove('hide');
+  
+  }
+
 }
+
 
 // Add event listener for the window resize event
 
@@ -43,8 +51,13 @@ function hide() {
   document.querySelector('.contact').classList.toggle('hide');
   document.querySelector('.socialmedia-links').classList.toggle('hide');
   document.querySelector('.email_links_container > ul').classList.toggle('hide');
-  document.querySelector('.nav-links').classList.toggle('hide');
+  document.querySelector('.nav-links').classList.remove('hide');
+  
   //document.querySelector('.popup').classList.toggle('hide');
+}
+function hideLink(){
+  document.querySelector('.nav-links').classList.remove('hide');
+  
 }
 
 function hideAll() {
@@ -60,15 +73,20 @@ function hideToPopup() {
   hide();
 }
 
-function removeBgHeight() {
+function removeBgHeightMenu() {
   document.querySelector('.header-menu').classList.remove('defaultHeight');
   document.querySelector('.container').classList.remove('bodyBg');
+  
   hamburguerBtn.src = './assets/img/hamburguer.svg';
 }
 
-function addBgHeight() {
+function addBgHeightMenu() {
   document.querySelector('.header-menu').classList.toggle('defaultHeight');
   document.querySelector('.container').classList.toggle('bodyBg');
+  if(document.querySelector('.header-menu').classList.contains("defaultHeight")){
+  }else{
+    document.querySelector('.nav-links').classList.add('hide');
+  }
 }
 /*function addFullHeight() {
   document.querySelector('.popup').classList.toggle('fullHeight');
@@ -78,31 +96,50 @@ function addBgHeight() {
 
 /*****************EVENTS */
 linkPortfolio.addEventListener('click', () => {
-  removeBgHeight();
+  removeBgHeightMenu();
   hide();
+  document.querySelector('.nav-links').classList.add('hide');
+ 
 });
 
 linkAbout.addEventListener('click', () => {
-  removeBgHeight();
+  removeBgHeightMenu();
   hide();
+  document.querySelector('.nav-links').classList.add('hide');
 });
 
 linkContact.addEventListener('click', () => {
-  removeBgHeight();
+  removeBgHeightMenu();
   hide();
+  document.querySelector('.nav-links').classList.add('hide');
 });
 
-hamburguerBtn.addEventListener('click', () => {
+
+hamburguerBtn.addEventListener('click', () => { 
   const adress = (hamburguerBtn.src).replace('http://127.0.0.1:5501', '');
   if (adress === '/assets/img/close.svg') {
     hamburguerBtn.src = './assets/img/hamburguer.svg';
-  } else {
+  }else{
     hamburguerBtn.src = './assets/img/close.svg';
-  }
+    //document.querySelector(".nav-links").style.display="block";
+  }  
   hide();
-  addBgHeight();
+  addBgHeightMenu();
 });
 
+
+/*
+hamburguerBtn.removeEventListener('click', () => { 
+  const adress = (hamburguer.src).replace('http://127.0.0.1:5501', '');
+  if (adress === '/assets/img/close.svg') {
+     hide();
+     
+  document.querySelector('.nav-links').classList.add('hide');
+ 
+    removeBgHeightMenu();
+  }  
+});
+*/
 
 
 /**BUTTON CONSTRUCTOR */
@@ -235,6 +272,8 @@ window.addEventListener('resize', handleResizeMobile);
 
 seeProjectList.forEach((seeProject) => {
   seeProject.addEventListener('click', () => {
+
+
     if(windowSizemobile<768){
 
       createPopup(project);
@@ -253,7 +292,6 @@ let windowSize=window.outerWidth;
 function handleResize() {
   var outerWidth = window.outerWidth;
   windowSize=outerWidth;
-  console.log("Window outer width DESKTOP:", outerWidth);
 }
 
 

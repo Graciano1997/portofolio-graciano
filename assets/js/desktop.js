@@ -51,11 +51,11 @@
   }
   */
   function removeBgHeight() {
-    document.querySelector('.modal').classList.remove('modalBackground');
+    document.querySelector('#modal').classList.remove('modalBackground');
   }
   
   function addBgHeight() {
-    document.querySelector('.modal').classList.toggle('modalBackground');
+    document.querySelector('#modal').classList.toggle('modalBackground');
   }
   /*function addFullHeight() {
     document.querySelector('.popup').classList.toggle('fullHeight');
