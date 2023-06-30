@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-.flexLayout, .socialmedia-links {
+
+.flexLayout,
+.socialmedia-links {
   display: flex;
   justify-content: center;
 }
 
-.fontStyle, .headline-primary,
-.headline-secondary, * {
+.fontStyle,
+.headline-primary,
+.headline-secondary,
+* {
   font-family: "Inter", sans-serif;
   font-style: normal;
 }
 
 .gridLayout {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 100fr;
 }
 
 body {
@@ -56,12 +60,14 @@ body {
   border: transparent;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.project-btn-primary:active {
   background: #36b37f;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
-.btn-primary:active {
+.btn-primary:active,
+.project-btn-primary:active {
   background: #008552;
 }
 
@@ -152,7 +158,8 @@ nav ul li {
   from {
     font-size: 30px;
   }
+
   to {
     margin-top: -2%;
   }
-}/*# sourceMappingURL=style.css.map */
+}

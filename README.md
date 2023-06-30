@@ -117,6 +117,12 @@ npx eslint .
 - Twitter: [@GracianoSoft](https://twitter.com/GracianoSoft)
 - Linkedin: [@GracianoSoft](https://www.linkedin.com/in/graciano-manuel-henrique-175527221/)
 
+👤 **Ayokunnumi Omololu**
+
+- GitHub: [@Ayokunnumi1](https://github.com/Ayokunnumi1)
+- Twitter: [@Ayokunnumi](https://twitter.com/AyokunnumiA)
+- Linkedin: [@Ayokunnumi](https://www.linkedin.com/in/ayokunnumiomololu)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
