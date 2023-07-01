@@ -14,6 +14,7 @@ function handleResizeMobile() {
 }
 
 
+
 // Add event listener for the window resize event
 
   /**************WINDOWS POPUP*********************/
@@ -287,6 +288,7 @@ seeProjectList.forEach((seeProject) => {
 
 
 
+
 let windowSize=window.outerWidth;
 
 function handleResize() {
@@ -296,3 +298,90 @@ function handleResize() {
 
 
 // Add event listener for the window resize event
+let errors=[];
+
+function validatorName(clasValue){
+  let nameValue=document.querySelector(clasValue);
+  if(nameValue.value.length>=2){
+   // console.log("valid name")
+    //document.querySelector(".userName").classList.remove("invalid");
+    document.querySelector(clasValue).classList.add("valid");
+    return true;}else{
+      document.querySelector(clasValue).classList.add("valid");
+      errors.push("Verify the name");
+      return false; 
+    }
+  }
+
+ function validatorEmail(clasValue){
+  let emailValue=document.querySelector(clasValue);
+ 
+   
+    if(emailValue.value.toLowerCase().match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)){
+      document.querySelector(clasValue).value=emailValue.value.toLowerCase();
+      document.querySelector(clasValue).classList.add("valid");
+      return true;
+     }else{
+       document.querySelector(clasValue).classList.add("invalid");
+       errors.push("Verify a valid Email");
+       return false;
+     }
+     
+}
+
+
+let form=document.querySelector("#formU");
+
+form.addEventListener("submit",(e)=>{
+  document.querySelector(".userEmail").value=(document.querySelector(".userEmail").value).toLowerCase();
+  
+  if(validatorName(".userName")&&validatorEmail(".userEmail")){
+    form.submit();
+  }else{
+    e.preventDefault();
+    alert("Nao posso");
+  }
+   
+});
+
+/*
+document.querySelector(".userName").addEventListener("input",(e)=>{
+  if(e.target.value.length>=2){
+    console.log("valid name")
+    document.querySelector(".userName").classList.remove("invalid");
+    document.querySelector(".userName").classList.add("valid");
+  }else{
+    document.querySelector(".userName").classList.add("valid");
+    document.querySelector(".userName").classList.add("invalid");
+    console.log("Invalid valid name");
+  }
+});
+
+
+document.querySelector(".userEmail").addEventListener("input",(e)=>{
+  
+  if(e.target.value.toLowerCase().match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)){
+    document.querySelector(".userEmail").classList.remove("invalid");
+    document.querySelector(".userEmail").classList.add("valid");
+      
+      console.log("valid email");
+   }
+  else{
+    document.querySelector(".userEmail").classList.add("valid");
+    document.querySelector(".userEmail").classList.add("invalid");
+    console.log("Invalid Email");
+  }
+});
+
+document.querySelector(".userSms").addEventListener("input",(e)=>{
+  if(e.target.value.length>=30){
+    console.log("valid name")
+    document.querySelector(".userSms").classList.remove("invalid");
+    document.querySelector(".userSms").classList.add("valid");
+  }else{
+    document.querySelector(".userSms").classList.add("valid");
+    document.querySelector(".userSms").classList.add("invalid");
+    console.log("Invalid valid name");
+  }
+});
+*/

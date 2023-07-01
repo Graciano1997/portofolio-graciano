@@ -382,7 +382,6 @@
   }
   .form-container input {
     background: #fff;
-    border: 1px solid #d0d9d4;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
     font-style: italic;
@@ -394,7 +393,6 @@
   }
   .form-container textarea {
     background: white;
-    border: 1px solid #60c095;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
     font-style: normal;

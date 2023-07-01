@@ -356,6 +356,12 @@
     margin-left: 5%;
     margin-right: 5%;
   }
+  .information {
+    margin-left: 5%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+  }
   .form-container textarea {
     padding: 3%;
     margin-left: 5%;
