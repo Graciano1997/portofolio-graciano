@@ -268,6 +268,7 @@ closeProjectBtn.addEventListener("click",()=>{
 
  
 }
+
 const seeProjectList = document.querySelectorAll('.btnPopup');
 window.addEventListener('resize', handleResizeMobile);
 
@@ -298,9 +299,24 @@ function validatorName(clasValue){
     return true;}else{
       document.querySelector(clasValue).classList.add("valid");
       errorType.push("Please write a good name");
+      document.querySelector(".userName").value='';
       return false; 
     }
   }
+
+  function validatorSMS(clasValue){
+    let nameValue=document.querySelector(clasValue);
+    if(nameValue.value.length>=50){
+     // console.log("valid name")
+      //document.querySelector(".userName").classList.remove("invalid");
+      document.querySelector(clasValue).classList.add("valid");
+      return true;}else{
+        document.querySelector(clasValue).classList.add("valid");
+        errorType.push("Please write a bit more! at least 50 chars");
+       document.querySelector(".userSMS").value='';
+        return false; 
+      }
+    }
 
  function validatorEmail(clasValue){
   let emailValue=document.querySelector(clasValue);
@@ -312,6 +328,8 @@ function validatorName(clasValue){
       return true;
      }else{
        document.querySelector(clasValue).classList.add("invalid");
+       document.querySelector(".userEmail").value='';
+       
        errorType.push("please write a valid Email");
        return false;
      }
@@ -319,15 +337,25 @@ function validatorName(clasValue){
 }
 function createErrorContent(content){
   let p=document.createElement('p'); 
-  p.id="info";
+  p.classList.add('info');
   p.textContent=content;
   return p;
 }
 
+
+
 function createError(arr){
-  for(let i=0;i<arr.length;i++){
-    document.querySelector(".information").append(createErrorContent(arr[i]));
+  if(document.querySelector('.info')){
+   var  spanInfo = document.querySelector('.information');
+
+  //document.querySelector('.info').classList.contains('.info')
+    spanInfo.removeChild(document.querySelector('.info'));
+  }else{
+    for(let i=0;i<arr.length;i++){
+      document.querySelector(".information").append(createErrorContent(arr[i]));
+    }
   }
+  
 }
 
 
@@ -336,13 +364,18 @@ function createError(arr){
 let form=document.querySelector("#formU");
 
 form.addEventListener("submit",(e)=>{
+
+
+
   document.querySelector(".userEmail").value=(document.querySelector(".userEmail").value).toLowerCase();
   
-  if(validatorName(".userName")&&validatorEmail(".userEmail")){
+  if(validatorName(".userName")&&validatorEmail(".userEmail")&&validatorSMS(".userSMS")){
     form.submit();
   }else{
     e.preventDefault();
+  
     createError(errorType);
+    errorType=[];
   }
    
 });

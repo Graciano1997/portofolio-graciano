@@ -158,25 +158,21 @@ nav ul li {
     margin-top: -2%;
   }
 }
-/*
-
 .form-container input:valid,
-.form-container textarea:valid
-{
-border: 2px solid #36b37e;
+.form-container textarea:valid {
+  border: 2px solid #36b37e;
 }
 
 .form-container input:invalid,
-.form-container textarea:invalid
-{
-border: 2px dashed #ff6163;
+.form-container textarea:invalid {
+  border: 2px dashed #ff6163;
 }
-*/
+
 #email {
   text-transform: lowercase;
 }
 
-#info {
+.info {
   color: #ff6163;
   font-weight: 500;
   font-size: 17px;
