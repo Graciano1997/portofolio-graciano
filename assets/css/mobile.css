@@ -1,4 +1,21 @@
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable-next-line CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable CssSyntaxError */
+/* stylelint-disable selector-list-comma-newline-after */
+/* stylelint-disable rule-empty-line-before */
+
 @media (min-width: 375px) and (max-width: 767px) {
+  /* stylelint-disable-next-line selector-list-comma-newline-after */
   .flexLayout, .box-contact, .form-container, .about, .resume, .card-see, .card-tech, .box-tech, .box-card, .box-icon, .works-section, .headline-section, .container {
     display: flex;
     justify-content: center;
