@@ -1,8 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable no-console */
-/* eslint-disable no-plusplus */
-/** ************WINDOWS POPUP******************** */
-
 let windowSize = window.outerWidth;
 
 function handleResize() {
@@ -33,33 +28,12 @@ const projectMedical = {
   },
 };
 
-//* ****PORTOFOLIO ENDS******************************************
 
-// fUNCTIONS HIDE****************************************************
-/* function hide() {
-    document.querySelector('.headline-section').classList.toggle('hide');
-    document.querySelector('.works-section').classList.toggle('hide');
-    document.querySelector('.about').classList.toggle('hide');
-    document.querySelector('.contact').classList.toggle('hide');
-    document.querySelector('.socialmedia-links').classList.toggle('hide');
-    document.querySelector('.email_links_container > ul').classList.toggle('hide');
-    document.querySelector('.nav-links').classList.toggle('hide');
-    //document.querySelector('.popup').classList.toggle('hide');
-  }
-  */
 function hideAll() {
   document.querySelector('.header-menu').classList.toggle('hide');
   document.querySelector('.main').classList.toggle('hide');
 }
-/*
-  function hideToPopup() {
-    document.querySelector('.nav-links').classList.toggle('hide');
-    document.querySelector('.header-menu').classList.toggle('hide');
-    document.querySelector('.indicator-finish').classList.toggle('hide');
-    document.querySelector('.popup').classList.toggle('hide');
-    hide();
-  }
-  */
+
 function removeBgHeight() {
   document.querySelector('#modal').classList.remove('modalBackground');
 }
@@ -67,15 +41,7 @@ function removeBgHeight() {
 function addBgHeight() {
   document.querySelector('#modal').classList.toggle('modalBackground');
 }
-/* function addFullHeight() {
-    document.querySelector('.popup').classList.toggle('fullHeight');
-  } */
 
-/** ***************END FUNCTIONS************************************* */
-
-/** ***************EVENTS */
-
-/** BUTTON CONSTRUCTOR */
 function createSeeButtons(projectMedical, n) {
   const button = document.createElement('button');
   button.classList.add('project-btn-primary');
@@ -86,9 +52,7 @@ function createSeeButtons(projectMedical, n) {
   button.appendChild(img);
   return button;
 }
-/** BUTTON CONSTRUCTOR */
 
-/* creating the List */
 function createListItemModal(projectMedical, i) {
   const li = document.createElement('li');
   li.classList.add('modal-language');
@@ -106,26 +70,20 @@ function createListTechModal(projectMedical) {
   }
   return ul;
 }
-/* END LIST */
 
-/* creating Title */
 function createTitle(projectMedical) {
   const h3 = document.createElement('h3');
   h3.classList.add('project-title');
   h3.textContent = projectMedical.title;
   return h3;
 }
-/* END Creating content */
 
-/* creating Contents */
 function createContent(projectMedical) {
   const p = document.createElement('p');
   p.textContent = projectMedical.content;
   return p;
 }
-/* END Creating content */
 
-/* creating Contents */
 function createImageMedical(projectMedical, name) {
   const imageName = name.toLowerCase();
 
@@ -145,7 +103,7 @@ function createImageMedical(projectMedical, name) {
   }
   return console.log('please I only build: iot or close images');
 }
-/* END Creating content */
+
 
 function createPopupWindows(projectMedical) {
   const projectModalButtonDiv = document.createElement('div');
@@ -182,7 +140,6 @@ function createPopupWindows(projectMedical) {
 
   hideAll();
 
-  // document.querySelector('.popup').classList.toggle('');
 
   document.querySelector('.modal').classList.remove('hide');
 
@@ -191,17 +148,12 @@ function createPopupWindows(projectMedical) {
   const closeProjectBtn = document.querySelector('#modalClose');
 
   closeProjectBtn.addEventListener('click', () => {
-    //  document.querySelector(".popup").classList.add("hide");
     document.querySelector('.modal').removeChild(document.querySelector('.modal-body'));
     removeBgHeight();
     document.querySelector('.modal').classList.add('hide');
   });
 }
 
-/*
-  seeProjectList.addEventListener('click', () => {
-
-  }); */
 
 const seeProjectListW = document.querySelectorAll('.btnPopup');
 window.addEventListener('resize', handleResize);
@@ -216,59 +168,3 @@ seeProjectListW.forEach((seeProject) => {
   });
 });
 
-/*
-  <div class="modal-body">
-
-  <div class="modal-close">
-      <img src="./assets/img/btnmedicalClose.svg" alt="close icon" id="modalClose">
-  </div>
-
-  <div class="modal-img">
-      <img src="./assets/img/medicalIlustrate.svg" alt="Medical Illustration sets">
-  </div>
-
-  <div class="list-button">
-
-      <div class="header-modal-text">
-          <h3>Keeping track of hundreds of components</h3>
-      </div>
-      <div class="modal-btns">
-          <button class="project-btn-primary">See live &nbsp;<img src="./assets/img/seeLive.svg" alt=""></button>
-          <button class="project-btn-primary">See Source &nbsp;<img src="./assets/img/seeGit.svg" alt=""></button>
-
-      </div>
-
-  </div>
-
-  <div class="modal-tecnology-list">
-      <ul class="modal-list">
-          <li class="modal-language ">
-              <a href="http://">Codekit</a>
-          </li>
-          <li class="modal-language ">
-              <a href="http://">Github</a>
-          </li>
-          <li class="modal-language">
-              <a href="http://">JavaScript</a>
-          </li>
-          <li class="modal-language">
-              <a href="http://">Bootstrap</a>
-          </li>
-          <li class="modal-language">
-              <a href="http://">Terminal</a>
-          </li>
-          <li class="modal-language">
-              <a href="http://">Codepen</a>
-          </li>
-      </ul>
-  </div>
-
-  <div class="modal-content">
-      <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-           when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea
-      </p>
-  </div>
-
-  </div> */

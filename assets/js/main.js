@@ -1,6 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable no-empty */
-/* eslint-disable no-unused-vars */
 let windowSizemobile = window.innerWidth;
 
 function handleResizeMobile() {
@@ -14,9 +11,6 @@ function handleResizeMobile() {
   }
 }
 
-// Add event listener for the window resize event
-
-/** ************WINDOWS POPUP******************** */
 
 const linksOption = {
   linkPortfolio: document.querySelector('#item-portfolio'),
@@ -39,10 +33,8 @@ const project = {
   },
 };
 
-//* ****PORTOFOLIO ENDS******************************************
 const hamburguerBtn = document.querySelector('#hamburg-icon');
 
-// fUNCTIONS HIDE****************************************************
 function hide() {
   document.querySelector('.headline-section').classList.toggle('hide');
   document.querySelector('.works-section').classList.toggle('hide');
@@ -52,9 +44,7 @@ function hide() {
   document.querySelector('.email_links_container > ul').classList.toggle('hide');
   document.querySelector('.nav-links').classList.remove('hide');
 
-  // document.querySelector('.popup').classList.toggle('hide');
 }
-// eslint-disable-next-line no-unused-vars
 function hideLink() {
   document.querySelector('.nav-links').classList.remove('hide');
 }
@@ -87,13 +77,7 @@ function addBgHeightMenu() {
     document.querySelector('.nav-links').classList.add('hide');
   }
 }
-/* function addFullHeight() {
-  document.querySelector('.popup').classList.toggle('fullHeight');
-} */
 
-/** ***************END FUNCTIONS************************************* */
-
-/** ***************EVENTS */
 linkPortfolio.addEventListener('click', () => {
   removeBgHeightMenu();
   hide();
@@ -118,26 +102,12 @@ hamburguerBtn.addEventListener('click', () => {
     hamburguerBtn.src = './assets/img/hamburguer.svg';
   } else {
     hamburguerBtn.src = './assets/img/close.svg';
-    // document.querySelector(".nav-links").style.display="block";
   }
   hide();
   addBgHeightMenu();
 });
 
-/*
-hamburguerBtn.removeEventListener('click', () => {
-  const adress = (hamburguer.src).replace('http://127.0.0.1:5501', '');
-  if (adress === '/assets/img/close.svg') {
-     hide();
 
-  document.querySelector('.nav-links').classList.add('hide');
-
-    removeBgHeightMenu();
-  }
-});
-*/
-
-/** BUTTON CONSTRUCTOR */
 function createSeeButtons(project, n) {
   const button = document.createElement('button');
   button.classList.add('project-btn-primary');
@@ -148,9 +118,7 @@ function createSeeButtons(project, n) {
   button.appendChild(img);
   return button;
 }
-/** BUTTON CONSTRUCTOR */
 
-/* creating the List */
 function createListItem(project, i) {
   const li = document.createElement('li');
   li.classList.add('language');
@@ -160,6 +128,7 @@ function createListItem(project, i) {
   li.appendChild(a);
   return li;
 }
+
 function createListTech(project) {
   const ul = document.createElement('ul');
   ul.classList.add('project-list');
@@ -168,26 +137,21 @@ function createListTech(project) {
   }
   return ul;
 }
-/* END LIST */
 
-/* creating Title */
+
 function createTitle(project) {
   const h3 = document.createElement('h3');
   h3.classList.add('project-title');
   h3.textContent = project.title;
   return h3;
 }
-/* END Creating content */
 
-/* creating Contents */
 function createContent(project) {
   const p = document.createElement('p');
   p.textContent = project.content;
   return p;
 }
-/* END Creating content */
 
-/* creating Contents */
 function createImageIot(project, name) {
   const imageName = name.toLowerCase();
 
@@ -205,12 +169,8 @@ function createImageIot(project, name) {
     imgClose.id = project.images.btnClose.id;
     return imgClose;
   }
-  return 'please I only build: iot or close images';
+  return false;
 }
-/* END Creating content */
-/* the containers */
-
-/* the containers */
 
 function createPopup(project) {
   const projectHeaderDiv = document.createElement('div');
@@ -241,8 +201,6 @@ function createPopup(project) {
   popupDiv.classList.add('popup');
   popupDiv.append(projectDiv);
 
-  // document.querySelector('.popup').classList.toggle('');
-
   hideAll();
   document.querySelector('.modal').classList.remove('hide');
   document.querySelector('.modal').append(popupDiv);
@@ -250,7 +208,6 @@ function createPopup(project) {
   const closeProjectBtn = document.querySelector('#projectClose');
 
   closeProjectBtn.addEventListener('click', () => {
-    //  document.querySelector(".popup").classList.add("hide");
     document.querySelector('.modal').removeChild(document.querySelector('.popup'));
     document.querySelector('.modal').classList.add('hide');
     hideAll();
@@ -270,123 +227,3 @@ seeProjectList.forEach((seeProject) => {
   });
 });
 
-// Add event listener for the window resize event
-let errorType = [];
-
-function validatorName(clasValue) {
-  const nameValue = document.querySelector(clasValue);
-  if (nameValue.value.length >= 2) {
-    // console.log("valid name")
-    // document.querySelector(".userName").classList.remove("invalid");
-    document.querySelector(clasValue).classList.add('valid');
-    return true;
-  }
-  document.querySelector(clasValue).classList.add('valid');
-  errorType.push('Please write a good name');
-  document.querySelector('.userName').value = '';
-  return false;
-}
-
-function validatorSMS(clasValue) {
-  const nameValue = document.querySelector(clasValue);
-  if (nameValue.value.length >= 50) {
-    // console.log("valid name")
-    // document.querySelector(".userName").classList.remove("invalid");
-    document.querySelector(clasValue).classList.add('valid');
-    return true;
-  }
-  document.querySelector(clasValue).classList.add('valid');
-  errorType.push('Please write a bit more! at least 50 chars');
-  document.querySelector('.userSMS').value = '';
-  return false;
-}
-
-function validatorEmail(clasValue) {
-  const emailValue = document.querySelector(clasValue);
-
-  if (emailValue.value.toLowerCase().match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
-    document.querySelector(clasValue).value = emailValue.value.toLowerCase();
-    document.querySelector(clasValue).classList.add('valid');
-    return true;
-  }
-  document.querySelector(clasValue).classList.add('invalid');
-  document.querySelector('.userEmail').value = '';
-
-  errorType.push('please write a valid Email');
-  return false;
-}
-function createErrorContent(content) {
-  const p = document.createElement('p');
-  p.classList.add('info');
-  p.textContent = content;
-  return p;
-}
-
-function createError(arr) {
-  if (document.querySelector('.info')) {
-    const spanInfo = document.querySelector('.information');
-
-    // document.querySelector('.info').classList.contains('.info')
-    spanInfo.removeChild(document.querySelector('.info'));
-  } else {
-    for (let i = 0; i < arr.length; i++) {
-      document.querySelector('.information').append(createErrorContent(arr[i]));
-    }
-  }
-}
-
-const form = document.querySelector('#formU');
-
-form.addEventListener('submit', (e) => {
-  document.querySelector('.userEmail').value = (document.querySelector('.userEmail').value).toLowerCase();
-
-  if (validatorName('.userName') && validatorEmail('.userEmail') && validatorSMS('.userSMS')) {
-    form.submit();
-  } else {
-    e.preventDefault();
-
-    createError(errorType);
-    errorType = [];
-  }
-});
-
-/*
-document.querySelector(".userName").addEventListener("input",(e)=>{
-  if(e.target.value.length>=2){
-    console.log("valid name")
-    document.querySelector(".userName").classList.remove("invalid");
-    document.querySelector(".userName").classList.add("valid");
-  }else{
-    document.querySelector(".userName").classList.add("valid");
-    document.querySelector(".userName").classList.add("invalid");
-    console.log("Invalid valid name");
-  }
-});
-
-document.querySelector(".userEmail").addEventListener("input",(e)=>{
-
-  if(e.target.value.toLowerCase().match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)){
-    document.querySelector(".userEmail").classList.remove("invalid");
-    document.querySelector(".userEmail").classList.add("valid");
-
-      console.log("valid email");
-   }
-  else{
-    document.querySelector(".userEmail").classList.add("valid");
-    document.querySelector(".userEmail").classList.add("invalid");
-    console.log("Invalid Email");
-  }
-});
-
-document.querySelector(".userSms").addEventListener("input",(e)=>{
-  if(e.target.value.length>=30){
-    console.log("valid name")
-    document.querySelector(".userSms").classList.remove("invalid");
-    document.querySelector(".userSms").classList.add("valid");
-  }else{
-    document.querySelector(".userSms").classList.add("valid");
-    document.querySelector(".userSms").classList.add("invalid");
-    console.log("Invalid valid name");
-  }
-});
-*/

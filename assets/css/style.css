@@ -1,16 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
-.flexLayout,
-.socialmedia-links {
+.flexLayout, .socialmedia-links {
   display: flex;
   justify-content: center;
 }
 
-.fontStyle,
-.headline-primary,
-.headline-secondary,
-* {
+.fontStyle, .headline-primary,
+.headline-secondary, * {
   font-family: "Inter", sans-serif;
   font-style: normal;
 }
@@ -128,8 +124,7 @@ nav ul li {
   font-weight: 400;
   font-size: 15px;
   background: #fff;
-
-  /* border: 1px solid #d0d9d4; */
+  border: 1px solid #d0d9d4;
   border-radius: 4px;
   line-height: 24px;
   color: #6b778c;
@@ -137,8 +132,7 @@ nav ul li {
 
 .form-container textarea {
   background: white;
-
-  /* border: 1px solid #60c095; */
+  border: 1px solid #60c095;
   border-radius: 4px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -160,28 +154,7 @@ nav ul li {
   from {
     font-size: 30px;
   }
-
   to {
     margin-top: -2%;
   }
-}
-
-.form-container input:valid,
-.form-container textarea:valid {
-  border: 2px solid #36b37e;
-}
-
-.form-container input:invalid,
-.form-container textarea:invalid {
-  border: 2px dashed #ff6163;
-}
-
-#email {
-  text-transform: lowercase;
-}
-
-.info {
-  color: #ff6163;
-  font-weight: 500;
-  font-size: 17px;
-}
+}/*# sourceMappingURL=style.css.map */

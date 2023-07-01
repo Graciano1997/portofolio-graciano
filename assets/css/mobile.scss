@@ -18,9 +18,6 @@
     border-bottom-right-radius: 4.3%;
   }
 
-  /* .fullHeight {
-   height:max-content;
-  } */
 
   #hamburg-icon {
     font-size: 17pt;
@@ -564,9 +561,6 @@
     img {
       width: 100%;
     }
-    // background-size: cover;
-    // background-position: center;
-    // background: url(../img/iot.svg) no-repeat;
     margin-top: -7%;
     border-radius: 8px;
     display: flex;
@@ -574,8 +568,6 @@
   }
 
   .project-card {
-    // grid-template-rows: 12% 50% 10%;
-    // @extend.gridLayout;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
