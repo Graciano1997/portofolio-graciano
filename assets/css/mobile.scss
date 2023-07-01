@@ -12,16 +12,15 @@
     background: white;
   }
 
-
   .defaultHeight {
     height: 98vh;
     border-bottom-left-radius: 4.3%;
     border-bottom-right-radius: 4.3%;
   }
 
-  /*.fullHeight {
+  /* .fullHeight {
    height:max-content;
-  }*/
+  } */
 
   #hamburg-icon {
     font-size: 17pt;
@@ -79,6 +78,25 @@
   .card-ruby a {
     font-weight: bold;
     color: $default;
+  }
+
+  .project-list {
+    display: flex;
+    gap: 12px;
+    padding-left: 0%;
+    margin-top: -3%;
+    margin-bottom: 8%;
+
+    li {
+      font-weight: 600;
+      font-size: 12px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      color: $workCardTitleColor;
+      @extend.fontStyle;
+    }
   }
 
   .nav-bar {
@@ -477,19 +495,18 @@
     // padding-right: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
-    background: #C1C7D0;
+    background: #c1c7d0;
   }
 
   .project {
-      border: 1px solid #d0d9d4;
-      background:white;
-      border-radius: 8px;
-      margin-top:1%;
-      margin-bottom:3%;
-      margin-left: 5%;
-      margin-right: 5%;
-      padding: 3%;
-
+    border: 1px solid #d0d9d4;
+    background: white;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
   }
 
   .project-header {
@@ -499,46 +516,29 @@
     width: 80%;
     margin-top: -5%;
   }
-  
-  .project-content{
+
+  .project-content {
     text-align: justify;
-    color:#344563;
+    color: #344563;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
   }
-  
+
   .project-title {
     font-weight: 600;
     font-size: 32px;
-    line-height:44px;
-    color: #172B4D;
-    padding-top:-5%;
+    line-height: 44px;
+    color: #172b4d;
+    padding-top: -5%;
   }
 
-  .project-list{
-      display: flex;
-      gap: 12px;
-      padding-left: 0%;
-      margin-top: -3%;
-      margin-bottom: 8%;
-      li{
-        font-weight: 600;
-        font-size: 12px;
-        text-align: center;
-        text-decoration: none;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        color: $workCardTitleColor;
-        @extend.fontStyle;
-      }  
-  }
- 
-  .project-see{
+  .project-see {
     display: flex;
     justify-content: space-between;
   }
-  #projectClose{
+
+  #projectClose {
     width: 8%;
     height: 8%;
     align-self: self-end;
@@ -546,17 +546,16 @@
     top: 3rem;
     padding-right: 3%;
   }
-  
-  @media (min-width:579px) and (max-width:768px){
-    #projectClose{
+
+  @media (min-width: 579px) and (max-width: 768px) {
+    #projectClose {
       top: 5rem;
     }
-  } 
+  }
 
   .project-img {
-    img{
+    img {
       width: 100%;
-   
     }
     // background-size: cover;
     // background-position: center;
@@ -574,24 +573,22 @@
     display: flex;
     flex-direction: column;
   }
-  
-  
-.project-btn-primary {
-  background: $btnBg;
-  border-radius: 4px;
-  font-family: $fontPrimary;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing:3%;
-  color: $btnFc;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  height: 48px;
-  padding: 6%;
-}
 
+  .project-btn-primary {
+    background: $btnBg;
+    border-radius: 4px;
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: $btnFc;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 48px;
+    padding: 6%;
+  }
 }

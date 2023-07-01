@@ -469,13 +469,13 @@
     -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
     color: black;
-    height: 482dvh;
+    height: 482vh;
     width: 100%;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) and (max-width: 1440px) {
   .modalBackground {
-    height: 550dvh;
+    height: 550vh;
   }
 }
 @media (min-width: 768px) {
