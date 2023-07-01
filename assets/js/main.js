@@ -286,19 +286,8 @@ seeProjectList.forEach((seeProject) => {
 });
 
 
-
-
-
-let windowSize=window.outerWidth;
-
-function handleResize() {
-  var outerWidth = window.outerWidth;
-  windowSize=outerWidth;
-}
-
-
 // Add event listener for the window resize event
-let errors=[];
+let errorType=[];
 
 function validatorName(clasValue){
   let nameValue=document.querySelector(clasValue);
@@ -308,7 +297,7 @@ function validatorName(clasValue){
     document.querySelector(clasValue).classList.add("valid");
     return true;}else{
       document.querySelector(clasValue).classList.add("valid");
-      errors.push("Verify the name");
+      errorType.push("Verify the name");
       return false; 
     }
   }
@@ -323,7 +312,7 @@ function validatorName(clasValue){
       return true;
      }else{
        document.querySelector(clasValue).classList.add("invalid");
-       errors.push("Verify a valid Email");
+       errorType.push("Verify the valid Email");
        return false;
      }
      

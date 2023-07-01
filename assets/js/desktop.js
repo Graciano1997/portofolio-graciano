@@ -2,6 +2,14 @@
   /**************WINDOWS POPUP*********************/
   
 
+let windowSize=window.outerWidth;
+
+function handleResize() {
+  var outerWidth = window.outerWidth;
+  windowSize=outerWidth;
+}
+
+
 
   const projectMedical={
 
