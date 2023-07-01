@@ -11,7 +11,6 @@ function handleResizeMobile() {
   }
 }
 
-
 const linksOption = {
   linkPortfolio: document.querySelector('#item-portfolio'),
   linkAbout: document.querySelector('#item-about'),
@@ -43,10 +42,6 @@ function hide() {
   document.querySelector('.socialmedia-links').classList.toggle('hide');
   document.querySelector('.email_links_container > ul').classList.toggle('hide');
   document.querySelector('.nav-links').classList.remove('hide');
-
-}
-function hideLink() {
-  document.querySelector('.nav-links').classList.remove('hide');
 }
 
 function hideAll() {
@@ -54,26 +49,16 @@ function hideAll() {
   document.querySelector('.main').classList.toggle('hide');
 }
 
-function hideToPopup() {
-  document.querySelector('.nav-links').classList.toggle('hide');
-  document.querySelector('.header-menu').classList.toggle('hide');
-  document.querySelector('.indicator-finish').classList.toggle('hide');
-  document.querySelector('.popup').classList.toggle('hide');
-  hide();
-}
-
 function removeBgHeightMenu() {
   document.querySelector('.header-menu').classList.remove('defaultHeight');
   document.querySelector('.container').classList.remove('bodyBg');
-
   hamburguerBtn.src = './assets/img/hamburguer.svg';
 }
 
 function addBgHeightMenu() {
   document.querySelector('.header-menu').classList.toggle('defaultHeight');
   document.querySelector('.container').classList.toggle('bodyBg');
-  if (document.querySelector('.header-menu').classList.contains('defaultHeight')) {
-  } else {
+  if (!document.querySelector('.header-menu').classList.contains('defaultHeight')) {
     document.querySelector('.nav-links').classList.add('hide');
   }
 }
@@ -107,7 +92,6 @@ hamburguerBtn.addEventListener('click', () => {
   addBgHeightMenu();
 });
 
-
 function createSeeButtons(project, n) {
   const button = document.createElement('button');
   button.classList.add('project-btn-primary');
@@ -137,7 +121,6 @@ function createListTech(project) {
   }
   return ul;
 }
-
 
 function createTitle(project) {
   const h3 = document.createElement('h3');
@@ -221,9 +204,6 @@ seeProjectList.forEach((seeProject) => {
   seeProject.addEventListener('click', () => {
     if (windowSizemobile < 768) {
       createPopup(project);
-    } else {
-
     }
   });
 });
-

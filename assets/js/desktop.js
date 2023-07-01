@@ -28,7 +28,6 @@ const projectMedical = {
   },
 };
 
-
 function hideAll() {
   document.querySelector('.header-menu').classList.toggle('hide');
   document.querySelector('.main').classList.toggle('hide');
@@ -62,10 +61,11 @@ function createListItemModal(projectMedical, i) {
   li.appendChild(a);
   return li;
 }
+
 function createListTechModal(projectMedical) {
   const ul = document.createElement('ul');
   ul.classList.add('modal-list');
-  for (let i = 0; i < projectMedical.techLanguage.length; i++) {
+  for (let i = 0; i < projectMedical.techLanguage.length; i = i + 1) {
     ul.appendChild(createListItemModal(projectMedical, i));
   }
   return ul;
@@ -101,9 +101,8 @@ function createImageMedical(projectMedical, name) {
     imgClose.id = projectMedical.images.btnClose.id;
     return imgClose;
   }
-  return console.log('please I only build: iot or close images');
+  return true;
 }
-
 
 function createPopupWindows(projectMedical) {
   const projectModalButtonDiv = document.createElement('div');
@@ -153,7 +152,6 @@ function createPopupWindows(projectMedical) {
     document.querySelector('.modal').classList.add('hide');
   });
 }
-
 
 const seeProjectListW = document.querySelectorAll('.btnPopup');
 window.addEventListener('resize', handleResize);
