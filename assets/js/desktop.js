@@ -65,7 +65,7 @@ function createListItemModal(projectMedical, i) {
 function createListTechModal(projectMedical) {
   const ul = document.createElement('ul');
   ul.classList.add('modal-list');
-  for (let i = 0; i < projectMedical.techLanguage.length; i = i + 1) {
+  for (let i = 0; i < projectMedical.techLanguage.length; i += 1) {
     ul.appendChild(createListItemModal(projectMedical, i));
   }
   return ul;
@@ -107,7 +107,8 @@ function createImageMedical(projectMedical, name) {
 function createPopupWindows(projectMedical) {
   const projectModalButtonDiv = document.createElement('div');
   projectModalButtonDiv.classList.add('modal-btns');
-  projectModalButtonDiv.append(createSeeButtons(projectMedical, 0), createSeeButtons(projectMedical, 1));
+  projectModalButtonDiv.append(createSeeButtons(projectMedical, 0),
+    createSeeButtons(projectMedical, 1));
 
   const projectModalHeaderDiv = document.createElement('div');
   projectModalHeaderDiv.classList.add('header-modal-text');
@@ -135,10 +136,11 @@ function createPopupWindows(projectMedical) {
 
   const projectMedicalBodyDiv = document.createElement('div');
   projectMedicalBodyDiv.classList.add('modal-body');
-  projectMedicalBodyDiv.append(projectModalCloseImgDiv, projectModalMedicalImgDiv, projectModalListButtomDiv, projectTecnolyList, projectContentDiv);
+
+  projectMedicalBodyDiv.append(projectModalCloseImgDiv,
+    projectModalMedicalImgDiv, projectModalListButtomDiv, projectTecnolyList, projectContentDiv);
 
   hideAll();
-
 
   document.querySelector('.modal').classList.remove('hide');
 
@@ -165,4 +167,3 @@ seeProjectListW.forEach((seeProject) => {
     }
   });
 });
-

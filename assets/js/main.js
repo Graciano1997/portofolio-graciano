@@ -116,7 +116,7 @@ function createListItem(project, i) {
 function createListTech(project) {
   const ul = document.createElement('ul');
   ul.classList.add('project-list');
-  for (let i = 0; i < project.techLanguage.length; i++) {
+  for (let i = 0; i < project.techLanguage.length; i += 1) {
     ul.appendChild(createListItem(project, i));
   }
   return ul;
