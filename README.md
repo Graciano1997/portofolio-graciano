@@ -49,6 +49,7 @@ and how to use images and backgrounds to enhance the look of the website.
 -**Understand how to create UIs adaptable to different screen sizes using media queries.**
 - **Understand how to parse a Figma design to create a UI.**
 - **Understand how to create UIs adaptable to different screen sizes using media queries.**
+- **Understand how to create popup windows to mobile and desktop.**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 - [Live Demo Link](https://graciano1997.github.io/portofolio-graciano/)
