@@ -193,7 +193,7 @@ function createPopup(project) {
   closeProjectBtn.addEventListener('click', () => {
     document.querySelector('.modal').removeChild(document.querySelector('.popup'));
     document.querySelector('.modal').classList.add('hide');
-    hideAll();
+   hideAll();
   });
 }
 
