@@ -1,9 +1,18 @@
-let windowSize = window.outerWidth;
+let windowSize = window.innerWidth;
 
 function handleResize() {
-  const { outerWidth } = window;
+  const outerWidth = window.innerWidth;
   windowSize = outerWidth;
+
+  if (windowSize < 768) {
+    if (document.querySelector('.modal-body') !== null) {
+      document.querySelector('.modal').classList.remove('modalBackground');
+      document.querySelector('.modal').removeChild(document.querySelector('.modal-body'));
+    }
+  }
 }
+
+window.addEventListener('resize', handleResize);
 
 const projectMedical = {
 
@@ -34,11 +43,11 @@ function hideAll() {
 }
 
 function removeBgHeight() {
-  document.querySelector('#modal').classList.remove('modalBackground');
+  document.querySelector('.modal').classList.remove('modalBackground');
 }
 
 function addBgHeight() {
-  document.querySelector('#modal').classList.toggle('modalBackground');
+  document.querySelector('.modal').classList.toggle('modalBackground');
 }
 
 function createSeeButtons(projectMedical, n) {
@@ -135,6 +144,7 @@ function createPopupWindows(projectMedical) {
   projectContentDiv.append(createContent(projectMedical));
 
   const projectMedicalBodyDiv = document.createElement('div');
+  projectMedicalBodyDiv.id = 'modalbd';
   projectMedicalBodyDiv.classList.add('modal-body');
 
   projectMedicalBodyDiv.append(projectModalCloseImgDiv,
@@ -156,7 +166,6 @@ function createPopupWindows(projectMedical) {
 }
 
 const seeProjectListW = document.querySelectorAll('.btnPopup');
-window.addEventListener('resize', handleResize);
 
 seeProjectListW.forEach((seeProject) => {
   seeProject.addEventListener('click', () => {

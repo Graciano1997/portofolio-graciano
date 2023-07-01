@@ -13,6 +13,8 @@
     grid-template-columns: 100fr;
   }
   .container {
+    margin: 0;
+    padding: 0;
     flex-direction: column;
   }
   .header-menu {
@@ -28,6 +30,11 @@
     font-size: 17pt;
     padding-right: 2rem;
     color: #000;
+  }
+  .project-contet p {
+    font-size: 16px;
+    color: #344563;
+    line-height: 24px;
   }
   .socialmedia-links {
     transform: translateX(-7%);

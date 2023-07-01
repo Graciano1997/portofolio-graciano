@@ -8,8 +8,15 @@ function handleResizeMobile() {
     document.querySelector('.nav-links').classList.add('hide');
   } else {
     document.querySelector('.nav-links').classList.remove('hide');
+    if (document.querySelector('.popup') !== null) {
+      document.querySelector('.modal').removeChild(document.querySelector('.popup'));
+      document.querySelector('.main').classList.remove('hide');
+      document.querySelector('.header-menu').classList.remove('hide');
+    }
   }
 }
+
+window.addEventListener('resize', handleResizeMobile);
 
 const linksOption = {
   linkPortfolio: document.querySelector('#item-portfolio'),
@@ -193,12 +200,11 @@ function createPopup(project) {
   closeProjectBtn.addEventListener('click', () => {
     document.querySelector('.modal').removeChild(document.querySelector('.popup'));
     document.querySelector('.modal').classList.add('hide');
-   hideAll();
+    hideAll();
   });
 }
 
 const seeProjectList = document.querySelectorAll('.btnPopup');
-window.addEventListener('resize', handleResizeMobile);
 
 seeProjectList.forEach((seeProject) => {
   seeProject.addEventListener('click', () => {

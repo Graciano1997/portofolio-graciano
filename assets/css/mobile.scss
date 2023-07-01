@@ -3,6 +3,8 @@
   @import 'layout';
 
   .container {
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     @extend.flexLayout;
   }
@@ -22,6 +24,14 @@
     font-size: 17pt;
     padding-right: 2rem;
     color: $default;
+  }
+
+  .project-contet {
+    p {
+      font-size: 16px;
+      color: #344563;
+      line-height: 24px;
+    }
   }
 
   .socialmedia-links {
@@ -490,6 +500,7 @@
   .bodyBg {
     background: $bodyBg;
   }
+
   .modal {
     padding: 0;
     display: flex;
@@ -498,20 +509,11 @@
   }
 
   .popup {
-    // display: flex;
-    // flex-direction: column;
-    // padding-left: 5%;
-    // padding-right: 5%;
-    //padding-top: 3%;
-   // padding-bottom: 3%;
-    //background: #c1c7d0;
     padding-top: 5%;
     padding-bottom: 5%;
     display: flex;
     justify-content: center;
     background: rgba(193, 199, 208, 0.8);
-   
-  
     backdrop-filter: blur(10px);
     color: black;
     width: 100%;
