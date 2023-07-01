@@ -447,7 +447,6 @@
 
   .form-container input {
     background: #fff;
-    border: 1px solid #d0d9d4;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
     font-style: italic;
@@ -460,7 +459,6 @@
 
   .form-container textarea {
     background: white;
-    border: 1px solid #60c095;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -531,6 +529,138 @@
     padding-left: 2%;
     padding-right: 2%;
     padding-top: -10%;
+  }
+
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(193, 199, 208, 0.8);
+    top: 0;
+    // left: 0;
+    backdrop-filter: blur(2px);
+    color: black;
+    width: 100%;
+    padding-top: 100vh;
+    padding-bottom: 100vh;
+  }
+
+  .modal-body {
+    background: white;
+    border-radius: 8px;
+    margin: 10%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+  }
+
+  .modal-list {
+    display: flex;
+    gap: 8px;
+    padding-left: 0;
+    justify-content: start;
+  }
+
+  .modal-tecnology-list {
+    margin-top: -2.5rem;
+    width: 100%;
+  }
+
+  .list-button {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .modal-btns {
+    display: flex;
+    gap: 1rem;
+    width: 50%;
+    justify-content: end;
+  }
+
+  .project-btn-primary {
+    background: $btnBg;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 20px;
+    color: $btnFc;
+    border: transparent;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-close {
+    align-self: flex-end;
+  }
+
+  .modal-img {
+    display: flex;
+    width: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .header-modal-text {
+    width: 50%;
+    justify-self: start;
+
+    h3 {
+      font-size: 32px;
+      line-height: 44px;
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+
+  .modal-language {
+    display: flex;
+    align-items: center;
+    background: #ebf0ee;
+    text-align: center;
+    border-radius: 4px;
+    list-style: none;
+    padding: 4px;
+  }
+
+  .modal-language a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #344563;
+  }
+
+  .modal-content {
+    margin-top: -1.5%;
+
+    p {
+      color: #344563;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: start;
+    }
   }
 
   #submit {

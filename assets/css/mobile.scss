@@ -3,6 +3,8 @@
   @import 'layout';
 
   .container {
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     @extend.flexLayout;
   }
@@ -22,6 +24,14 @@
     font-size: 17pt;
     padding-right: 2rem;
     color: $default;
+  }
+
+  .project-contet {
+    p {
+      font-size: 16px;
+      color: #344563;
+      line-height: 24px;
+    }
   }
 
   .socialmedia-links {
@@ -74,6 +84,25 @@
   .card-ruby a {
     font-weight: bold;
     color: $default;
+  }
+
+  .project-list {
+    display: flex;
+    gap: 12px;
+    padding-left: 0%;
+    margin-top: -3%;
+    margin-bottom: 8%;
+
+    li {
+      font-weight: 600;
+      font-size: 12px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      color: $workCardTitleColor;
+      @extend.fontStyle;
+    }
   }
 
   .nav-bar {
@@ -418,6 +447,13 @@
     margin-right: 5%;
   }
 
+  .information {
+    margin-left: 5%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 17px;
+  }
+
   .form-container textarea {
     padding: 3%;
     margin-left: 5%;
@@ -463,5 +499,114 @@
 
   .bodyBg {
     background: $bodyBg;
+  }
+
+  .modal {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .popup {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    background: rgba(193, 199, 208, 0.8);
+    backdrop-filter: blur(10px);
+    color: black;
+    width: 100%;
+  }
+
+  .project {
+    border: 1px solid #d0d9d4;
+    background: white;
+    border-radius: 16px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 4%;
+    padding: 5%;
+  }
+
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 80%;
+    margin-top: -5%;
+  }
+
+  .project-content {
+    text-align: justify;
+    color: #344563;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .project-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    padding-top: -5%;
+  }
+
+  .project-see {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #projectClose {
+    width: 5%;
+    height: 5%;
+    align-self: self-end;
+    position: relative;
+    top: 2rem;
+    padding-right: 7%;
+  }
+
+  @media (min-width: 579px) and (max-width: 768px) {
+    #projectClose {
+      top: 5rem;
+    }
+  }
+
+  .project-img {
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    margin-top: -7%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-btn-primary {
+    background: $btnBg;
+    border-radius: 4px;
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 3%;
+    color: $btnFc;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 48px;
+    padding: 6%;
   }
 }
