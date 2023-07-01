@@ -1,7 +1,7 @@
-let windowSizemobile=window.outerWidth;
+let windowSizemobile=window.innerWidth;
 
 function handleResizeMobile() {
-  var outerWidth = window.outerWidth;
+  var outerWidth = window.innerWidth;
   windowSizemobile=outerWidth;
 
   if(windowSizemobile<768){
