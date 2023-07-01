@@ -297,7 +297,7 @@ function validatorName(clasValue){
     document.querySelector(clasValue).classList.add("valid");
     return true;}else{
       document.querySelector(clasValue).classList.add("valid");
-      errorType.push("Verify the name");
+      errorType.push("Please write a good name");
       return false; 
     }
   }
@@ -312,11 +312,25 @@ function validatorName(clasValue){
       return true;
      }else{
        document.querySelector(clasValue).classList.add("invalid");
-       errorType.push("Verify the valid Email");
+       errorType.push("please write a valid Email");
        return false;
      }
      
 }
+function createErrorContent(content){
+  let p=document.createElement('p'); 
+  p.id="info";
+  p.textContent=content;
+  return p;
+}
+
+function createError(arr){
+  for(let i=0;i<arr.length;i++){
+    document.querySelector(".information").append(createErrorContent(arr[i]));
+  }
+}
+
+
 
 
 let form=document.querySelector("#formU");
@@ -328,7 +342,7 @@ form.addEventListener("submit",(e)=>{
     form.submit();
   }else{
     e.preventDefault();
-    alert("Nao posso");
+    createError(errorType);
   }
    
 });
