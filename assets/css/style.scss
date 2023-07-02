@@ -119,7 +119,7 @@ nav ul li {
   font-weight: 400;
   font-size: 15px;
   background: $defaultWhite;
- // border: 1px solid #d0d9d4;
+  // border: 1px solid #d0d9d4;
   border-radius: 4px;
   line-height: 24px;
   color: #6b778c;
@@ -161,20 +161,9 @@ nav ul li {
 }
 
 .invalidField {
-  border: 0.5px dashed #ff6163 ;
+  border: 0.5px dashed #ff6163;
 }
 
-/*
-.form-container input:valid,
-.form-container textarea:valid {
-  border: 2px solid #36b37e;
-}
-
-.form-container input:invalid,
-.form-container textarea:invalid {
-  border: 2px dashed #ff6163;
-}
-*/
 #email {
   text-transform: lowercase;
 }

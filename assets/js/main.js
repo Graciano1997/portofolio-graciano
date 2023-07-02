@@ -214,8 +214,6 @@ seeProjectList.forEach((seeProject) => {
   });
 });
 
-
-// Add event listener for the window resize event
 let errorType = [];
 
 function validatorName(clasValue) {
@@ -263,38 +261,31 @@ function createErrorContent(content) {
 }
 
 function createError(arr) {
-  //if (document.querySelector('.info')) {
-   // const spanInfo = document.querySelector('.information');
-
-    // document.querySelector('.info').classList.contains('.info')
- //   spanInfo.removeChild(document.querySelector('.info'));
- // } else {
-    for (let i = 0; i < arr.length; i++) {
-      document.querySelector('.information').appendChild(createErrorContent(arr[i]));
-    }
-  //}
+  for (let i = 0; i < arr.length; i += 1) {
+    document.querySelector('.information').appendChild(createErrorContent(arr[i]));
+  }
 }
 
 const form = document.querySelector('#formU');
 
 form.addEventListener('submit', (e) => {
   document.querySelector('.userEmail').value = (document.querySelector('.userEmail').value).toLowerCase();
-  let nameControl=validatorName('.userName');
-  let emailControl=validatorEmail('.userEmail');
-  let smsControl=validatorSMS('.userSMS');
+  const nameControl = validatorName('.userName');
+  const emailControl = validatorEmail('.userEmail');
+  const smsControl = validatorSMS('.userSMS');
 
- if(nameControl&&emailControl&&smsControl===true){
-   form.submit();
-  }else{
+  if (nameControl && emailControl && smsControl === true) {
+    form.submit();
+  } else {
     e.preventDefault();
     if (document.querySelector('.info')) {
       const spanInfo = document.querySelector('.information');
       const Info = document.querySelectorAll('.info');
-      Info.forEach((inf) => {
+      Info.forEach(() => {
         spanInfo.removeChild(document.querySelector('.info'));
-        });
-      }
+      });
+    }
     createError(errorType);
-  errorType = [];
- }
+    errorType = [];
+  }
 });

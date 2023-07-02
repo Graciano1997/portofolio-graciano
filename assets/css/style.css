@@ -164,17 +164,6 @@ nav ul li {
   border: 0.5px dashed #ff6163;
 }
 
-/*
-.form-container input:valid,
-.form-container textarea:valid {
-  border: 2px solid #36b37e;
-}
-
-.form-container input:invalid,
-.form-container textarea:invalid {
-  border: 2px dashed #ff6163;
-}
-*/
 #email {
   text-transform: lowercase;
 }
