@@ -349,12 +349,13 @@
                     </p>
                 </div>
 
-                <form action="https://formspree.io/f/mrgvwjrg" method="post" class="form-container" >
+                <form action="https://formspree.io/f/mrgvwjrg" method="post" class="form-container" id="formU" novalidate>
 
                     <input type="text" name="name" class="userName" placeholder="Full name" min="2" maxlength="30" required>
-                    <input type="email" name="email" id="email"  placeholder="Email adress"  required>
-                    <textarea name="message" id="" cols="30"  minlength="50" rows="10" placeholder="Hey I'd like to connect to..."
+                    <input type="email" name="email" id="email" class="userEmail" placeholder="Email adress"  required>
+                    <textarea name="message" id="" cols="30" class="userSMS " rows="10" placeholder="Hey I'd like to connect to..."
                      required></textarea>
+                     <span class="information"></span>
                     <div class="card-see">
                         <button class="btn-primary" type="submit" id="submit" >Get in touch</button>
                     </div>

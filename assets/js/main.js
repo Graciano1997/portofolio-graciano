@@ -213,3 +213,88 @@ seeProjectList.forEach((seeProject) => {
     }
   });
 });
+
+
+// Add event listener for the window resize event
+let errorType = [];
+
+function validatorName(clasValue) {
+  const nameValue = document.querySelector(clasValue);
+  if (nameValue.value.length >= 2) {
+    document.querySelector(clasValue).classList.remove('invalidField');
+    document.querySelector(clasValue).classList.add('validField');
+    return true;
+  }
+  document.querySelector(clasValue).classList.add('invalidField');
+  errorType.push('Please write a good name');
+  return false;
+}
+
+function validatorSMS(clasValue) {
+  const nameValue = document.querySelector(clasValue);
+  if (nameValue.value.length >= 50) {
+    document.querySelector(clasValue).classList.remove('invalidField');
+    document.querySelector(clasValue).classList.add('validField');
+    return true;
+  }
+  document.querySelector(clasValue).classList.add('invalidField');
+  errorType.push(`Please write a bit more! at least 50 chars ! You wrote ${(nameValue.value.length)} chars`);
+  return false;
+}
+
+function validatorEmail(clasValue) {
+  const emailValue = document.querySelector(clasValue);
+
+  if (emailValue.value.toLowerCase().match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+    document.querySelector(clasValue).value = emailValue.value.toLowerCase();
+    document.querySelector(clasValue).classList.remove('invalidField');
+    document.querySelector(clasValue).classList.add('validField');
+    return true;
+  }
+  document.querySelector(clasValue).classList.add('invalidField');
+  errorType.push('please write a valid Email');
+  return false;
+}
+function createErrorContent(content) {
+  const p = document.createElement('p');
+  p.classList.add('info');
+  p.textContent = content;
+  return p;
+}
+
+function createError(arr) {
+  //if (document.querySelector('.info')) {
+   // const spanInfo = document.querySelector('.information');
+
+    // document.querySelector('.info').classList.contains('.info')
+ //   spanInfo.removeChild(document.querySelector('.info'));
+ // } else {
+    for (let i = 0; i < arr.length; i++) {
+      document.querySelector('.information').appendChild(createErrorContent(arr[i]));
+    }
+  //}
+}
+
+const form = document.querySelector('#formU');
+
+form.addEventListener('submit', (e) => {
+  document.querySelector('.userEmail').value = (document.querySelector('.userEmail').value).toLowerCase();
+  let nameControl=validatorName('.userName');
+  let emailControl=validatorEmail('.userEmail');
+  let smsControl=validatorSMS('.userSMS');
+
+ if(nameControl&&emailControl&&smsControl===true){
+   form.submit();
+  }else{
+    e.preventDefault();
+    if (document.querySelector('.info')) {
+      const spanInfo = document.querySelector('.information');
+      const Info = document.querySelectorAll('.info');
+      Info.forEach((inf) => {
+        spanInfo.removeChild(document.querySelector('.info'));
+        });
+      }
+    createError(errorType);
+  errorType = [];
+ }
+});
