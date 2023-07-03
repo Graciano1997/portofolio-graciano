@@ -470,12 +470,10 @@
     position: absolute;
     background: rgba(193, 199, 208, 0.8);
     top: 0;
-    -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-    color: black;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     width: 100%;
-    padding-top: 100vh;
-    padding-bottom: 100vh;
+    height: 620vh;
   }
   .modal-body {
     background: white;
