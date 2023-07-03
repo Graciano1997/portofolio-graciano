@@ -268,6 +268,32 @@ function createError(arr) {
 
 const form = document.querySelector('#formU');
 
+function setFormData() {
+  const currentFormValues = JSON.parse(localStorage.getItem('formData'));
+  document.querySelector('.userName').value = currentFormValues.name;
+  document.querySelector('.userEmail').value = currentFormValues.email;
+  document.querySelector('.userSMS').value = currentFormValues.sms;
+}
+
+function populateStorage() {
+  const formValues = {
+    name: document.querySelector('.userName').value,
+    email: document.querySelector('.userEmail').value,
+    sms: document.querySelector('.userSMS').value,
+  };
+  localStorage.setItem('ormData', JSON.stringify(formValues));
+  setFormData();
+}
+
+if (localStorage.getItem('formData')) {
+  setFormData();
+}
+
+function resetStorage() {
+  localStorage.clear();
+}
+document.querySelector('#reset').addEventListener('click', resetStorage);
+
 form.addEventListener('submit', (e) => {
   document.querySelector('.userEmail').value = (document.querySelector('.userEmail').value).toLowerCase();
   const nameControl = validatorName('.userName');
@@ -275,6 +301,7 @@ form.addEventListener('submit', (e) => {
   const smsControl = validatorSMS('.userSMS');
 
   if (nameControl && emailControl && smsControl === true) {
+    populateStorage();
     form.submit();
   } else {
     e.preventDefault();

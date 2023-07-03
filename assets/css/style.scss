@@ -36,6 +36,28 @@ body {
   }
 }
 
+.btn-reset {
+  height: 48px;
+  background: #ff6163;
+  border-radius: 4px;
+  font-family: $fontPrimary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $btnFc;
+  border: transparent;
+}
+
+.formBtn {
+  flex-direction: row;
+  align-items: center;
+  height: 48px;
+  gap: 12px;
+  @extend.flexLayout;
+}
+
 .btn-primary {
   height: 48px;
   background: $btnBg;
