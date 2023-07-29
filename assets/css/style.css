@@ -193,4 +193,8 @@ nav ul li {
   color: #ff6163;
   font-weight: 500;
   font-size: 17px;
+}
+
+.hide {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

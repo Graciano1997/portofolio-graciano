@@ -127,6 +127,9 @@ function createPopupWindows(projectMedical) {
   projectModalCloseImgDiv.classList.add('modal-close');
   projectModalCloseImgDiv.append(createImageMedical(projectMedical, 'close'));
 
+  const projectModalContainer = document.createElement('div');
+  projectModalContainer.classList.add('modal-container');
+
   const projectModalMedicalImgDiv = document.createElement('div');
   projectModalMedicalImgDiv.classList.add('modal-img');
   projectModalMedicalImgDiv.append(createImageMedical(projectMedical, 'medical'));
@@ -143,25 +146,25 @@ function createPopupWindows(projectMedical) {
   projectContentDiv.classList.add('modal-content');
   projectContentDiv.append(createContent(projectMedical));
 
-  const projectMedicalBodyDiv = document.createElement('div');
-  projectMedicalBodyDiv.id = 'modalbd';
-  projectMedicalBodyDiv.classList.add('modal-body');
-
-  projectMedicalBodyDiv.append(projectModalCloseImgDiv,
-    projectModalMedicalImgDiv, projectModalListButtomDiv, projectTecnolyList, projectContentDiv);
+  projectModalContainer.append(projectModalMedicalImgDiv,
+    projectModalListButtomDiv, projectTecnolyList, projectContentDiv);
 
   hideAll();
 
+  document.querySelector('.fade').classList.remove('hide');
   document.querySelector('.modal').classList.remove('hide');
 
-  document.querySelector('.modal').append(projectMedicalBodyDiv);
+  document.querySelector('.modal').append(projectModalCloseImgDiv, projectModalContainer);
 
   const closeProjectBtn = document.querySelector('#modalClose');
 
   closeProjectBtn.addEventListener('click', () => {
-    document.querySelector('.modal').removeChild(document.querySelector('.modal-body'));
+    while (document.querySelector('.modal').firstChild) {
+      document.querySelector('.modal').removeChild(document.querySelector('.modal').firstChild);
+    }
     removeBgHeight();
     document.querySelector('.modal').classList.add('hide');
+    document.querySelector('.fade').classList.add('hide');
   });
 }
 

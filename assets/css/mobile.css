@@ -480,15 +480,11 @@
     width: 100%;
     border-radius: 8px;
   }
-}
-@media (min-width: 375px) and (max-width: 767px) {
   .project-card {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
   }
-}
-@media (min-width: 375px) and (max-width: 767px) {
   .project-btn-primary {
     background: #36b37f;
     border-radius: 4px;
