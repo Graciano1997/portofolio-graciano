@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
   @import 'variables';
   @import 'layout';
 
@@ -462,7 +462,7 @@
 
   .email {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     line-height: 32px;
     color: $terciary;

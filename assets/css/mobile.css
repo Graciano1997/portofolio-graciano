@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .flexLayout, .box-contact, .form-container, .about, .resume, .card-see, .card-tech, .box-tech, .box-card, .box-icon, .works-section, .headline-section, .container {
     display: flex;
     justify-content: center;
@@ -373,7 +373,7 @@
   }
   .email {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     line-height: 32px;
     color: #42526e;
@@ -464,12 +464,12 @@
     padding-right: 7%;
   }
 }
-@media (min-width: 375px) and (max-width: 767px) and (min-width: 579px) and (max-width: 768px) {
+@media (max-width: 767px) and (min-width: 579px) and (max-width: 768px) {
   #projectClose {
     top: 5rem;
   }
 }
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .project-img {
     margin-top: -7%;
     border-radius: 8px;
