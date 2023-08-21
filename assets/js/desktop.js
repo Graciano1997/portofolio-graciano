@@ -1,4 +1,4 @@
-let windowSize = window.innerWidth;
+/*let windowSize = window.innerWidth;
 
 function handleResize() {
   const outerWidth = window.innerWidth;
@@ -162,7 +162,7 @@ function createPopupWindows(projectMedical) {
     while (document.querySelector('.modal').firstChild) {
       document.querySelector('.modal').removeChild(document.querySelector('.modal').firstChild);
     }
-    removeBgHeight();
+    // removeBgHeight();
     document.querySelector('.modal').classList.add('hide');
     document.querySelector('.fade').classList.add('hide');
   });
@@ -179,3 +179,5 @@ seeProjectListW.forEach((seeProject) => {
     }
   });
 });
+
+*/

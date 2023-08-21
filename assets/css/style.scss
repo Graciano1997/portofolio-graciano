@@ -149,8 +149,6 @@ nav ul li {
 
 .form-container textarea {
   background: #ffff;
-  //border: 1px solid #60c095;
-  //border: 1px solid #d0d9d4;
   border-radius: 4px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -198,4 +196,35 @@ nav ul li {
 
 .hide {
   display: none;
+}
+
+.modal {
+  transition: all 2s 0.5s ease-in-out;    
+}
+
+.modal:hover {
+  box-shadow: 2px 1px 4px 2px $secondary;
+}
+
+button {
+  cursor: pointer;
+}
+
+.modalBackground {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+  z-index: 15;
+  background: white;
+  border-radius: 8px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 2s 0.5s ease-in-out;    
 }

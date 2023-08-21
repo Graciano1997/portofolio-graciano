@@ -472,42 +472,7 @@
     z-index: 5;
   }
   .modal {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     z-index: 10;
-  }
-  .modalBackground {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    width: 90%;
-    height: 80%;
-    z-index: 15;
-    background: white;
-    border-radius: 8px;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .modal-body {
-    /*    background: white;
-    border-radius: 8px;
-    margin: 10%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem; */
-  }
-  .modal-container {
-    display: flex;
-    flex-direction: column;
   }
   .modal-list {
     display: flex;
