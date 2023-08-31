@@ -16,6 +16,10 @@
   grid-template-columns: 100fr;
 }
 
+* {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   padding: 0;

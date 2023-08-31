@@ -22,7 +22,7 @@ const projects = [
   },
   title: 'Keeping track of hundreds of components',
 
-  techLanguage: ['Codekit', 'Github', 'JavaScript', 'Bootstrap', 'Terminal', 'Codepen'],
+  techLanguage: ['Codekit', 'Github', 'JavaScript', 'Bootstrap'],
 
   content: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
