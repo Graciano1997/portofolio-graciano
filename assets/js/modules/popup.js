@@ -3,11 +3,19 @@ import projects from "./projectsData.js";
 function createSeeButtons(project, n) {
   const button = document.createElement('button');
   button.classList.add('project-btn-primary');
-  button.textContent = project.button.label[n];
+  const link = document.createElement('a');
+  link.classList.add('modalLink');
+  link.href = project.button.link[n];
+  link.target = '_blank';
+  const span = document.createElement('span');
+  span.classList.add('buttonContext');
+  span.textContent = project.button.label[n];
   const img = document.createElement('img');
   img.src = project.button.iconsPath[n];
   img.alt = 'icon';
-  button.appendChild(img);
+  span.append(img);
+  link.append(span)
+  button.appendChild(link);
   return button;
 }
 
@@ -48,6 +56,7 @@ function createImage(project, name) {
 
   if (imageName === 'image') {
     const image = document.createElement('img');
+    image.classList.add('projectImage');
     image.alt = project.images.image.alt;
     image.src = project.images.image.path;
     return image;
@@ -120,9 +129,10 @@ function createPopup(project) {
 
 const popupListenner = () => {
   const seeProjectList = document.querySelectorAll('.btnPopup');
-  seeProjectList.forEach((seeProject) => {
+  seeProjectList.forEach((seeProject, index) => {
     seeProject.addEventListener('click', () => {
-      createPopup(projects[1]);
+      const id = document.querySelectorAll('#projectId')[index].value;
+      createPopup(projects[id - 1]);// because of the index zero of the array....
       document.querySelector('.container').style.overflowY = 'hidden';
       document.querySelector('.modal').classList.add('modalBackground');
     });

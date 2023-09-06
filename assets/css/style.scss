@@ -200,7 +200,7 @@ nav ul li {
 }
 
 .modal {
-  transition: all 2s 0.5s ease-in-out;    
+  transition: all 2s 0.5s ease-in-out;
 }
 
 .modal:hover {
@@ -227,5 +227,45 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  transition: all 2s 0.5s ease-in-out;    
+  transition: all 2s 0.5s ease-in-out;
+}
+
+.buttonContext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalLink {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.projectImage {
+  border-radius: 50px;
+}
+
+.card-headerbg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    border-radius: 3%;
+    transition: all 1.3s 1s ease-in-out;
+  }
+
+  img:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.1);
+  }
+}
+
+#modalClose {
+  cursor: pointer;
 }
