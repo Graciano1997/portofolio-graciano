@@ -1,4 +1,4 @@
-import projects from "./projectsData.js";
+import projects from './projectsData.js';
 
 function createSeeButtons(project, n) {
   const button = document.createElement('button');
@@ -14,7 +14,7 @@ function createSeeButtons(project, n) {
   img.src = project.button.iconsPath[n];
   img.alt = 'icon';
   span.append(img);
-  link.append(span)
+  link.append(span);
   button.appendChild(link);
   return button;
 }
@@ -108,7 +108,6 @@ function createPopup(project) {
   projectModalContainer.append(projectModalImgDiv,
     projectModalListButtomDiv, projectTecnolyList, projectContentDiv);
 
-
   document.querySelector('.fade').classList.remove('hide');
   document.querySelector('.modal').classList.remove('hide');
 
@@ -137,6 +136,6 @@ const popupListenner = () => {
       document.querySelector('.modal').classList.add('modalBackground');
     });
   });
-}
+};
 
-export default popupListenner; 
+export default popupListenner;

@@ -254,7 +254,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-.card-headerbg img {
+.card-headerbg .cardHeaderImage {
   -o-object-fit: cover;
      object-fit: cover;
   width: 95%;
@@ -262,7 +262,7 @@ button {
   border-radius: 3%;
   transition: all 1.3s 1s ease-in-out;
 }
-.card-headerbg img:hover {
+.card-headerbg .cardHeaderImage:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;

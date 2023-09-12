@@ -1,4 +1,4 @@
-import projects from "./projectsData.js";
+import projects from './projectsData.js';
 
 const cardHeader = (title) => {
   const div = document.createElement('div');
@@ -13,6 +13,7 @@ const cardHeader = (title) => {
 const cardHeaderBg = (data) => {
   const div = document.createElement('div');
   const image = document.createElement('img');
+  image.classList.add('cardHeaderImage');
   image.src = data.images.image.path;
   image.alt = data.images.image.alt;
   div.classList.add('card-headerbg');
@@ -28,7 +29,7 @@ const createListItem = (listTechItem) => {
   a.textContent = listTechItem;
   li.appendChild(a);
   return li;
-}
+};
 
 const createCardList = (project) => {
   const ul = document.createElement('ul');
@@ -36,9 +37,9 @@ const createCardList = (project) => {
 
   project.forEach((language) => {
     ul.appendChild(createListItem(language));
-  })
+  });
   return ul;
-}
+};
 
 const createSeeButtonContainer = (id) => {
   const button = document.createElement('button');
@@ -46,21 +47,23 @@ const createSeeButtonContainer = (id) => {
   button.classList.add('btn-primary');
   button.textContent = 'See Project';
   const input = document.createElement('input');
-  input.type = "hidden";
+  input.type = 'hidden';
   input.value = id;
   input.id = 'projectId';
   const div = document.createElement('div');
   div.classList.add('card-see');
   div.append(input, button);
   return div;
-}
+};
 
 const cardGra = (data) => {
   const div = document.createElement('div');
   div.classList.add('card-gra');
-  div.append(cardHeader(data.title), createCardList(data.techLanguage), createSeeButtonContainer(data.id));
+  div.append(cardHeader(data.title));
+  div.append(createCardList(data.techLanguage));
+  div.append(createSeeButtonContainer(data.id));
   return div;
-}
+};
 
 export const cardGenerator = (data) => {
   const card = document.createElement('div');
@@ -68,12 +71,12 @@ export const cardGenerator = (data) => {
   card.append(cardGra(data));
   const cards = document.createElement('div');
   cards.classList.add('cards');
-  cards.append(cardHeaderBg(data), card)
+  cards.append(cardHeaderBg(data), card);
   return cards;
-}
+};
 
 export const projectSectionGenerator = () => {
   projects.forEach((project) => {
     document.querySelector('.box-card').append(cardGenerator(project));
-  })
-}
+  });
+};

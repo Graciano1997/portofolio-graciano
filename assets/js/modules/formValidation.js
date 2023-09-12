@@ -78,7 +78,7 @@ function resetStorage() {
 
 document.querySelector('#reset').addEventListener('click', resetStorage);
 
-export const formListener = () => {
+const formListener = () => {
   form.addEventListener('submit', (e) => {
     document.querySelector('.userEmail').value = (document.querySelector('.userEmail').value).toLowerCase();
     const nameControl = validatorName('.userName');
@@ -101,4 +101,6 @@ export const formListener = () => {
       errorType = [];
     }
   });
-}
+};
+
+export default formListener;

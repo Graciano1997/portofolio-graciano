@@ -133,6 +133,7 @@
       }
     }
   }
+
   .nav-links {
     display: none;
   }
@@ -628,7 +629,7 @@
 
   .modal-close {
     margin-top: 5%;
-    width: 96dvw;
+    width: 96vw;
     height: 100%;
     position: absolute;
     display: flex;
@@ -637,19 +638,12 @@
   }
 
   #modalClose {
-    // width: 5%;
-    // height: 5%;
     position: relative;
-    // // top: 2rem;
-    // padding-right: 7%;
-    // background: red;
     align-self: self-end;
     width: 8%;
     height: 8%;
     top: 0;
-    // left: 89%;
   }
-
 
   .fade {
     position: fixed;
@@ -665,9 +659,9 @@
   }
 
   .modal-tecnology-list {
-    margin-top: 10%;
-    // width: 100%;
+    // margin-top: 10%;
     justify-content: center;
+    margin-top: -2.5%;
   }
 
   .modal-list {
@@ -675,11 +669,6 @@
     gap: 8px;
     padding-left: 0;
     justify-content: center;
-  }
-
-  .modal-tecnology-list {
-    margin-top: -2.5%;
-    // width: 100%;
   }
 
   .list-button {
