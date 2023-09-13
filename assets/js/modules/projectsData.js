@@ -74,6 +74,25 @@ const projects = [
       iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
     },
   },
+  {
+    id: 5,
+    images: {
+      image: { path: '../assets/img/book.png', alt: 'Medical Illustration sets' },
+      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+    },
+    title: 'Space Travelers Hub',
+
+    techLanguage: ['React.js', 'Github', 'Redux', 'Bootstrap'],
+
+    content: `This is a React Web App that displays some real rockets and available Missions from a fetched API.🚀🚀`,
+
+    button: {
+      label: ['See live', 'See source'],
+      link: ['https://space-travelers-hub-sepia.vercel.app/', 'https://github.com/Graciano1997/space_travelers_hub.git'],
+      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+    },
+  }
+
 ];
 
 export default projects;
