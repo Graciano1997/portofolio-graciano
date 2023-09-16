@@ -91,6 +91,24 @@ const projects = [
       link: ['https://space-travelers-hub-sepia.vercel.app/', 'https://github.com/Graciano1997/space_travelers_hub.git'],
       iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
     },
+  },
+  {
+    id: 6,
+    images: {
+      image: { path: '../assets/img/book.png', alt: 'Medical Illustration sets' },
+      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+    },
+    title: 'Today Covid-19 Pandemic Situation',
+
+    techLanguage: ['React.js', 'Github', 'Redux'],
+
+    content: `This is a React Web App that report the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
+    **Everything in Real time, Fetching the data from a provided API**.`,
+    button: {
+      label: ['See live', 'See source'],
+      link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+    },
   }
 
 ];
