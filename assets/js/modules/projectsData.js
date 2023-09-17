@@ -2,8 +2,8 @@ const projects = [
   {
     id: 1,
     images: {
-      image: { path: '../assets/img/book.png', alt: 'Book Store' },
-      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+      image: { path: 'assets/img/book.png', alt: 'Book Store' },
+      btnClose: { path: 'assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'BookStore App',
 
@@ -15,14 +15,14 @@ const projects = [
     button: {
       label: ['See live', 'See source'],
       link: ['https://live.com', 'https://source.com'],
-      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+      iconsPath: ['assets/img/seeLive.svg', 'assets/img/seeGit.svg'],
     },
   },
   {
     id: 2,
     images: {
-      image: { path: '../assets/img/math.png', alt: 'Math Magicians' },
-      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+      image: { path: 'assets/img/math.png', alt: 'Math Magicians' },
+      btnClose: { path: 'assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'Math Magicians',
 
@@ -35,14 +35,14 @@ const projects = [
     button: {
       label: ['See live', 'See source'],
       link: ['https://math-magicians-wh32.onrender.com/', 'https://github.com/Graciano1997/math_magicians'],
-      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+      iconsPath: ['assets/img/seeLive.svg', 'assets/img/seeGit.svg'],
     },
   },
   {
     id: 3,
     images: {
-      image: { path: '../assets/img/gomovie.png', alt: 'go movie' },
-      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+      image: { path: 'assets/img/gomovie.png', alt: 'go movie' },
+      btnClose: { path: 'assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'JS Capstone-Go!Moovies',
 
@@ -53,14 +53,14 @@ const projects = [
     button: {
       label: ['See live', 'See source'],
       link: ['https://graciano1997.github.io/js_moduleII_capstone/dist/', 'https://github.com/Graciano1997/js_moduleII_capstone'],
-      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+      iconsPath: ['assets/img/seeLive.svg', 'assets/img/seeGit.svg'],
     },
   },
   {
     id: 4,
     images: {
-      image: { path: '../assets/img/summit.png', alt: 'creative Summit' },
-      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+      image: { path: 'assets/img/summit.png', alt: 'creative Summit' },
+      btnClose: { path: 'assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'Creative Summit 2015',
 
@@ -71,14 +71,14 @@ const projects = [
     button: {
       label: ['See live', 'See source'],
       link: ['https://graciano1997.github.io/global-summit/', 'https://github.com/Graciano1997/global-summit'],
-      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+      iconsPath: ['assets/img/seeLive.svg', 'assets/img/seeGit.svg'],
     },
   },
   {
     id: 5,
     images: {
-      image: { path: '../assets/img/space.png', alt: 'Medical Illustration sets' },
-      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+      image: { path: 'assets/img/space.png', alt: 'Medical Illustration sets' },
+      btnClose: { path: 'assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'Space Travelers Hub',
 
@@ -89,14 +89,14 @@ const projects = [
     button: {
       label: ['See live', 'See source'],
       link: ['https://space-travelers-hub-sepia.vercel.app/', 'https://github.com/Graciano1997/space_travelers_hub.git'],
-      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+      iconsPath: ['assets/img/seeLive.svg', 'assets/img/seeGit.svg'],
     },
   },
   {
     id: 6,
     images: {
-      image: { path: '../assets/img/covid.png', alt: 'pandemic countries situation' },
-      btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
+      image: { path: 'assets/img/covid.png', alt: 'pandemic countries situation' },
+      btnClose: { path: 'assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'Pandemic Situation',
 
@@ -107,7 +107,7 @@ const projects = [
     button: {
       label: ['See live', 'See source'],
       link: ['https://pandemic-react-capstone.vercel.app/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
-      iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
+      iconsPath: ['assets/img/seeLive.svg', 'assets/img/seeGit.svg'],
     },
   },
 ];
