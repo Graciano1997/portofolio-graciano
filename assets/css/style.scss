@@ -270,3 +270,16 @@ button {
 #modalClose {
   cursor: pointer;
 }
+
+#resumeItem {
+  text-decoration: none;
+  color: #ffff;
+
+  #resumeItem:active {
+    color: #ffff;
+  }
+
+  #resumeItem:visited {
+    color: #ffff;
+  }
+}

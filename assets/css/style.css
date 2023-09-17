@@ -272,4 +272,15 @@ button {
 
 #modalClose {
   cursor: pointer;
+}
+
+#resumeItem {
+  text-decoration: none;
+  color: white;
+}
+#resumeItem #resumeItem:active {
+  color: white;
+}
+#resumeItem #resumeItem:visited {
+  color: white;
 }/*# sourceMappingURL=style.css.map */
