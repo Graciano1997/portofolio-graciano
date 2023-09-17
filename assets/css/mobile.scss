@@ -1,4 +1,4 @@
-@media (min-width: 375px) and (max-width: 767px) {
+@media (max-width: 767px) {
   @import 'variables';
   @import 'layout';
 
@@ -78,6 +78,7 @@
       letter-spacing: 0.03em;
       color: $secondary;
     }
+
     @extend.fontStyle;
   }
 
@@ -131,6 +132,10 @@
         }
       }
     }
+  }
+
+  .nav-links {
+    display: none;
   }
 
   main {
@@ -233,6 +238,7 @@
       margin-top: -7%;
       @extend.fontStyle;
     }
+
     @extend.gridLayout;
   }
 
@@ -462,7 +468,7 @@
 
   .email {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     line-height: 32px;
     color: $terciary;
@@ -530,7 +536,7 @@
     padding: 5%;
   }
 
-  .project-header {
+  .header-modal-text {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -538,12 +544,14 @@
     margin-top: -5%;
   }
 
-  .project-content {
+  .modal-content {
+    margin-top: 4%;
     text-align: justify;
     color: #344563;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    padding-bottom: 20%;
   }
 
   .project-title {
@@ -554,36 +562,24 @@
     padding-top: -5%;
   }
 
-  .project-see {
+  .modal-btns {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 1%;
+    gap: 10px;
   }
 
-  #projectClose {
-    width: 5%;
-    height: 5%;
-    align-self: self-end;
-    position: relative;
-    top: 2rem;
-    padding-right: 7%;
-  }
-
-  @media (min-width: 579px) and (max-width: 768px) {
-    #projectClose {
-      top: 5rem;
-    }
-  }
-
-  .project-img {
-    img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    margin-top: -7%;
+  .modal-img {
+    margin-top: 30%;
     border-radius: 8px;
     display: flex;
-    flex-direction: column;
+
+    img {
+      padding-top: 2%;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
   }
 
   .project-card {
@@ -598,8 +594,8 @@
     font-family: $fontPrimary;
     font-style: normal;
     font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: 3%;
     color: $btnFc;
     border: transparent;
@@ -607,6 +603,82 @@
     align-items: center;
     gap: 4px;
     height: 48px;
-    padding: 6%;
+    padding: 4%;
+  }
+
+  .modalBackground {
+    //position: fixed;
+    width: 96vw;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    padding: 70% 4% 0 4%;
+  }
+
+  .modal-close {
+    margin-top: 5%;
+    width: 96vw;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-right: 6%;
+  }
+
+  #modalClose {
+    position: relative;
+    align-self: self-end;
+    width: 8%;
+    height: 8%;
+    top: 0;
+  }
+
+  .fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(193, 199, 208, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 5;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .modal-tecnology-list {
+    // margin-top: 10%;
+    justify-content: center;
+    margin-top: -2.5%;
+  }
+
+  .modal-list {
+    display: flex;
+    gap: 8px;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .list-button {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+
+  .modal-language {
+    display: flex;
+    align-items: center;
+    background: #ebf0ee;
+    text-align: center;
+    border-radius: 4px;
+    list-style: none;
+    padding: 4px;
   }
 }

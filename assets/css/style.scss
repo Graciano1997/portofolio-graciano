@@ -5,6 +5,8 @@
 
 * {
   @extend.fontStyle;
+
+  list-style-type: none;
 }
 
 body {
@@ -34,6 +36,28 @@ body {
     color: $primary;
     text-align: center;
   }
+}
+
+.btn-reset {
+  height: 48px;
+  background: #ff6163;
+  border-radius: 4px;
+  font-family: $fontPrimary;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $btnFc;
+  border: transparent;
+}
+
+.formBtn {
+  flex-direction: row;
+  align-items: center;
+  height: 48px;
+  gap: 12px;
+  @extend.flexLayout;
 }
 
 .btn-primary {
@@ -119,7 +143,7 @@ nav ul li {
   font-weight: 400;
   font-size: 15px;
   background: $defaultWhite;
-  border: 1px solid #d0d9d4;
+  // border: 1px solid #d0d9d4;
   border-radius: 4px;
   line-height: 24px;
   color: #6b778c;
@@ -127,7 +151,6 @@ nav ul li {
 
 .form-container textarea {
   background: #ffff;
-  border: 1px solid #60c095;
   border-radius: 4px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -152,5 +175,111 @@ nav ul li {
 
   to {
     margin-top: -2%;
+  }
+}
+
+.validField {
+  border: 0.5px solid #36b37e;
+}
+
+.invalidField {
+  border: 0.5px dashed #ff6163;
+}
+
+#email {
+  text-transform: lowercase;
+}
+
+.info {
+  color: #ff6163;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.hide {
+  display: none;
+}
+
+.modal {
+  transition: all 2s 0.5s ease-in-out;
+}
+
+.modal:hover {
+  box-shadow: 2px 1px 4px 2px $secondary;
+}
+
+button {
+  cursor: pointer;
+}
+
+.modalBackground {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  width: 90%;
+  height: 80%;
+  z-index: 15;
+  background: white;
+  border-radius: 8px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 2s 0.5s ease-in-out;
+}
+
+.buttonContext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalLink {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.projectImage {
+  border-radius: 50px;
+}
+
+.card-headerbg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .cardHeaderImage {
+    object-fit: cover;
+    width: 95%;
+    height: 95%;
+    border-radius: 3%;
+    transition: all 1.3s 1s ease-in-out;
+  }
+
+  .cardHeaderImage:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(1.1);
+  }
+}
+
+#modalClose {
+  cursor: pointer;
+}
+
+#resumeItem {
+  text-decoration: none;
+  color: #ffff;
+
+  #resumeItem:active {
+    color: #ffff;
+  }
+
+  #resumeItem:visited {
+    color: #ffff;
   }
 }
