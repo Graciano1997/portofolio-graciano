@@ -24,7 +24,7 @@ const projects = [
       image: { path: '../assets/img/math.png', alt: 'Math Magicians' },
       btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
-    title: 'Math Magicians Full webSite',
+    title: 'Math Magicians',
 
     techLanguage: ['React.js', 'Github', 'Css'],
 
@@ -44,7 +44,7 @@ const projects = [
       image: { path: '../assets/img/gomovie.png', alt: 'go movie' },
       btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
-    title: 'Microverse JS Capstone-Go!Moovies',
+    title: 'JS Capstone-Go!Moovies',
 
     techLanguage: ['Js', 'Github', 'Css', 'Html', 'Webpack'],
 
@@ -62,7 +62,7 @@ const projects = [
       image: { path: '../assets/img/summit.png', alt: 'creative Summit' },
       btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
-    title: 'Capstone: Creative Angola Summit 2015',
+    title: 'Creative Summit 2015',
 
     techLanguage: ['JavaScript', 'Github', 'sass', 'Html'],
 
@@ -84,7 +84,7 @@ const projects = [
 
     techLanguage: ['React.js', 'Github', 'Redux', 'Bootstrap'],
 
-    content: `This is a React Web App that displays some real rockets and available Missions from a fetched API.🚀🚀`,
+    content: 'This is a React Web App that displays some real rockets and available Missions from a fetched API.🚀🚀',
 
     button: {
       label: ['See live', 'See source'],
@@ -98,7 +98,7 @@ const projects = [
       image: { path: '../assets/img/covid.png', alt: 'pandemic countries situation' },
       btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
-    title: 'Today Covid-19 Pandemic Situation',
+    title: 'Pandemic Situation',
 
     techLanguage: ['React.js', 'Github', 'Redux'],
 
@@ -109,8 +109,7 @@ const projects = [
       link: ['https://pandemic-react-capstone.vercel.app/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
       iconsPath: ['../assets/img/seeLive.svg', '../assets/img/seeGit.svg'],
     },
-  }
-
+  },
 ];
 
 export default projects;
