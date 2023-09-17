@@ -9,7 +9,7 @@ const projects = [
 
     techLanguage: ['React.js', 'Github', 'Redux', 'Css'],
 
-    content: `**Bookstore** is a web application designed for manage and Store your books collection! Feel free to use this App 😊🤩😉 
+    content: `**Bookstore** is a web application designed for manage and Store your books collection! Feel free to use this App 😊🤩😉
     `,
 
     button: {
@@ -102,7 +102,7 @@ const projects = [
 
     techLanguage: ['React.js', 'Github', 'Redux'],
 
-    content: `This is a React Web App that report the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
+    content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
     **Everything in Real time, Fetching the data from a provided API**.`,
     button: {
       label: ['See live', 'See source'],
