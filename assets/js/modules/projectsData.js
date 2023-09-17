@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     images: {
-      image: { path: '../assets/img/book.png', alt: 'Medical Illustration sets' },
+      image: { path: '../assets/img/book.png', alt: 'Book Store' },
       btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'BookStore App',
@@ -77,7 +77,7 @@ const projects = [
   {
     id: 5,
     images: {
-      image: { path: '../assets/img/book.png', alt: 'Medical Illustration sets' },
+      image: { path: '../assets/img/space.png', alt: 'Medical Illustration sets' },
       btnClose: { path: '../assets/img/btnmedicalClose.svg', alt: 'close icon', id: 'modalClose' },
     },
     title: 'Space Travelers Hub',
