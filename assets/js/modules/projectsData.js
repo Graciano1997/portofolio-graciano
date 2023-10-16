@@ -106,7 +106,7 @@ const projects = [
     **Everything in Real time, Fetching the data from a provided API**.`,
     button: {
       label: ['See live', 'See source'],
-      link: ['https://pandemic-react-capstone.vercel.app/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+      link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
       iconsPath: ['assets/img/seeLive.svg', 'assets/img/seeGit.svg'],
     },
   },
