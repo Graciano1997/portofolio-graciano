@@ -1,0 +1,16 @@
+.footerContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5rem;
+}
+.indicatorFinish {
+    margin-top: 3%;
+    width: 134px;
+    height: 5px;
+    bottom: 8px;
+    background: var(--tenth-color);
+    border-radius: 10px;
+}
+

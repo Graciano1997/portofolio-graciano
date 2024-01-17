@@ -1,0 +1,49 @@
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  margin-top: -8rem;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--fourth-color);
+  border-radius: 8px;
+  border: 1px solid var(--nineth-color);
+  height: 350px;
+}
+
+
+.cardTitle {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  line-height: 32px;
+  color: var(--seventh-color);
+}
+
+.techsContainer {
+  margin-top: 1rem;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.techsContainer p {
+  background-color: var(--white-color);
+  padding: 8px;
+  border-radius: 8px;
+  color: var(--main-color);
+
+}

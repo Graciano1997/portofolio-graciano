@@ -1,0 +1,67 @@
+@import url(./base.css);
+
+.menuContainer {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-image: url(../img/desk_bg.svg);
+    background-position: center;
+    background-color: var(--tenth-color);
+    transition: all 1.2s ease-in-out;
+    color: var(--white-color);
+    overflow: hidden;
+    font-size: 40px;
+    opacity: 0.990;
+    z-index: 6000;
+}
+
+.menuContainer hr{
+    width: 70%;
+    position: fixed;
+    top: 7%;
+    height: 3px;
+    border-radius: 8px;
+    background-color: var(--white-color);
+}
+
+.menuCloseContainer button {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menuCloseContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.footerMenuContainer {
+    top: 50%;
+    position: fixed;
+    margin-top: 50%;
+}
+
+.menuContainer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.menuContainer li {
+    list-style-type: none;
+    color: var(--white-color);
+}
+
+.menuContainer li a {
+    color: var(--white-color);
+    text-transform: capitalize;
+    text-decoration: wavy;
+ 
+}
