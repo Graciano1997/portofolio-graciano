@@ -1,5 +1,6 @@
 import projects from '../data/projectsData';
 import styles from '../style/Work.module.css';
+import Modal from './Modal';
 import Work from './Work';
 
 const Works = () => {
@@ -17,6 +18,7 @@ const Works = () => {
               key={{ index }} />)
         }
       </div>
+      <Modal />
     </section>
   );
 };

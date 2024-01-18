@@ -27,7 +27,7 @@
   border-radius: 8px;
   border: 1px solid var(--nineth-color);
   height: 350px;
-  width: 369px;
+  width: 358px;
   cursor: pointer;
   transition: all 1s ease-in-out;
 }
@@ -78,15 +78,19 @@
     width: 1172px;
     transition: all 1s ease-in-out;
   }
+
+  .cardItem {
+    width: 369px;
+  }
 }
 
-@media screen and (min-width:768px) and (max-width:1200px){
+@media screen and (min-width:768px) and (max-width:1200px) {
   .cardsContainer {
     margin-top: -14rem;
     display: grid;
-    grid-template-columns: repeat(2,50fr);
-    grid-template-rows: repeat(2,50fr);
-    align-items:center;
+    grid-template-columns: repeat(2, 50fr);
+    grid-template-rows: repeat(2, 50fr);
+    align-items: center;
     justify-items: center;
     width: 100%;
     transition: all 1s ease-in-out;

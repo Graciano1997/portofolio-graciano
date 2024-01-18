@@ -14,7 +14,8 @@ const Work = ({ projectInfo }) => {
             <p key={{ index }}>{tech}</p>)}
         </div>
         <div className="btnContainer">
-          <button className="btnPrimary" onClick={()=>{
+          <button className="btnPrimary" onClick={() => {
+            document.querySelector('.modalContainer').classList.remove('hide');
           }}>See Project</button>
         </div>
       </div>

@@ -35,8 +35,7 @@
   border-radius: 8px;
   cursor: pointer;
   height: 474px;
-  width: 369px;
-  /* height: 800px; */
+  width: 358px;
   transition: all 1s ease-in-out;
 }
 
@@ -99,6 +98,9 @@
 }
 
 @media screen and (min-width:824px) {
+  .workContainerItem {
+       width: 369px;
+  }
   .works {
     display: grid;
     grid-template: repeat(1, 1fr) / repeat(3, 1fr);
