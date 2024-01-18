@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+.appBackground{
+  display: none;
+}
+
 .hamburguerContainer {
   position: fixed;
   top: 0;
@@ -20,6 +24,7 @@
 .hamburguerContainer button {
   border: transparent;
   background: transparent;
+  cursor: pointer;
 }
 
 .moreFormContainer {
@@ -28,27 +33,67 @@
 }
 
 @media screen and (min-width:768px) {
+
+  @keyframes anime {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .appBackground {
+    position: fixed;
+    height: 100%;
+    top: 10%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -500;
+    animation-duration: 20s;
+    animation-name: anime;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    padding-top: 10rem;
+  }
+
+  .appBackground img {
+    transform: scale(1.2);
+  }
+
   .contact {
-        margin-top: 1px;
-        background-image: url(./img/desk_contact.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-bottom: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    margin-top: 1px;
+    background-image: url(./img/desk_contact.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .moreFormContainer {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .moreFormContainer {
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50fr 50fr;
     grid-template-rows: 100fr;
     margin-left: 8%;
     margin-right: 8%;
+    column-gap: 4px;
     width: 1172px;
   }
 }

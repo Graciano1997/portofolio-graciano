@@ -22,6 +22,7 @@
 .pointerDown {
   display: contents;
 }
+
 .pointerLeft {
   display: none;
 }
@@ -77,11 +78,13 @@
     /* align-items: center; */
     /* padding: 0; */
   }
-  .aboutContainer p{
-text-align: center;
-padding-left: 13%;
-padding-right: 13%;
+
+  .aboutContainer p {
+    text-align: center;
+    padding-left: 13%;
+    padding-right: 13%;
   }
+
   .moreAboutContainer {
     align-items: flex-start;
     justify-content: flex-start;
@@ -106,7 +109,19 @@ padding-right: 13%;
     padding-right: 0;
     font-size: 30px;
   }
+}
 
+@media screen and (min-width:768px) and (max-width:1200px) {
+  .pointerDown {
+    display: contents;
+  }
+
+  .pointerLeft {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px) {
   .pointerDown {
     display: none;
   }

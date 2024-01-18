@@ -1,73 +1,106 @@
 @import url(./base.css);
 
 .menuContainer {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.5rem;
-    background-image: url(../img/desk_bg.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-color: var(--tenth-color);
-    color: var(--white-color);
-    overflow: hidden;
-    font-size: 40px;
-    z-index: 6000;
-    transition: all 1.2s ease-in-out;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-image: url(../img/desk_bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: var(--tenth-color);
+  color: var(--white-color);
+  overflow: hidden;
+  font-size: 40px;
+  opacity: 0.988;
+  z-index: 6000;
+  transition: all 1.2s ease-in-out;
 }
 
 .menuContainer hr {
-    width: 70%;
-    position: fixed;
-    top: 7%;
-    height: 3px;
-    border-radius: 8px;
-    background-color: var(--white-color);
+  width: 70%;
+  position: fixed;
+  top: 7%;
+  height: 3px;
+  border-radius: 8px;
+  background-color: var(--white-color);
 }
 
 .menuCloseContainer button {
-    border: transparent;
-    background-color: transparent;
-    cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .menuCloseContainer {
-    position: fixed;
-    top: 0;
-    right: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 .footerMenuContainer {
-    top: 50%;
-    position: fixed;
-    margin-top: 50%;
+  top: 50%;
+  position: fixed;
+  margin-top: 50%;
 }
 
 .menuContainer ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .menuContainer li {
-    list-style-type: none;
-    color: var(--white-color);
+  list-style-type: none;
+  color: var(--white-color);
 }
 
 .menuContainer li a {
-    color: var(--white-color);
-    text-transform: capitalize;
-    text-decoration: wavy;
+  color: var(--white-color);
+  text-transform: capitalize;
+  text-decoration: wavy;
 }
 
 @media screen and (min-width:768px) {
-    .menuContainer {
-        background-position: center;
+  @keyframes anime {
+    0% {
+    background-size:10%;
+    background-repeat: repeat;
     }
+    10%{
+      background-size:20%;
+      background-repeat: no-repeat;
+    }
+    20%{
+      background-size:30%;
+      background-repeat: repeat;
+    }
+    50%{
+      background-size:60%;
+      background-repeat: no-repeat;
+    }
+    55%{
+      background-size:70%;
+      background-repeat: repeat;
+    }
+    to {
+      background-size:100%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .menuContainer {
+
+    animation-duration: 20s;
+    animation-name: anime;
+    animation-delay: 5s;
+    animation-iteration-count: initial;
+    /* background-size: 100%; */
+  }
 }

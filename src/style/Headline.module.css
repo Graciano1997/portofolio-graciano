@@ -43,12 +43,35 @@
     align-items: center;
     margin-top: -1rem;
   } 
-
+  
   .headlineDivInfo {
     margin-top: -25rem;
   }
 
   .headlineContainer p {
     padding: 0 15% 0 15%;
+  }
+}
+@media screen and (min-width:1600px) {
+  .headlineContainer {
+    /* height: 63rem; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .headlineDivInfo {
+    margin-top: 0%;
+  }
+
+  .headlineContainer p {
+    padding: 0 15% 0 15%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px){
+  .btnHoverContainer {
+    margin-top: -25rem;
+    transition: all 1s ease-in-out;
   }
 }

@@ -8,7 +8,7 @@ const Cards = () =>
   <section className={style.cardsMainContainer}>
     <div className={style.cardsContainer}>
       <Card info={{
-        topic: 'languages',
+        topic: 'Languages',
         photo: languagePic, items: [
           "Ruby on Rails",
           "CSS",
@@ -34,7 +34,7 @@ const Cards = () =>
             "Web Development", "API Design"
           ]
         }} />
-    </div>;
+    </div>
   </section>
 
 export default Cards;

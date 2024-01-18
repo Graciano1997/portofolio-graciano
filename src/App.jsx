@@ -8,7 +8,7 @@ import MoreAbout from './components/MoreAbout';
 import Form from './components/Form';
 import FooterItem from './components/FooterItem';
 import Hamburguer from './components/Hamburguer';
-
+import box from './img/box.svg';
 
 function App() {
   return (
@@ -26,6 +26,9 @@ function App() {
         </div>
       </div>
       <FooterItem />
+      <div className={style.appBackground}>
+        <img src={box} />
+      </div>
     </div>
   );
 }
