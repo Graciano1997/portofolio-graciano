@@ -19,6 +19,10 @@ const Modal = () => {
                             <p>CSS</p>
                             <p>JAVASCRIPT</p>
                         </div>
+                        <div className={style.modalButton}>
+                        <button className="btnPrimary">See Live</button>
+                        <button className="btnPrimary">See Source</button>
+                    </div>
                     </div>
                     <div className={style.description}>
                         <p>
