@@ -12,17 +12,17 @@
     gap: 1rem;
     padding: 0.5rem;
     background-image: url(../img/desk_bg.svg);
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: bottom;
     background-color: var(--tenth-color);
-    transition: all 1.2s ease-in-out;
     color: var(--white-color);
     overflow: hidden;
     font-size: 40px;
-    opacity: 0.990;
     z-index: 6000;
+    transition: all 1.2s ease-in-out;
 }
 
-.menuContainer hr{
+.menuContainer hr {
     width: 70%;
     position: fixed;
     top: 7%;
@@ -54,6 +54,7 @@
     flex-direction: column;
     gap: 1rem;
 }
+
 .menuContainer li {
     list-style-type: none;
     color: var(--white-color);
@@ -63,5 +64,10 @@
     color: var(--white-color);
     text-transform: capitalize;
     text-decoration: wavy;
- 
+}
+
+@media screen and (min-width:768px) {
+    .menuContainer {
+        background-position: center;
+    }
 }

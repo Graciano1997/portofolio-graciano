@@ -48,18 +48,49 @@
     margin-top: 1rem;
     text-align: center;
     line-height: 32px;
-    font-size: 20px;
+    font-size: 19px;
     color: #42526E;
+    display: flex;
+    padding: 0 1rem 0 1rem;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
     transition: all 1s ease-in-out;
 }
 
 .email:hover,
 .email:active,
-.email:focus
- {
+.email:focus {
     color: #ff6163;
 }
 
 #btnReset {
     background-color: #ff6163;
+}
+
+.successSms {
+    color: var(--main-color);
+}
+
+.errorSms {
+    color: #ff6163;
+}
+
+@media screen and (min-width:768px) {
+    .formContainer {
+        padding: 0;
+        background-image: none;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .formContainerBtns {
+        justify-content: flex-start;
+    }
+
+    .formContainer textarea {
+        opacity: 0.8;
+    }
 }

@@ -40,6 +40,10 @@ code {
   border: transparent;
   padding: 4%;
   cursor: pointer;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 1s ease-in-out;
 }
 
@@ -61,4 +65,8 @@ code {
 
 .hide{
   display: none;
+}
+
+#root {
+  overflow: hidden;
 }

@@ -5,7 +5,6 @@
   background-size: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 100vh;
   background-repeat: no-repeat;
@@ -20,6 +19,13 @@
   margin-top: -4%;
 }
 
+.pointerDown {
+  display: contents;
+}
+.pointerLeft {
+  display: none;
+}
+
 .aboutContainer p {
   font-weight: 400;
   font-size: 20px;
@@ -30,9 +36,16 @@
   margin-right: 5%;
   margin-top: 2%;
 }
+
 .aboutContainer button {
   margin-top: 2.5rem;
+  height: 48px;
 }
+
+.aboutContainer .btnPrimary {
+  height: 48px;
+}
+
 .moreAboutContainer {
   display: flex;
   flex-direction: column;
@@ -51,4 +64,53 @@
   color: var(--fith-color);
   line-height: 52px;
   font-weight: bold;
+}
+
+@media screen and (min-width:768px) {
+  .aboutContainer {
+    /* display: flex;
+    flex-direction: column; */
+    background-image: url(../img/desk_about.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* padding: 0; */
+  }
+  .aboutContainer p{
+text-align: center;
+padding-left: 13%;
+padding-right: 13%;
+  }
+  .moreAboutContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .aboutContainerHeader {
+    margin-top: 10%;
+  }
+
+  .formContainerBtns {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moreAboutContainer p {
+    margin-top: 2rem;
+    text-align: start;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 30px;
+  }
+
+  .pointerDown {
+    display: none;
+  }
+  .pointerLeft {
+    display: contents;
+  }
 }

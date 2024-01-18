@@ -19,8 +19,12 @@ function App() {
       <Works />
       <About />
       <Cards />
-      <MoreAbout />
-      <Form />
+      <div className={style.contact}>
+        <div className={style.moreFormContainer}>
+          <MoreAbout />
+          <Form />
+        </div>
+      </div>
       <FooterItem />
     </div>
   );

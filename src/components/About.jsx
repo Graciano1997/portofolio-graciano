@@ -12,7 +12,9 @@ const About = () => {
         you like what you see and have a project you need coded,
         don't hesitate to contact me.
       </p>
+      <div className={style.formContainerBtns}>
         <button className="btnPrimary">Get my Resume</button>
+      </div>
     </section>
   );
 };

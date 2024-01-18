@@ -2,11 +2,11 @@ import { useState } from 'react';
 import style from '../style/Form.module.css';
 
 const Form = () => {
-  const [client, setClient] = useState({ name: '', email: '', message: '' })
+  const [client, setClient] = useState({ name: '', email: '', message: '' });
+  const [sentStatus, setSentStatus] = useState('');
   return (
     <form action="https://formspree.io/f/mrgvwjrg" onSubmit={async (el) => {
       el.preventDefault();
-
       const options = {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -15,11 +15,13 @@ const Form = () => {
 
       await fetch('https://formspree.io/f/mrgvwjrg', options)
         .then((response) => {
-          console.log(response);
+          if (response.ok) {
+            setSentStatus(true);
+            document.querySelector('#formU').reset();
+          }
           return response.json();
         })
-        .then(data => console.log(data))
-        .catch(err => console.log('Error:', err))
+        .catch(err => setSentStatus(false))
     }} method="post" className={style.formContainer} id="formU">
 
       <input type="text" name="name" class="userName" onChange={(el) => {
@@ -46,12 +48,19 @@ const Form = () => {
             message: el.target.value,
           })
         }}
-        rows="10" placeholder="Hey I'd like to connect to..."
+        rows="3" placeholder="Hey I'd like to connect to..."
         required></textarea>
-      <span class="information"></span>
+      {sentStatus && (<p className={style.successSms}>Your Message was sent successfully'</p>)}
+      {sentStatus === false && (<p className={style.errorSms}>Uups! Could not sent your Message please check your connection and try again!'</p>)}
       <div className={style.formContainerBtns}>
         <button className="btnPrimary" type="submit">Get in touch</button>
-        <button className="btnPrimary" type="reset" id="btnReset" style={{ backgroundColor: '#ff6163' }}>Reset form</button>
+        <button
+          className="btnPrimary"
+          type="reset" id="btnReset"
+          style={{ backgroundColor: '#ff6163' }}
+          onClick={() => { setSentStatus('') }}
+        >
+          Reset form</button>
       </div>
       <a className={style.email} href="mailto:gracianomanuelhenrique@gmail.com">gracianomanuelhenrique@gmail.com</a>
     </form>

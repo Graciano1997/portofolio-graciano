@@ -5,6 +5,7 @@
     align-items: center;
     padding-bottom: 0.5rem;
 }
+
 .indicatorFinish {
     margin-top: 3%;
     width: 134px;
@@ -14,3 +15,21 @@
     border-radius: 10px;
 }
 
+@media screen and (min-width:768px) {
+    .indicatorFinish {
+        display: none;
+    }
+
+    .footerContainer {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .footerContainer ul {
+        width: 100%;
+        border-top: 1px solid  #DFE1E6;
+        display: flex;
+        padding-top: 0.9rem;
+        align-items: center;
+    }
+}
