@@ -92,3 +92,9 @@
     transition: all 1s ease-in-out;
   }
 }
+
+@media screen and (max-width: 396px) {
+  .btnHoverContainer {
+    margin-top: -2rem;
+  }
+}

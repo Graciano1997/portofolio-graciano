@@ -85,7 +85,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .cardsContainer {
-    margin-top: -14rem;
+    margin-top: -12rem;
     display: grid;
     grid-template-columns: repeat(2, 50fr);
     grid-template-rows: repeat(2, 50fr);
@@ -93,5 +93,11 @@
     justify-items: center;
     width: 100%;
     transition: all 1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .cardsContainer {
+    margin-top: -2.5rem;
   }
 }

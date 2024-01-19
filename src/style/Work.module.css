@@ -124,3 +124,9 @@
     }
   }
 }
+
+@media screen and (max-width: 375px) {
+  .workContainerItem {
+    width: 350px;
+  }
+}
