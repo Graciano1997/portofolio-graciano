@@ -27,7 +27,7 @@ const projects = [
     techLanguage: [' RoR', 'Rspec', 'PL/pgSQL'],
     content: `Motorcycle Booking Back-end This repository contains the Rails back-end API for the "Motorcycle Booking" project. The API serves as the foundation for user authentication, motorcycle management, reservation handling, and related functionalities. It utilizes PostgreSQL as the database and is designed to be a robust and secure backend system. The API exposes endpoints for user login, motorcycle listing, motorcycle details, reservation creation, and user reservation listing. Additionally, it implements
      features such as marking a motorcycle as removed and comprehensive documentation for seamless integration with the front-end.`,
-    link: ['https://motorcyclebooking.onrender.com', 'https://github.com/Graciano1997/motorcycle_booking_back_end.git'],
+    link: ['https://motorcyclebooking.onrender.com/api-docs', 'https://github.com/Graciano1997/motorcycle_booking_back_end.git'],
   },
   {
     id: 3,
