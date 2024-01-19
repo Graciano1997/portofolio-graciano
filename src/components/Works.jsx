@@ -1,9 +1,17 @@
+import { useState } from 'react';
 import projects from '../data/projectsData';
 import styles from '../style/Work.module.css';
 import Modal from './Modal';
-import Work from './Work';
+
 
 const Works = () => {
+  const [selectedProject, setSelectedProject] = useState({
+    image: '',
+    title: '',
+    techLanguage: [],
+    content: '',
+    link: []
+  });
   return (
     <section className={styles.workscontainer} id="work-section-area">
       <div className={styles.worksHeader}>
@@ -13,12 +21,29 @@ const Works = () => {
       <div className={styles.works}>
         {
           projects.length > 0 && projects.map((project, index) =>
-            <Work
-              projectInfo={project}
-              key={{ index }} />)
+            <div className={styles.workContainerItem} index={{ index }}>
+              <div className={styles.workImage}>
+                <img src={project.image}
+                  alt={project.title} />
+              </div>
+              <div className={styles.workBody}>
+                <h4 className={styles.workTitle} >{project.title}</h4>
+                <div className={styles.techsContaier}>
+                  {project.techLanguage.length > 0 && project.techLanguage.map((tech, index) =>
+                    <p key={{ index }}>{tech}</p>)}
+                </div>
+                <div className="btnContainer">
+                  <button className="btnPrimary" onClick={() => {
+                    setSelectedProject(project);
+                    document.querySelector('.modalContainer').classList.remove('hide');
+                  }}>See Project</button>
+                </div>
+              </div>
+            </div>
+          )
         }
       </div>
-      <Modal />
+      <Modal projectInfo={selectedProject} />
     </section>
   );
 };

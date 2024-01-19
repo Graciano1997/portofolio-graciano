@@ -1,11 +1,11 @@
-import summit from '../img/summit.png';
 import styles from '../style/Work.module.css';
 
 const Work = ({ projectInfo }) => {
   return (
     <div className={styles.workContainerItem}>
       <div className={styles.workImage}>
-        <img src={summit} alt="summit" />
+        <img src={projectInfo.image}
+          alt="summit" />
       </div>
       <div className={styles.workBody}>
         <h4 className={styles.workTitle} >{projectInfo.title}</h4>

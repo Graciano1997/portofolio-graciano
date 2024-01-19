@@ -102,6 +102,10 @@
     align-items: center;
   }
 
+  .formContainerBtns button a {
+    color: var(--white-color);
+  }
+
   .moreAboutContainer p {
     margin-top: 2rem;
     text-align: start;
@@ -125,6 +129,7 @@
   .pointerDown {
     display: none;
   }
+
   .pointerLeft {
     display: contents;
   }

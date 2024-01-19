@@ -1,3 +1,4 @@
+import resume from '../data/resume.pdf';
 import style from '../style/About.module.css';
 
 const About = () => {
@@ -13,7 +14,9 @@ const About = () => {
         don't hesitate to contact me.
       </p>
       <div className={style.formContainerBtns}>
-        <button className="btnPrimary">Get my Resume</button>
+        <button className="btnPrimary">
+          <a href={resume} target="_blank">
+            Get my resume</a></button>
       </div>
     </section>
   );

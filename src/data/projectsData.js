@@ -1,43 +1,55 @@
+import book from '../img/projects/book.png';
+import motoFront from '../img/projects/motoBooking.png';
+import naruto from '../img/projects/naruto.png';
+import restApp from '../img/projects/resting.png';
+import summitApp from '../img/projects/summit.png';
+import spaceApp from '../img/projects/space.png';
+import movieApp from '../img/projects/gomovie.png';
+import mathApp from '../img/projects/math_magician.png';
+import budgetApp from '../img/projects/transation.png';
+import covidApp from '../img/projects/covid.png';
+import apiApp from '../img/projects/api.png';
+
 const projects = [
   {
     id: 1,
-    image: 'assets/img/covid.png',
+    image: motoFront,
     title: 'Motorcycle Booking Front',
     techLanguage: ['React.js','Redux', 'Rest API'],
-    content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
-    **Everything in Real time, Fetching the data from a provided API**.`,
-    link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+    content: `Motorcycle Booking Front-end This repository contains the React/Redux front-end application for the "Motorcycle Booking" project. The front-end provides an intuitive user interface for interacting with the booking system. Users can log in with a username, browse a list of motorcycles, view detailed information about specific motorcycles, reserve appointments, add new motorcycles, and manage existing ones. The application is designed to be responsive, offering a seamless experience on both desktop and mobile devices.
+     The front-end communicates with the back-end API to ensure a cohesive and efficient user experience.`,
+    link: ['https://motobookingapp.onrender.com', 'https://github.com/Graciano1997/motorcycle_booking_front_end.git'],
   },
   {
     id: 2,
-    image: 'assets/img/covid.png',
+    image: apiApp,
     title: 'Motorcycle Booking Back',
     techLanguage: [' RoR', 'Rspec', 'PL/pgSQL'],
-    content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
-    **Everything in Real time, Fetching the data from a provided API**.`,
-    link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+    content: `Motorcycle Booking Back-end This repository contains the Rails back-end API for the "Motorcycle Booking" project. The API serves as the foundation for user authentication, motorcycle management, reservation handling, and related functionalities. It utilizes PostgreSQL as the database and is designed to be a robust and secure backend system. The API exposes endpoints for user login, motorcycle listing, motorcycle details, reservation creation, and user reservation listing. Additionally, it implements
+     features such as marking a motorcycle as removed and comprehensive documentation for seamless integration with the front-end.`,
+    link: ['https://motorcyclebooking.onrender.com', 'https://github.com/Graciano1997/motorcycle_booking_back_end.git'],
   },
   {
     id: 3,
-    image: 'assets/img/covid.png',
+    image: budgetApp,
     title: 'Budget App',
     techLanguage: [' RoR', 'Rspec', 'PL/pgSQL'],
-    content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
-    **Everything in Real time, Fetching the data from a provided API**.`,
-    link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+    content: `Budget app is a web application that allows users to keep track of their financial expenses. In each category, users can add purchases. 
+    On the category page, users can view the total amount of purchase items..`,
+    link: ['https://budget-ps5p.onrender.com', 'https://github.com/Graciano1997/budget_app.git'],
   },
+  // {
+  //   id: 4,
+  //   image: 'assets/img/covid.png',
+  //   title: 'Recipe App',
+  //   techLanguage: [' RoR', 'Rspec', 'PL/pgSQL'],
+  //   content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
+  //   **Everything in Real time, Fetching the data from a provided API**.`,
+  //   link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+  // },
   {
     id: 4,
-    image: 'assets/img/covid.png',
-    title: 'Recipe App',
-    techLanguage: [' RoR', 'Rspec', 'PL/pgSQL'],
-    content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
-    **Everything in Real time, Fetching the data from a provided API**.`,
-    link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
-  },
-  {
-    id: 5,
-    image: 'assets/img/covid.png',
+    image: covidApp,
     title: 'Pandemic Situation',
     techLanguage: ['React.js', 'JEST', 'Redux'],
     content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
@@ -45,32 +57,32 @@ const projects = [
     link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
   },
   {
-    id: 6,
-    image: 'assets/img/covid.png',
+    id: 5,
+    image: restApp,
     title: 'Resting Countries',
     techLanguage: ['React.js', 'Redux'],
-    content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
-    **Everything in Real time, Fetching the data from a provided API**.`,
-    link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+    content: `This is a React Web App that shows the fundamental indispensable information of each country of the worlds including its borders.`,
+    link: ['https://rest-countries-api-with-color-theme-switcher-master-ten-topaz.vercel.app/', 'https://github.com/Graciano1997/rest-countries-api-with-color-theme-switcher-master.git'],
   },
   {
-    id: 7,
-    image: 'assets/img/space.png',
+    id: 6,
+    image: spaceApp,
     title: 'Space Travelers Hub',
     techLanguage: ['React.js', 'Redux', 'JEST'],
     content: 'This is a React Web App that displays some real rockets and available Missions from a fetched API.🚀🚀',
     link: ['https://space-travelers-hub-sepia.vercel.app/', 'https://github.com/Graciano1997/space_travelers_hub.git'],
   },
   {
-    id: 8,
-    image: 'assets/img/book.png',
+    id: 7,
+    image: book,
     title: 'BookStore App',
     techLanguage: ['React.js', 'JEST', 'Redux'],
     content: `**Bookstore** is a web application designed for manage and Store your books collection! Feel free to use this App 😊🤩😉`,
+    link: ['https://book-store-hn32.vercel.app', 'https://github.com/Graciano1997/book_store.git'],
   },
   {
-    id: 9,
-    image: 'assets/img/math.png',
+    id: 8,
+    image: mathApp,
     title: 'Math Magicians',
     techLanguage: ['React.js', 'JEST'],
     content: `**math_magicians** is a web application designed for mathematics enthusiasts 😍🤩. It is a Single Page App (SPA) that provides users with the ability 
@@ -79,16 +91,24 @@ const projects = [
     link: ['https://math-magicians-wh32.onrender.com/', 'https://github.com/Graciano1997/math_magicians'],
   },
   {
-    id: 10,
-    image: 'assets/img/gomovie.png',
+    id: 9,
+    image: movieApp,
     title: 'JS Capstone-Go!Moovies',
     techLanguage: ['JS', 'JEST', 'HTML', 'Webpack'],
     content: 'js_moduleII_capstone-Go!Moovies is a repository.The goal is to Create, interactive list funcionality, and we use JEST to test. This JavaScript capstone project is about building a web application based on an external API. And We select https://www.tvmaze.com/api to provides data about a moovies and series. This webapp have 2 interfaces (the homepage and the commenter popup windows).',
     link: ['https://graciano1997.github.io/js_moduleII_capstone/dist/', 'https://github.com/Graciano1997/js_moduleII_capstone'],
   },
   {
+    id: 10,
+    image: naruto,
+    title: 'Naruto LeadBoard',
+    techLanguage: ['CSS','HTML', 'Webpack'],
+    content: 'js_moduleII_capstone-Go!Moovies is a repository.The goal is to Create, interactive list funcionality, and we use JEST to test. This JavaScript capstone project is about building a web application based on an external API. And We select https://www.tvmaze.com/api to provides data about a moovies and series. This webapp have 2 interfaces (the homepage and the commenter popup windows).',
+    link: ['https://graciano1997.github.io/js_moduleII_capstone/dist/', 'https://github.com/Graciano1997/js_moduleII_capstone'],
+  },
+  {
     id: 11,
-    image: 'assets/img/summit.png',
+    image: summitApp,
     title: 'Creative Summit 2015',
     techLanguage: ['JS', 'sass', 'HTML'],
     content: 'Capstone-summit is a project that demonstrates that I did undersand the last four week main topics, hard skill (HTML,CSS and JavaScript ) and Soft skills (video apresentation of the software) and so much. This project consists of a website with two main pages: the home page and the about page.',
