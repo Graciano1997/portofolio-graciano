@@ -95,6 +95,6 @@
 
 @media screen and (max-width: 396px) {
   .btnHoverContainer {
-    margin-top: -2rem;
+    margin-top: 0.5rem;
   }
 }
