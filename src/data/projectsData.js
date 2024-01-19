@@ -106,7 +106,7 @@ const projects = [
     title: 'Naruto LeadBoard',
     techLanguage: ['CSS', 'HTML', 'Webpack'],
     content: 'This App offer to you  an elegant and simple user interface and experience, here you can see the Naruto fighters most recent Leadborad, feel free to add your best fight score 😍🤩',
-    link: ['https://graciano1997.github.io/js_moduleII_capstone/dist/', 'https://github.com/Graciano1997/js_moduleII_capstone'],
+    link: ['https://graciano1997.github.io/leaderboard/dist/', 'https://github.com/Graciano1997/leaderboard.git'],
   },
   {
     id: 11,
