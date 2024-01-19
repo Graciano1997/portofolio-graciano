@@ -15,8 +15,8 @@ const projects = [
     id: 1,
     image: motoFront,
     title: 'Motorcycle Booking Front',
-    techLanguage: ['React.js','Redux', 'Rest API'],
-    content: `Motorcycle Booking Front-end This repository contains the React/Redux front-end application for the "Motorcycle Booking" project. The front-end provides an intuitive user interface for interacting with the booking system. Users can log in with a username, browse a list of motorcycles, view detailed information about specific motorcycles, reserve appointments, add new motorcycles, and manage existing ones. The application is designed to be responsive, offering a seamless experience on both desktop and mobile devices.
+    techLanguage: ['React.js', 'Redux', 'Rest API'],
+    content: `This app provides an elegant and intuitive user interface and experience for booking your favorite Vespa. Users can login, browse a list of motorcycles, view detailed information about specific motorcycles, reserve a motorecycle, add and delete new motorcycles (ADM only). The application is fully responsive and offer a seamless experience on both desktop and mobile devices.
      The front-end communicates with the back-end API to ensure a cohesive and efficient user experience.`,
     link: ['https://motobookingapp.onrender.com', 'https://github.com/Graciano1997/motorcycle_booking_front_end.git'],
   },
@@ -69,7 +69,7 @@ const projects = [
     image: spaceApp,
     title: 'Space Travelers Hub',
     techLanguage: ['React.js', 'Redux', 'JEST'],
-    content: 'This is a React Web App that displays some real rockets and available Missions from a fetched API.🚀🚀',
+    content: 'This is a React Web App that displays some real rockets and available Missions from a fetched API and you are free to reserve....🚀🚀',
     link: ['https://space-travelers-hub-sepia.vercel.app/', 'https://github.com/Graciano1997/space_travelers_hub.git'],
   },
   {
@@ -95,15 +95,16 @@ const projects = [
     image: movieApp,
     title: 'JS Capstone-Go!Moovies',
     techLanguage: ['JS', 'JEST', 'HTML', 'Webpack'],
-    content: 'js_moduleII_capstone-Go!Moovies is a repository.The goal is to Create, interactive list funcionality, and we use JEST to test. This JavaScript capstone project is about building a web application based on an external API. And We select https://www.tvmaze.com/api to provides data about a moovies and series. This webapp have 2 interfaces (the homepage and the commenter popup windows).',
+    content: `This Web App has an interactive
+     list funcionality, here you welcome to write your comments and see your favorite films informations and so much more 😍🤩...`,
     link: ['https://graciano1997.github.io/js_moduleII_capstone/dist/', 'https://github.com/Graciano1997/js_moduleII_capstone'],
   },
   {
     id: 10,
     image: naruto,
     title: 'Naruto LeadBoard',
-    techLanguage: ['CSS','HTML', 'Webpack'],
-    content: 'js_moduleII_capstone-Go!Moovies is a repository.The goal is to Create, interactive list funcionality, and we use JEST to test. This JavaScript capstone project is about building a web application based on an external API. And We select https://www.tvmaze.com/api to provides data about a moovies and series. This webapp have 2 interfaces (the homepage and the commenter popup windows).',
+    techLanguage: ['CSS', 'HTML', 'Webpack'],
+    content: 'This App offer to you  an elegant and simple user interface and experience, here you can see the Naruto fighters most recent Leadborad, feel free to add your best fight score 😍🤩',
     link: ['https://graciano1997.github.io/js_moduleII_capstone/dist/', 'https://github.com/Graciano1997/js_moduleII_capstone'],
   },
   {
@@ -111,7 +112,7 @@ const projects = [
     image: summitApp,
     title: 'Creative Summit 2015',
     techLanguage: ['JS', 'sass', 'HTML'],
-    content: 'Capstone-summit is a project that demonstrates that I did undersand the last four week main topics, hard skill (HTML,CSS and JavaScript ) and Soft skills (video apresentation of the software) and so much. This project consists of a website with two main pages: the home page and the about page.',
+    content: 'This is a web page for the Creative Summit 2015, here your can find indispensable information about the Summit program.',
     link: ['https://graciano1997.github.io/global-summit/', 'https://github.com/Graciano1997/global-summit'],
   },
 ];

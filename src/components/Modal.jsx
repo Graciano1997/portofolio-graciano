@@ -1,5 +1,7 @@
 import close from '../img/close.svg';
 import style from '../style/Modal.module.css';
+import git from '../img/seeGit.svg';
+import live from '../img/seeLive.svg';
 
 const Modal = ({ projectInfo }) => {
     return (
@@ -19,16 +21,16 @@ const Modal = ({ projectInfo }) => {
                             <p>JAVASCRIPT</p>
                         </div>
                         <div className={style.modalButton}>
-                            <button className="btnPrimary"><a href={projectInfo.link[0]} target="_blank">See Live</a></button>
-                            <button className="btnPrimary"><a href={projectInfo.link[1]} target="_blank">See Source</a></button>
+                            <button className="btnPrimary"><a href={projectInfo.link[0]} target="_blank"><span>See Live</span> <img src={live} /></a></button>
+                            <button className="btnPrimary"><a href={projectInfo.link[1]} target="_blank"><span>See Source</span><img src={git} /></a></button>
                         </div>
                     </div>
                     <div className={style.description}>
                         <p>{projectInfo.content}</p>
                     </div>
                     <div className={style.modalButtons}>
-                        <button className="btnPrimary"><a href={projectInfo.link[0]} target="_blank">See Live</a></button>
-                        <button className="btnPrimary"><a href={projectInfo.link[1]} target="_blank">See Source</a></button>
+                    <button className="btnPrimary"><a href={projectInfo.link[0]} target="_blank"><span>See Live</span> <img src={live} /></a></button>
+                            <button className="btnPrimary"><a href={projectInfo.link[1]} target="_blank"><span>See Source</span><img src={git} /></a></button>
                     </div>
                     <div className={style.modalClose}>
                         <button onClick={() => {
