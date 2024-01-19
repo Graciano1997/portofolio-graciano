@@ -22,3 +22,9 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+  .headersContiner {
+    margin-top: 3rem;
+  }
+}
