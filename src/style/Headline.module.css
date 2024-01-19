@@ -71,7 +71,6 @@
 
 @media screen and (min-width: 1600px) {
   .headlineContainer {
-    /* height: 63rem; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -93,7 +92,7 @@
   }
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 507px) {
   .btnHoverContainer {
     margin-top: 0.5rem;
   }
