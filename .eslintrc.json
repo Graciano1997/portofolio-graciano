@@ -1,31 +1,57 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "jest": true
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "parser": "babel-eslint",
-    "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "extends": [
-        "airbnb-base"
-    ],
-    "rules": {
-        "no-shadow": "off",
-        "no-param-reassign": "off",
-        "eol-last": "off",
-        "import/extensions": [
-            1,
-            {
-                "js": "always",
-                "json": "always"
-            }
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
         ]
-    },
-    "ignorePatterns": [
-        "dist/",
-        "build/"
-    ]
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "react/prop-types": "off",
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "react/jsx-first-prop-new-line": "off"
+  },
+  "overrides": [
+    {
+      // feel free to replace with your preferred file pattern - eg. 'src/**/*Slice.js' or 'redux/**/*Slice.js'
+      "files": [
+        "src/**/*Slice.js"
+      ],
+      // avoid state param assignment
+      "rules": { "no-param-reassign": ["error", { "props": false }],
+      "max-len": ["error", { "code": 175 }]
+     }
+    }
+  ],
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
 }

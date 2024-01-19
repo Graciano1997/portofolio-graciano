@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+  --main-color: #36b37e;
+  --second-color: #c5e9da;
+  --third-color: #c5e9da;
+  --fourth-color: #ebf0ee;
+  --fith-color: #172b4d;
+  --sixth-color: #d0d9d4;
+  --seventh-color: #3a4a42;
+  --eigth-color: #42526e;
+  --nineth-color: #c1c7d0;
+  --tenth-color: #0d151e;
+  --eleventh-color: #ffe7e8;
+  --modal-color: rgba(193, 199, 208, 0.8);
+  --white-color: #ffff;
+  --black-color: #000;
+  --btnMainHover-color: #36b37f;
+  --btnMainHoverShadow-color: rgba(54, 179, 127, 0.24);
+}

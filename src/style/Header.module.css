@@ -1,0 +1,24 @@
+@keyframes anime {
+  from {
+    transform: rotate(15deg);
+  }
+
+  to {
+    transform: rotate(50deg);
+  }
+}
+
+.shakeHand {
+  display: inline-flex;
+  animation-duration: 1s;
+  animation-name: anime;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+
+.headersContiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
