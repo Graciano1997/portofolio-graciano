@@ -16,9 +16,8 @@ const Modal = ({ projectInfo }) => (
             {projectInfo.title}
           </p>
           <div className={style.languageContainer}>
-            <p>Ruby on Rails</p>
-            <p>CSS</p>
-            <p>JAVASCRIPT</p>
+            {projectInfo.techLanguage.length > 0
+              && projectInfo.techLanguage.map((tech, index) => <p key={{ index }}>{tech}</p>)}
           </div>
           <div className={style.modalButton}>
             <button type="button" className="btnPrimary">
@@ -74,6 +73,7 @@ Modal.propTypes = {
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
+    techLanguage: PropTypes.arrayOf(PropTypes.string).isRequired,
     link: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };
