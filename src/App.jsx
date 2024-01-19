@@ -27,7 +27,7 @@ function App() {
       </div>
       <FooterItem />
       <div className={style.appBackground}>
-        <img src={box} />
+        <img src={box} alt="Big Green Box" />
       </div>
     </div>
   );

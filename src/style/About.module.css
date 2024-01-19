@@ -71,15 +71,18 @@
   font-weight: bold;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .aboutContainer {
     /* display: flex;
     flex-direction: column; */
     background-image: url(../img/desk_about.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+
     /* justify-content: center; */
+
     /* align-items: center; */
+
     /* padding: 0; */
   }
 
@@ -115,7 +118,7 @@
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .pointerDown {
     display: contents;
   }
@@ -125,7 +128,7 @@
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .pointerDown {
     display: none;
   }

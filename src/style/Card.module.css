@@ -64,10 +64,9 @@
   padding: 8px;
   border-radius: 8px;
   color: var(--main-color);
-
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .cardsContainer {
     margin-top: -15%;
     flex-direction: row;
@@ -84,7 +83,7 @@
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .cardsContainer {
     margin-top: -14rem;
     display: grid;

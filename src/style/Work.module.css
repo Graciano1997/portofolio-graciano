@@ -98,10 +98,11 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width:824px) {
+@media screen and (min-width: 824px) {
   .workContainerItem {
-       width: 369px;
+    width: 369px;
   }
+
   .works {
     display: grid;
     grid-template: repeat(1, 1fr) / repeat(3, 1fr);
@@ -113,8 +114,8 @@
     padding-right: 8%;
     width: 1172px;
   }
-  
-  @media screen and (min-width:824px)and (max-width:1260px) {
+
+  @media screen and (min-width: 824px)and (max-width: 1260px) {
     .works {
       grid-template: repeat(1, 1fr) / repeat(2, 1fr);
       column-gap: 24px;

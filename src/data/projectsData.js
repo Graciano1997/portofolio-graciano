@@ -38,15 +38,16 @@ const projects = [
     On the category page, users can view the total amount of purchase items..`,
     link: ['https://budget-ps5p.onrender.com', 'https://github.com/Graciano1997/budget_app.git'],
   },
-  // {
-  //   id: 4,
-  //   image: 'assets/img/covid.png',
-  //   title: 'Recipe App',
-  //   techLanguage: [' RoR', 'Rspec', 'PL/pgSQL'],
-  //   content: `This is a React Web App that reports the 24H coronavirus new cases, recovered and active cases by each Country in All over the world!
-  //   **Everything in Real time, Fetching the data from a provided API**.`,
-  //   link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
-  // },
+  /* {
+     id: 4,
+     image: 'assets/img/covid.png',
+     title: 'Recipe App',
+     techLanguage: [' RoR', 'Rspec', 'PL/pgSQL'],
+     content: `This is a React Web App that reports the 24H coronavirus new cases,
+     recovered and active cases by each Country in All over the world!
+     **Everything in Real time, Fetching the data from a provided API**.`,
+     link: ['https://todays-pandemic-status-app.onrender.com/', 'https://github.com/Graciano1997/pandemic_react_capstone.git'],
+   }, */
   {
     id: 4,
     image: covidApp,
@@ -61,7 +62,7 @@ const projects = [
     image: restApp,
     title: 'Resting Countries',
     techLanguage: ['React.js', 'Redux'],
-    content: `This is a React Web App that shows the fundamental indispensable information of each country of the worlds including its borders.`,
+    content: 'This is a React Web App that shows the fundamental indispensable information of each country of the worlds including its borders.',
     link: ['https://rest-countries-api-with-color-theme-switcher-master-ten-topaz.vercel.app/', 'https://github.com/Graciano1997/rest-countries-api-with-color-theme-switcher-master.git'],
   },
   {
@@ -77,7 +78,7 @@ const projects = [
     image: book,
     title: 'BookStore App',
     techLanguage: ['React.js', 'JEST', 'Redux'],
-    content: `**Bookstore** is a web application designed for manage and Store your books collection! Feel free to use this App 😊🤩😉`,
+    content: '**Bookstore** is a web application designed for manage and Store your books collection! Feel free to use this App 😊🤩😉',
     link: ['https://book-store-hn32.vercel.app', 'https://github.com/Graciano1997/book_store.git'],
   },
   {

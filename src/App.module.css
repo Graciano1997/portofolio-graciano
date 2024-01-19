@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-.appBackground{
+.appBackground {
   display: none;
 }
 
@@ -32,8 +32,7 @@
   flex-direction: column;
 }
 
-@media screen and (min-width:768px) {
-
+@media screen and (min-width: 768px) {
   @keyframes anime {
     from {
       transform: rotate(0deg);
@@ -85,7 +84,7 @@
   }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width: 1200px) {
   .moreFormContainer {
     margin-top: 4rem;
     display: grid;

@@ -33,7 +33,7 @@
   margin-top: -4rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .headlineContainer {
     background-image: url('../img/desk_bg.svg');
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
   }
 
   .description {
-  margin-top: 2rem; 
+    margin-top: 2rem;
   }
 
   .socialMedia {
@@ -66,7 +66,7 @@
   }
 }
 
-@media screen and (min-width:1600px) {
+@media screen and (min-width: 1600px) {
   .headlineContainer {
     /* height: 63rem; */
     flex-direction: column;
@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (min-width:768px) and (max-width:1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .btnHoverContainer {
     margin-top: -25rem;
     transition: all 1s ease-in-out;

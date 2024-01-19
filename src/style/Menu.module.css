@@ -67,40 +67,45 @@
   text-decoration: wavy;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   @keyframes anime {
     0% {
-    background-size:10%;
-    background-repeat: repeat;
-    }
-    10%{
-      background-size:20%;
-      background-repeat: no-repeat;
-    }
-    20%{
-      background-size:30%;
+      background-size: 10%;
       background-repeat: repeat;
     }
-    50%{
-      background-size:60%;
+
+    10% {
+      background-size: 20%;
       background-repeat: no-repeat;
     }
-    55%{
-      background-size:70%;
+
+    20% {
+      background-size: 30%;
       background-repeat: repeat;
     }
+
+    50% {
+      background-size: 60%;
+      background-repeat: no-repeat;
+    }
+
+    55% {
+      background-size: 70%;
+      background-repeat: repeat;
+    }
+
     to {
-      background-size:100%;
+      background-size: 100%;
       background-repeat: no-repeat;
     }
   }
 
   .menuContainer {
-
     animation-duration: 15s;
     animation-name: anime;
     animation-delay: 1s;
     animation-iteration-count: initial;
+
     /* background-size: 100%; */
   }
 }

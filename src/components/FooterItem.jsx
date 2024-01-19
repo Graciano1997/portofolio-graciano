@@ -1,12 +1,12 @@
-import Networks from "./Network";
+import Networks from './Network';
 import style from '../style/Footer.module.css';
 
-const FooterItem = () =>
+const FooterItem = () => (
   <footer className={style.footerContainer}>
-    <hr className={style.indicator}/>
+    <hr className={style.indicator} />
     <Networks />
     <hr className={style.indicatorFinish} />
   </footer>
-
+);
 
 export default FooterItem;

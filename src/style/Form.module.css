@@ -1,31 +1,30 @@
 .formContainer {
-    background-image: url('../img/imgfoot.svg');
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    margin-top: 1rem;
-    padding: 0 5% 0 5%;
-    gap: 1rem;
+  background-image: url('../img/imgfoot.svg');
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  margin-top: 1rem;
+  padding: 0 5% 0 5%;
+  gap: 1rem;
 }
 
 .formContainer input,
 .formContainer textarea {
-    padding: 8px;
-    border-radius: 8px;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 15px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    line-height: 24px;
-    color: #6b778c;
-    outline: none;
-    transition: all 1s ease-in-out;
+  padding: 8px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  line-height: 24px;
+  color: #6b778c;
+  outline: none;
+  transition: all 1s ease-in-out;
 }
 
 .formContainer textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .formContainer input:focus,
@@ -34,63 +33,62 @@
 .formContainer textarea:focus,
 .formContainer textarea:active,
 .formContainer textarea:hover {
-    box-shadow: 1px 1px 1px 1px var(--main-color);
+  box-shadow: 1px 1px 1px 1px var(--main-color);
 }
 
 .formContainerBtns {
-    margin-top: 2rem;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .email {
-    margin-top: 1rem;
-    text-align: center;
-    line-height: 32px;
-    font-size: 19px;
-    color: #42526E;
-    display: flex;
-    padding: 0 1rem 0 1rem;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    transition: all 1s ease-in-out;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 32px;
+  font-size: 19px;
+  color: #42526e;
+  display: flex;
+  padding: 0 1rem 0 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all 1s ease-in-out;
 }
 
 .email:hover,
 .email:active,
 .email:focus {
-    color: #ff6163;
+  color: #ff6163;
 }
 
 #btnReset {
-    background-color: #ff6163;
+  background-color: #ff6163;
 }
 
 .successSms {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .errorSms {
-    color: #ff6163;
+  color: #ff6163;
 }
 
-@media screen and (min-width:768px) {
-    .formContainer {
-        padding: 0;
-        background-image: none;
-    }
+@media screen and (min-width: 768px) {
+  .formContainer {
+    padding: 0;
+    background-image: none;
+  }
 
-    .email {
-        display: none;
-    }
+  .email {
+    display: none;
+  }
 
-    .formContainerBtns {
-        justify-content: flex-start;
-    }
+  .formContainerBtns {
+    justify-content: flex-start;
+  }
 
-    .formContainer textarea {
-        opacity: 0.8;
-    }
+  .formContainer textarea {
+    opacity: 0.8;
+  }
 }
