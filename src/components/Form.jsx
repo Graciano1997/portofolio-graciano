@@ -71,7 +71,7 @@ const Form = () => {
           });
         }}
         rows="3"
-        placeholder="Hey I`&apos;`d like to connect to..."
+        placeholder="Hey I&apos;d like to connect to..."
         required
       />
       {sentStatus && (<p className={style.successSms}>Your Message was sent successfully</p>)}

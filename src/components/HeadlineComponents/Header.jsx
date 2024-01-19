@@ -5,7 +5,7 @@ const Header = () => (
     <h1 className="headline-primary">
       Hey there
       <div className={styles.shakeHand}>👋</div>
-      .I`&apos;`m Graciano.
+      .I&apos;m Graciano.
     </h1>
     <h1 className="headline-secondary">A full-Stack Web Developer</h1>
   </header>

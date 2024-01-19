@@ -7,12 +7,12 @@ const About = () => (
       <h2 className="headline-primary">About me</h2>
     </div>
     <p>
-      I can help you build a product ,
-      feature or website Look through some of my work and experience!
-      If
-      you like what you see and have a project you need coded,
-      don`&apos;`t hesitate to contact me.
+      I&apos;ve spent much time immersed in remote development, working,
+      and mentoring other devs, remotely and asynchronously
+      across different time zones, building everything from single pages,
+      and websites to fullStack Web Application. I love 😍🤩: Code, Math, Learning and People.
     </p>
+    <p> I run this race with great pleasure and love!</p>
     <div className={style.formContainerBtns}>
       <button type="button" className="btnPrimary">
         <a href={resume} target="_blank" rel="noreferrer">

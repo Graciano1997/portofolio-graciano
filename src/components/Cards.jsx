@@ -11,7 +11,7 @@ const Cards = () => (
         topic: 'Languages',
         photo: languagePic,
         items: [
-          'Ruby on Rails',
+          'Ruby',
           'CSS',
           'JAVASCRIPT',
           'HTML',

@@ -1,7 +1,10 @@
+@import url(./base.css);
+
 .description {
   padding: 1rem;
   font-size: 18px;
   text-align: center;
+  color: var(--tenth-color);
 }
 
 .headlineContainer {
