@@ -35,7 +35,10 @@ body {
   justify-content: center;
 }
 
-.btnPrimary {
+.btnPrimary,
+.btnPrimaryDis,
+.btnReset,
+.btnResetDis {
   background: var(--main-color);
   border-radius: 4px;
   font-style: normal;
@@ -54,6 +57,10 @@ body {
   transition: all 1s ease-in-out;
 }
 
+.btnPrimaryDis {
+  background: var(--third-color);
+}
+
 .btnPrimary:hover,
 .btnPrimary:active,
 .btnPrimary:focus {
@@ -61,9 +68,17 @@ body {
   box-shadow: 0 8px 16px var(--btnMainHoverShadow-color);
 }
 
-#btnReset:hover,
-#btnReset:active,
-#btnReset:focus {
+.btnReset {
+  background: #ff6163;
+}
+
+.btnResetDis {
+  background: #ff61649a;
+}
+
+.btnReset:hover,
+.btnReset:active,
+.btnReset:focus {
   background: #ff6164d3;
   box-shadow: 0 8px 16px #dd5659;
 }

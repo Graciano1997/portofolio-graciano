@@ -4,6 +4,7 @@ import style from '../style/Form.module.css';
 const Form = () => {
   const [client, setClient] = useState({ name: '', email: '', message: '' });
   const [sentStatus, setSentStatus] = useState('');
+  const [valid, setValid] = useState(false);
   return (
     <form
       action="https://formspree.io/f/mrgvwjrg"
@@ -39,6 +40,11 @@ const Form = () => {
             ...client,
             name: el.target.value,
           });
+          if (el.target.value !== '' && client.email !== '' && client.message !== '') {
+            setValid(true);
+          } else {
+            setValid(false);
+          }
         }}
         placeholder="Full name"
         min="2"
@@ -54,6 +60,11 @@ const Form = () => {
             ...client,
             email: el.target.value,
           });
+          if (el.target.value !== '' && client.name !== '' && client.message !== '') {
+            setValid(true);
+          } else {
+            setValid(false);
+          }
         }}
         className="userEmail"
         placeholder="Your Email"
@@ -69,6 +80,11 @@ const Form = () => {
             ...client,
             message: el.target.value,
           });
+          if (el.target.value !== '' && client.email !== '' && client.name !== '') {
+            setValid(true);
+          } else {
+            setValid(false);
+          }
         }}
         rows="3"
         placeholder="Hey I&apos;d like to connect to..."
@@ -76,22 +92,28 @@ const Form = () => {
       />
       {sentStatus && (<p className={style.successSms}>Your Message was sent successfully</p>)}
       {sentStatus === false && (
-      <p className={style.errorSms}>
-        Uups! Could not sent your
-        Message please check your connection and try again!
-      </p>
+        <p className={style.errorSms}>
+          Uups! Could not sent your
+          Message please check your connection and try again!
+        </p>
       )}
       <div className={style.formContainerBtns}>
-        <button className="btnPrimary" type="submit">Get in touch</button>
+        <button className={valid ? 'btnPrimary' : 'btnPrimaryDis'}
+          disabled={!valid}
+          type="submit"
+        >
+          Get in touch
+        </button>
         <button
-          className="btnPrimary"
+          className={(client.name !== '' || client.email !== '' || client.message !== '') ? 'btnReset' : 'btnResetDis'}
           type="button"
-          id="btnReset"
-          style={{ backgroundColor: '#ff6163' }}
+          disabled={!(client.name !== '' || client.email !== '' || client.message !== '')}
           onClick={() => {
             document.querySelector('.userName').value = '';
             document.querySelector('.userEmail').value = '';
             document.querySelector('.userSMS').value = '';
+            setClient({ name: '', email: '', message: '' });
+            setValid(false);
             setSentStatus('');
           }}
         >
