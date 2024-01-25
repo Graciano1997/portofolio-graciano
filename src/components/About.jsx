@@ -1,4 +1,3 @@
-import resume from '../data/resume.pdf';
 import style from '../style/About.module.css';
 
 const About = () => (
@@ -15,7 +14,7 @@ const About = () => (
     <p> I run this race with great pleasure and love!</p>
     <div className={style.formContainerBtns}>
       <button type="button" className="btnPrimary">
-        <a href={resume} target="_blank" rel="noreferrer">
+        <a href="https://docs.google.com/document/d/1KxZ_RiCEUgvVXsTxhMdi0JK5LTeEiGgmLJkkAj6YQxE/edit?usp=sharing" target="_blank" rel="noreferrer">
           Get my resume
         </a>
       </button>
