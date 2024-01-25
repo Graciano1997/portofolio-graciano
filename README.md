@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
   <br/>
-  <h3><b>Portofolio Graciano</b></h3>
+  <h2><b>Portfolio Graciano</b></h2>
 
 </div>
 # 📗 Table of Contents
@@ -28,8 +28,7 @@
 # 📖 Portofolio-Graciano
  <a name="about-project"></a>
 
-**Portofolio-Graciano**,Is a project that show that I understood how to parse a Figma design to create a UI, how to place elements on the page using Flexbox, Grid , media-query 
-and how to use images and backgrounds to enhance the look of the website.
+**Portofolio-Graciano**,Is a project that showcases about me, and portal that connect me with the exterior.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -40,19 +39,17 @@ and how to use images and backgrounds to enhance the look of the website.
   <ul>
     <li><a href="https://html.spec.whatwg.org/multipage/#toc-semantics/">Html</a></li>
     <li><a href="https://www.w3.org/standards/webdesign/htmlcss">Css</a></li>
+    <li><a href="https://react.dev/">React</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-- **Portofolio:responsive desktop,mobile ...**
--**Understand how to create UIs adaptable to different screen sizes using media queries.**
-- **Understand how to parse a Figma design to create a UI.**
-- **Understand how to create UIs adaptable to different screen sizes using media queries.**
-- **Understand how to create popup windows to mobile and desktop.**
+- **Refinement of My Skills and Projects**
+- **Responsive App**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://graciano1997.github.io/portofolio-graciano/)
+- [Live Demo Link](https://portofolio-graciano.vercel.app/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -94,9 +91,9 @@ To run the project, execute the following command:
 
 To run tests, run the following command:
 
-- To track HTML linter errors run:
+- To track JS / JSX linter errors run:
 ```
-npx hint .
+npx eslint "**/*.{js,jsx}"
 ```
 - To track CSS linter errors run::
 ```
@@ -110,26 +107,20 @@ npx eslint .
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-👤 **Graciano Henrique Gra_Soft**
+👤 **Graciano Henrique**
 
 - GitHub: [@Graciano1997](https://github.com/Graciano1997)
 - Twitter: [@GracianoSoft](https://twitter.com/GracianoSoft)
-- Linkedin: [@GracianoSoft](https://www.linkedin.com/in/graciano-manuel-henrique-175527221/)
-
-👤 **Ayokunnumi**
-
-- GitHub: [@Ayokunnumi](https://github.com/Ayokunnumi1)
-- Twitter: [@Ayokunnumi](https://twitter.com/AyokunnumiA)
-- Linkedin: [@Ayokunnumi](https://www.linkedin.com/in/graciano-manuel-henrique-175527221/)
+- Linkedin: [@GracianoSoft](https://www.linkedin.com/in/gracianohenrique/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Implement the desktop-version**
+- **Implement client Helper chat**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,7 +129,7 @@ npx eslint .
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Graciano1997/portofolio-graciano/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +143,7 @@ If you like this project share it and rate it :
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank **Hussen** and my Team 
+I would like to thank **Microverse** and my Team 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
