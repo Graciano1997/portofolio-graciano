@@ -3,7 +3,7 @@ import style from '../../style/Headline.module.css';
 const Description = () => (
   <>
     <p className={style.description}>
-      I&apos;m a passionate full-stack web developer
+      I&apos;m a passionate Full-stack web developer
       with expertise in building robust and user-friendly applications.
     </p>
     <p className={style.description}>
