@@ -97,3 +97,17 @@
     margin-top: 0.5rem;
   }
 }
+
+.info{
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(46, 43, 43, 0.959);
+  margin: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.info a {
+  color:yellow;
+}

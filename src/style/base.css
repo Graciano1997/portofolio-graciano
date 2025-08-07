@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
+  --dark:#333333f6;
   --main-color: #36b37e;
   --second-color: #c5e9da;
   --third-color: #c5e9da;
